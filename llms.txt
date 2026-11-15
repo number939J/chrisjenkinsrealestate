@@ -9,6 +9,7 @@
 
 ## Cities
 - [Chesapeake, VA](https://chrisjenkinsrealestate.com/neighborhoods/chesapeake/): 7,291 sales in 24 months, median $420,000 – South Norfolk, Riverwalk, Greenbrier, Deep Creek, Great Bridge and more.
+- [Virginia Beach, VA](https://chrisjenkinsrealestate.com/neighborhoods/virginia-beach/): 12,010 sales in 24 months, median $405,000 – Green Run, Ocean Lakes, Aragona Village, North End, Sandbridge and more.
 
 ## Neighborhood guides
 - [Bryans Cove, Chesapeake](https://chrisjenkinsrealestate.com/neighborhoods/chesapeake/bryans-cove/): 79 sales in 24 months, median $424,900; mostly newer construction.
@@ -37,6 +38,31 @@
 - [Stoney Creek, Chesapeake](https://chrisjenkinsrealestate.com/neighborhoods/chesapeake/stoney-creek/): 80 sales in 24 months, median $744,520; mostly newer construction.
 - [The Grove, Chesapeake](https://chrisjenkinsrealestate.com/neighborhoods/chesapeake/the-grove/): 74 sales in 24 months, median $419,900; mostly newer construction.
 - [Western Branch, Chesapeake](https://chrisjenkinsrealestate.com/neighborhoods/chesapeake/western-branch/): 116 sales in 24 months, median $355,000; a mix of homes from the 1990s to the 2010s.
+- [Aragona Village, Virginia Beach](https://chrisjenkinsrealestate.com/neighborhoods/virginia-beach/aragona-village/): 234 sales in 24 months, median $345,000; mostly older homes.
+- [Ashville Park, Virginia Beach](https://chrisjenkinsrealestate.com/neighborhoods/virginia-beach/ashville-park/): 109 sales in 24 months, median $1,218,153; mostly newer construction.
+- [Beach Borough, Virginia Beach](https://chrisjenkinsrealestate.com/neighborhoods/virginia-beach/beach-borough/): 226 sales in 24 months, median $507,500; a mix of homes from the 1990s to the 2010s.
+- [Campus East, Virginia Beach](https://chrisjenkinsrealestate.com/neighborhoods/virginia-beach/campus-east/): 99 sales in 24 months, median $250,000; mostly homes from the 1970s through the 1990s.
+- [Chesapeake Beach, Virginia Beach](https://chrisjenkinsrealestate.com/neighborhoods/virginia-beach/chesapeake-beach/): 120 sales in 24 months, median $550,000; mostly homes from the 1970s through the 1990s.
+- [Chimney Hill, Virginia Beach](https://chrisjenkinsrealestate.com/neighborhoods/virginia-beach/chimney-hill/): 126 sales in 24 months, median $336,000; mostly homes from the 1970s through the 1990s.
+- [Cypress Point, Virginia Beach](https://chrisjenkinsrealestate.com/neighborhoods/virginia-beach/cypress-point/): 116 sales in 24 months, median $382,500; mostly homes from the 1970s through the 1990s.
+- [Glenwood, Virginia Beach](https://chrisjenkinsrealestate.com/neighborhoods/virginia-beach/glenwood/): 186 sales in 24 months, median $452,500; mostly homes from the 1970s through the 1990s.
+- [Green Run, Virginia Beach](https://chrisjenkinsrealestate.com/neighborhoods/virginia-beach/green-run/): 322 sales in 24 months, median $329,000; mostly homes from the 1970s through the 1990s.
+- [Indian Lakes, Virginia Beach](https://chrisjenkinsrealestate.com/neighborhoods/virginia-beach/indian-lakes/): 240 sales in 24 months, median $325,250; mostly homes from the 1970s through the 1990s.
+- [Kempsville Lake, Virginia Beach](https://chrisjenkinsrealestate.com/neighborhoods/virginia-beach/kempsville-lake/): 138 sales in 24 months, median $315,000; mostly homes from the 1970s through the 1990s.
+- [Kings Grant, Virginia Beach](https://chrisjenkinsrealestate.com/neighborhoods/virginia-beach/kings-grant/): 111 sales in 24 months, median $619,000; mostly older homes.
+- [Lagomar, Virginia Beach](https://chrisjenkinsrealestate.com/neighborhoods/virginia-beach/lagomar/): 92 sales in 24 months, median $942,500; a mix of homes from the 1990s to the 2010s.
+- [Lynnhaven Shores, Virginia Beach](https://chrisjenkinsrealestate.com/neighborhoods/virginia-beach/lynnhaven-shores/): 112 sales in 24 months, median $419,000; mostly homes from the 1970s through the 1990s.
+- [North End Virginia Beach, Virginia Beach](https://chrisjenkinsrealestate.com/neighborhoods/virginia-beach/north-end-virginia-beach/): 252 sales in 24 months, median $1,155,000; mostly homes from the 1970s through the 1990s.
+- [Ocean Lakes, Virginia Beach](https://chrisjenkinsrealestate.com/neighborhoods/virginia-beach/ocean-lakes/): 287 sales in 24 months, median $420,000; mostly homes from the 1970s through the 1990s.
+- [Princess Anne Plaza, Virginia Beach](https://chrisjenkinsrealestate.com/neighborhoods/virginia-beach/princess-anne-plaza/): 280 sales in 24 months, median $360,000; mostly older homes.
+- [Ridgely Manor, Virginia Beach](https://chrisjenkinsrealestate.com/neighborhoods/virginia-beach/ridgely-manor/): 96 sales in 24 months, median $302,100; a mix of homes from the 1990s to the 2010s.
+- [Rosemont Forest, Virginia Beach](https://chrisjenkinsrealestate.com/neighborhoods/virginia-beach/rosemont-forest/): 161 sales in 24 months, median $340,000; mostly homes from the 1970s through the 1990s.
+- [Salem Lakes, Virginia Beach](https://chrisjenkinsrealestate.com/neighborhoods/virginia-beach/salem-lakes/): 101 sales in 24 months, median $385,000; mostly homes from the 1970s through the 1990s.
+- [Sandbridge Beach, Virginia Beach](https://chrisjenkinsrealestate.com/neighborhoods/virginia-beach/sandbridge-beach/): 140 sales in 24 months, median $1,032,500; a mix of homes from the 1990s to the 2010s.
+- [Shadowlawn, Virginia Beach](https://chrisjenkinsrealestate.com/neighborhoods/virginia-beach/shadowlawn/): 107 sales in 24 months, median $525,000; mostly homes from the 1970s through the 1990s.
+- [Timberlake, Virginia Beach](https://chrisjenkinsrealestate.com/neighborhoods/virginia-beach/timberlake/): 116 sales in 24 months, median $320,000; mostly homes from the 1970s through the 1990s.
+- [West Neck, Virginia Beach](https://chrisjenkinsrealestate.com/neighborhoods/virginia-beach/west-neck/): 112 sales in 24 months, median $462,700; a mix of homes from the 1990s to the 2010s.
+- [Windsor Oaks West, Virginia Beach](https://chrisjenkinsrealestate.com/neighborhoods/virginia-beach/windsor-oaks-west/): 154 sales in 24 months, median $377,450; mostly homes from the 1970s through the 1990s.
 
 ## Latest blog posts
 - [Virginia Residential Property Disclosure Statement: What Hampton Roads Buyers and Sellers Need to Know](https://chrisjenkinsrealestate.com/blog/virginia-residential-property-disclosure-statement-hampton-roads/): A plain-English guide to Virginia's Residential Property Disclosure Statement for Hampton Roads home buyers and sellers, from Chris Jenkins of Better Homes and Gardens Real Estate.
