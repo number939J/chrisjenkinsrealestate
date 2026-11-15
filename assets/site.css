@@ -241,4 +241,4 @@ main.sub { padding: 80px 5%; }
 .footer-links a { color: rgba(255,255,255,0.55); text-decoration: none; letter-spacing: 0.08em; text-transform: uppercase; font-size: 0.64rem; font-weight: 600; }
 .footer-links a:hover { color: var(--gold-lt); }
 @media(max-width: 960px) { .sub-grid { grid-template-columns: 1fr; gap: 3rem; } .side-card { position: static; } main.sub { padding: 56px 5%; } .page-hero { padding: 150px 5% 60px; } }
-@media(max-width: 1180px) { .nav-links { gap: 1.4rem; } }
+@media(max-width: 1180px) { .nav-links { gap: 1rem; } .nav-links a { font-size: 0.64rem; letter-spacing: 0.08em; white-space: nowrap; } .nav-cta { padding: 0.55rem 0.9rem !important; } }
