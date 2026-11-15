@@ -69,7 +69,7 @@ NAV = f"""<nav id="nav" class="scrolled">
 
 FOOTER = f"""<footer>
   <div class="footer-links">
-    <a href="/">Home</a><a href="/neighborhoods/">Hampton Roads Neighborhoods</a><a href="/questions/">Hampton Roads Real Estate Questions</a><a href="/tools/neighborhood-compare/">Compare Neighborhoods</a><a href="/tools/va-loan-payment-calculator/">VA Loan Calculator</a><a href="/blog/">Real Estate Blog</a><a href="/#contact">Contact Chris Jenkins</a>
+    <a href="/">Home</a><a href="/neighborhoods/">Hampton Roads Neighborhoods</a><a href="/questions/">Hampton Roads Real Estate Questions</a><a href="/tools/neighborhood-compare/">Compare Neighborhoods</a><a href="/tools/va-loan-payment-calculator/">VA Loan Calculator</a><a href="/videos/">Videos</a><a href="/blog/">Real Estate Blog</a><a href="/#contact">Contact Chris Jenkins</a>
   </div>
   <p>© {datetime.date.today().year} Chris Jenkins · {BRAND} · All Rights Reserved</p>
   <p style="margin-top:0.4rem;">Licensed in the Commonwealth of Virginia · chrisjenkinsrealestate.com</p>
@@ -552,6 +552,43 @@ def build_va_calc():
     urls.append((path, "2026-11-15", "0.8"))
 
 
+VIDEOS = [
+ ("flood-insurance", "Do You Need Flood Insurance in Hampton Roads?", "Three steps to check flood risk before you buy a Hampton Roads home: the FEMA flood map, your lender, and a real insurance quote.", "/questions/do-i-need-flood-insurance-hampton-roads/", "Read the full answer"),
+ ("va-appraisal-vs-inspection", "VA Appraisal vs. Home Inspection", "What a VA appraisal checks, what it does not, and what to ask your lender before you write an offer.", "/questions/va-loan-appraisal-and-inspection-hampton-roads/", "Read the full answer"),
+ ("va-loan-calculator", "VA Loan Payment Calculator for Hampton Roads", "How the free VA loan payment calculator works, with the funding fee, taxes, insurance and your BAH.", "/tools/va-loan-payment-calculator/", "Use the calculator"),
+ ("most-active-neighborhoods", "Most Active Neighborhoods in Virginia Beach and Chesapeake", "Which neighborhoods had the most closed home sales in the last two years, from REIN MLS data.", "/questions/most-active-neighborhoods-chesapeake-virginia-beach/", "Read the full answer"),
+ ("price-your-home", "How to Price Your Hampton Roads Home to Sell", "Price from closed sales, check speed and discounts, and aim for week one.", "/questions/how-to-price-your-home-to-sell-hampton-roads/", "Read the full answer"),
+ ("test-your-commute", "How to Test Your Commute Before You Buy", "Drive it at real hours, include water crossings, and time it to the gate.", "/questions/how-to-test-your-commute-hampton-roads/", "Read the full answer"),
+]
+
+
+def build_videos():
+    path = "/videos/"
+    tr = json.load(open(os.path.join(ROOT, "data", "video-transcripts.json")))
+    du = json.load(open(os.path.join(ROOT, "data", "video-durations.json")))
+    crumbs = [("Home", "/"), ("Videos", path)]
+    desc = f"Short Hampton Roads real estate videos from {AGENT}: flood insurance, VA loans, pricing your home, neighborhoods and commutes, each with a transcript."
+    items, ld_nodes = "", []
+    for slug, title, d, link, cta in VIDEOS:
+        text = " ".join(tr[slug])
+        items += (f'<section class="vid" id="{slug}"><h2>{esc(title)}</h2>'
+                  f'<video controls preload="none" playsinline width="360" poster="/assets/video/{slug}.jpg" style="max-width:100%;height:auto;aspect-ratio:9/16;background:#101828"><source src="/assets/video/{slug}.mp4" type="video/mp4"></video>'
+                  f'<p>{esc(d)} <a href="{link}">{cta}</a>.</p><details><summary>Read the transcript</summary><p>{esc(text)}</p></details></section>')
+        ld_nodes.append({"@type": "VideoObject", "@id": BASE + path + "#" + slug, "name": title, "description": d,
+                         "thumbnailUrl": BASE + f"/assets/video/{slug}.jpg", "contentUrl": BASE + f"/assets/video/{slug}.mp4",
+                         "uploadDate": "2026-11-15", "duration": f"PT{du[slug]}S", "transcript": text,
+                         "author": {"@id": BASE + "/#chris-jenkins"}, "publisher": {"@id": BASE + "/#chris-jenkins"}, "inLanguage": "en-US"})
+    body = (hero("Videos", "Hampton Roads Real Estate Videos", f"Short answers to common buying and selling questions from {esc(AGENT)}, {esc(BRAND)}. Each video has a transcript and links to the full guide.")
+            + crumbs_html(crumbs)
+            + '<main class="sub"><div class="sub-wide"><article class="prose">'
+            + '<p>The narration in these videos is an AI-generated voice reading scripts written for Chris Jenkins. The facts match the linked pages. This is general information, not legal or financial advice.</p>'
+            + items + '</article></div></main>')
+    title = f"Hampton Roads Real Estate Videos | {AGENT}"
+    ld = [AGENT_NODE, crumbs_ld(crumbs), {"@type": "CollectionPage", "@id": BASE + path + "#page", "name": "Hampton Roads Real Estate Videos", "url": BASE + path, "description": desc}] + ld_nodes
+    write("videos/index.html", page(path, title, desc, body, ld))
+    urls.append((path, "2026-11-15", "0.7"))
+
+
 def build_blog_index():
     path = "/blog/"
     crumbs = [("Home", "/"), ("Blog", path)]
@@ -589,7 +626,7 @@ def build_site_files():
     write("robots.txt", robots)
     lines = [f"# {AGENT} – {BRAND}", "",
              f"> {AGENT} is a full-time REALTOR® serving Chesapeake, Virginia Beach, Norfolk and all of Hampton Roads, Virginia. Over $100M in sales, 500+ homes sold, HRRA Circle of Excellence 2013–present. Specializes in home buyers, home sellers and military PCS relocation. Phone {PHONE_DISPLAY}.", "",
-             "## Core pages", f"- [Home]({BASE}/): About {AGENT}, services, client reviews, FAQ and contact", f"- [Neighborhood guides]({BASE}/neighborhoods/): Community-by-community Hampton Roads guides", f"- [Blog]({BASE}/blog/): Buying, selling, VA loan and relocation guides", f"- [Questions]({BASE}/questions/): Short, sourced answers to Hampton Roads buying and selling questions", f"- [VA loan payment calculator]({BASE}/tools/va-loan-payment-calculator/): Free Hampton Roads VA loan payment estimate with funding fee, taxes and BAH", f"- [Neighborhood compare tool]({BASE}/tools/neighborhood-compare/): Free side-by-side comparison of Hampton Roads neighborhoods", "", "## Cities"]
+             "## Core pages", f"- [Home]({BASE}/): About {AGENT}, services, client reviews, FAQ and contact", f"- [Neighborhood guides]({BASE}/neighborhoods/): Community-by-community Hampton Roads guides", f"- [Blog]({BASE}/blog/): Buying, selling, VA loan and relocation guides", f"- [Questions]({BASE}/questions/): Short, sourced answers to Hampton Roads buying and selling questions", f"- [Videos]({BASE}/videos/): Short Hampton Roads real estate videos with transcripts", f"- [VA loan payment calculator]({BASE}/tools/va-loan-payment-calculator/): Free Hampton Roads VA loan payment estimate with funding fee, taxes and BAH", f"- [Neighborhood compare tool]({BASE}/tools/neighborhood-compare/): Free side-by-side comparison of Hampton Roads neighborhoods", "", "## Cities"]
     lines += [f"- [{c['name']}, VA]({BASE}/neighborhoods/{c['slug']}/): {c['card']}" for c in CITIES.values()]
     lines += ["", "## Neighborhood guides"] + [f"- [{h['name']}, {CITIES[h['city_slug']]['name']}]({BASE}/neighborhoods/{h['city_slug']}/{h['slug']}/): {h['card']}" for h in HOODS]
     lines += ["", "## Questions answered"] + [f"- [{q['question']}]({BASE}/questions/{q['slug']}/): {q['description']}" for q in QUESTIONS]
@@ -615,5 +652,6 @@ if QUESTIONS:
     build_questions_index()
 build_tool()
 build_va_calc()
+build_videos()
 build_site_files()
 print(f"built {len(CITIES)} city hubs, {len(HOODS)} neighborhoods, {len(POSTS)} posts, {len(urls)+1} sitemap urls")
