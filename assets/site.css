@@ -260,3 +260,8 @@ main.sub { padding: 80px 5%; }
 .cmp-note { font-size: 0.8rem; opacity: 0.8; }
 .embed-code { width: 100%; font-family: monospace; font-size: 0.8rem; padding: 0.8rem; border: 1px solid rgba(184,131,42,0.5); }
 @media (max-width: 600px) { .cmp-controls { grid-template-columns: 1fr; } }
+.calc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 0 0 1.5rem; }
+.calc-grid label { display: block; font-size: 0.66rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.4rem; }
+.calc-grid input[type=number], .calc-grid select { width: 100%; padding: 0.7rem 0.8rem; font: inherit; border: 1px solid rgba(184,131,42,0.5); background: #fff; color: var(--dark); }
+.calc-check { display: flex; gap: 0.6rem; align-items: center; font-size: 0.9rem; margin: 0 0 0.6rem; }
+@media (max-width: 600px) { .calc-grid { grid-template-columns: 1fr; } }

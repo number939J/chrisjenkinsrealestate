@@ -7,6 +7,7 @@
 - [Neighborhood guides](https://chrisjenkinsrealestate.com/neighborhoods/): Community-by-community Hampton Roads guides
 - [Blog](https://chrisjenkinsrealestate.com/blog/): Buying, selling, VA loan and relocation guides
 - [Questions](https://chrisjenkinsrealestate.com/questions/): Short, sourced answers to Hampton Roads buying and selling questions
+- [VA loan payment calculator](https://chrisjenkinsrealestate.com/tools/va-loan-payment-calculator/): Free Hampton Roads VA loan payment estimate with funding fee, taxes and BAH
 - [Neighborhood compare tool](https://chrisjenkinsrealestate.com/tools/neighborhood-compare/): Free side-by-side comparison of Hampton Roads neighborhoods
 
 ## Cities

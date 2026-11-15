@@ -69,7 +69,7 @@ NAV = f"""<nav id="nav" class="scrolled">
 
 FOOTER = f"""<footer>
   <div class="footer-links">
-    <a href="/">Home</a><a href="/neighborhoods/">Hampton Roads Neighborhoods</a><a href="/questions/">Hampton Roads Real Estate Questions</a><a href="/tools/neighborhood-compare/">Compare Neighborhoods</a><a href="/blog/">Real Estate Blog</a><a href="/#contact">Contact Chris Jenkins</a>
+    <a href="/">Home</a><a href="/neighborhoods/">Hampton Roads Neighborhoods</a><a href="/questions/">Hampton Roads Real Estate Questions</a><a href="/tools/neighborhood-compare/">Compare Neighborhoods</a><a href="/tools/va-loan-payment-calculator/">VA Loan Calculator</a><a href="/blog/">Real Estate Blog</a><a href="/#contact">Contact Chris Jenkins</a>
   </div>
   <p>© {datetime.date.today().year} Chris Jenkins · {BRAND} · All Rights Reserved</p>
   <p style="margin-top:0.4rem;">Licensed in the Commonwealth of Virginia · chrisjenkinsrealestate.com</p>
@@ -501,6 +501,57 @@ def build_tool():
     write("tools/neighborhood-compare/embed/index.html", emb)
 
 
+def build_va_calc():
+    path = "/tools/va-loan-payment-calculator/"
+    crumbs = [("Home", "/"), ("VA Loan Payment Calculator", path)]
+    faqs = [
+        ("What is the VA funding fee?", "It is a one-time fee on VA purchase loans. For a first use it is 2.15% with less than 5% down, 1.5% with 5% to under 10% down, and 1.25% with 10% or more down. For subsequent use with less than 5% down it is 3.3%. Veterans receiving VA disability compensation and certain surviving spouses are exempt, so confirm your status with your lender."),
+        ("Can I roll the VA funding fee into the loan?", "Yes, the funding fee can generally be financed, which raises the loan amount. This calculator lets you choose either way so you can see the effect on the monthly payment and on cash at closing."),
+        ("Is the property tax figure exact?", "No. It multiplies the purchase price by the city's rate per $100 of assessed value, which is a simplification. Your actual bill uses the city's assessed value and may include special district charges, so check the specific property."),
+        ("Does this include flood insurance?", "Only if you enter it. Flood insurance varies by address in Hampton Roads, so get a quote for the specific home and enter the yearly premium."),
+        ("How should I use the BAH field?", f"Enter your monthly Basic Allowance for Housing from your official pay information. The calculator then shows your estimated payment as a multiple of your BAH. {AGENT} can help you compare homes against that number."),
+    ]
+    desc = f"Free VA loan payment calculator for Hampton Roads: estimate your monthly payment with the VA funding fee, city property tax, insurance, flood insurance and your BAH. By {AGENT}."
+    cities = '<option value="chesapeake">Chesapeake</option><option value="virginia-beach">Virginia Beach</option><option value="other">Other (edit the rate)</option>'
+    form = (f'<form id="va-calc" onsubmit="return false"><div class="calc-grid">'
+        '<div><label for="price">Purchase price ($)</label><input id="price" type="number" min="0" step="1000" value="400000"></div>'
+        '<div><label for="down">Down payment (%)</label><input id="down" type="number" min="0" max="100" step="0.5" value="0"></div>'
+        '<div><label for="rate">Interest rate (%) \u2013 use your lender\u2019s quote</label><input id="rate" type="number" min="0" step="0.125" value="6"></div>'
+        '<div><label for="term">Loan term (years)</label><select id="term"><option value="30" selected>30</option><option value="15">15</option></select></div>'
+        '<div><label for="use">VA loan use</label><select id="use"><option value="first" selected>First use</option><option value="subsequent">Subsequent use</option></select></div>'
+        f'<div><label for="city">City (sets the tax rate)</label><select id="city">{cities}</select></div>'
+        '<div><label for="taxrate">Real estate tax rate per $100</label><input id="taxrate" type="number" min="0" step="0.01" value="1.01"></div>'
+        '<div><label for="ins">Homeowner\u2019s insurance per year ($)</label><input id="ins" type="number" min="0" step="50" value="0"></div>'
+        '<div><label for="flood">Flood insurance per year ($)</label><input id="flood" type="number" min="0" step="50" value="0"></div>'
+        '<div><label for="hoa">HOA or condo dues per month ($)</label><input id="hoa" type="number" min="0" step="10" value="0"></div>'
+        '<div><label for="bah">Your monthly BAH ($, optional)</label><input id="bah" type="number" min="0" step="10" value="0"></div></div>'
+        '<label class="calc-check"><input id="finance" type="checkbox" checked> Roll the funding fee into the loan</label>'
+        '<label class="calc-check"><input id="exempt" type="checkbox"> I am exempt from the funding fee (for example, VA disability compensation)</label></form>'
+        '<div id="va-out" aria-live="polite"></div>')
+    body = (
+        hero("Free Tool for Military Buyers", "VA Loan Payment Calculator for Hampton Roads", f"Estimate your monthly payment on a VA loan in Chesapeake, Virginia Beach and the rest of Hampton Roads, with the funding fee, property tax, insurance and your BAH. Built by {esc(AGENT)}.")
+        + crumbs_html(crumbs)
+        + '<main class="sub"><div class="sub-wide"><article class="prose">'
+        + '<div class="tldr"><span class="tldr-label">What this does</span><p>Enter a price, down payment and your lender\u2019s rate to see an estimated monthly payment including the VA funding fee, city property tax, insurance and flood insurance, and how it compares with your BAH. The interest rate, insurance and BAH fields are yours to fill in; nothing here is a rate quote.</p></div>'
+        + form
+        + '<h2>How This Is Calculated</h2><ul><li><strong>Funding fee:</strong> the published VA purchase-loan chart: first use 2.15% (under 5% down), 1.5% (5% to under 10%), 1.25% (10% or more); subsequent use 3.3% under 5% down, then the same 1.5% and 1.25%. Exempt borrowers pay none.</li>'
+        + '<li><strong>Property tax:</strong> price times the city rate per $100, divided by 12. Virginia Beach\u2019s general rate is $0.97 per $100 per the city assessor, and Chesapeake is set to $1.01 per $100, the rate Virginia Beach\u2019s city blog cited in February 2025. Confirm the current rate with the city, and note special service districts can add charges.</li>'
+        + '<li><strong>Principal and interest:</strong> a standard fixed-rate payment for the term you choose.</li></ul>'
+        + f'<p>For flood zones, HOA packets and military noise zones, use our <a href="{GUIDE_URL}">Hampton Roads buying checklist</a>, and see <a href="/questions/do-i-need-flood-insurance-hampton-roads/">whether you need flood insurance</a>. Compare areas with the <a href="/tools/neighborhood-compare/">neighborhood compare tool</a>. This is an estimate for planning, not a loan offer or financial advice; ask a VA-approved lender for exact figures.</p>'
+        + sources_html([["VA funding fee rates for purchase loans (summary of the VA chart effective April 7, 2023)", "https://valoannetwork.com/va-loans/va-funding-fee"], ["VA loan funding fee explained (NerdWallet)", "https://www.nerdwallet.com/article/va-loan-funding-fee-explained"], ["City of Virginia Beach: current real estate tax rate ($0.97 per $100)", "https://assessor.virginiabeach.gov/tax-rates"], ["Virginia Beach: real estate tax rate and Chesapeake comparison (Feb. 2025)", "https://virginiabeach.gov/connect/blog/seven-key-takeaways-from-the-real-estate-assessors-annual-report"]])
+        + '</article></div></main>' + faq_html(faqs, "About the VA Loan Calculator")
+        + '<script src="/assets/va-calc.js" defer></script>'
+    )
+    title = f"VA Loan Payment Calculator for Hampton Roads | {AGENT}"
+    ld = [AGENT_NODE, crumbs_ld(crumbs),
+          {"@type": "WebApplication", "@id": BASE + path + "#tool", "name": "VA Loan Payment Calculator for Hampton Roads", "url": BASE + path, "description": desc,
+           "applicationCategory": "FinanceApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"},
+           "author": {"@id": BASE + "/#chris-jenkins"}, "dateModified": "2026-11-15", "inLanguage": "en-US"},
+          faq_ld(faqs)]
+    write("tools/va-loan-payment-calculator/index.html", page(path, title, desc, body, ld))
+    urls.append((path, "2026-11-15", "0.8"))
+
+
 def build_blog_index():
     path = "/blog/"
     crumbs = [("Home", "/"), ("Blog", path)]
@@ -538,7 +589,7 @@ def build_site_files():
     write("robots.txt", robots)
     lines = [f"# {AGENT} – {BRAND}", "",
              f"> {AGENT} is a full-time REALTOR® serving Chesapeake, Virginia Beach, Norfolk and all of Hampton Roads, Virginia. Over $100M in sales, 500+ homes sold, HRRA Circle of Excellence 2013–present. Specializes in home buyers, home sellers and military PCS relocation. Phone {PHONE_DISPLAY}.", "",
-             "## Core pages", f"- [Home]({BASE}/): About {AGENT}, services, client reviews, FAQ and contact", f"- [Neighborhood guides]({BASE}/neighborhoods/): Community-by-community Hampton Roads guides", f"- [Blog]({BASE}/blog/): Buying, selling, VA loan and relocation guides", f"- [Questions]({BASE}/questions/): Short, sourced answers to Hampton Roads buying and selling questions", f"- [Neighborhood compare tool]({BASE}/tools/neighborhood-compare/): Free side-by-side comparison of Hampton Roads neighborhoods", "", "## Cities"]
+             "## Core pages", f"- [Home]({BASE}/): About {AGENT}, services, client reviews, FAQ and contact", f"- [Neighborhood guides]({BASE}/neighborhoods/): Community-by-community Hampton Roads guides", f"- [Blog]({BASE}/blog/): Buying, selling, VA loan and relocation guides", f"- [Questions]({BASE}/questions/): Short, sourced answers to Hampton Roads buying and selling questions", f"- [VA loan payment calculator]({BASE}/tools/va-loan-payment-calculator/): Free Hampton Roads VA loan payment estimate with funding fee, taxes and BAH", f"- [Neighborhood compare tool]({BASE}/tools/neighborhood-compare/): Free side-by-side comparison of Hampton Roads neighborhoods", "", "## Cities"]
     lines += [f"- [{c['name']}, VA]({BASE}/neighborhoods/{c['slug']}/): {c['card']}" for c in CITIES.values()]
     lines += ["", "## Neighborhood guides"] + [f"- [{h['name']}, {CITIES[h['city_slug']]['name']}]({BASE}/neighborhoods/{h['city_slug']}/{h['slug']}/): {h['card']}" for h in HOODS]
     lines += ["", "## Questions answered"] + [f"- [{q['question']}]({BASE}/questions/{q['slug']}/): {q['description']}" for q in QUESTIONS]
@@ -563,5 +614,6 @@ for q in QUESTIONS:
 if QUESTIONS:
     build_questions_index()
 build_tool()
+build_va_calc()
 build_site_files()
 print(f"built {len(CITIES)} city hubs, {len(HOODS)} neighborhoods, {len(POSTS)} posts, {len(urls)+1} sitemap urls")
