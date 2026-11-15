@@ -562,6 +562,11 @@ VIDEOS = [
 ]
 
 
+YT_IDS = {"flood-insurance": "ZZDO8HTdCks", "va-appraisal-vs-inspection": "0cjqa2CqZB4", "va-loan-calculator": "sJ8aQIkW4-4",
+          "most-active-neighborhoods": "_wWQyjndJOA", "price-your-home": "rvK5YHIQOqM", "test-your-commute": "XsdlMNSB7ik"}
+YT_CHANNEL = "https://www.youtube.com/channel/UCTdLsGuLyNam8Ybjm1wxr1Q"
+
+
 def build_videos():
     path = "/videos/"
     tr = json.load(open(os.path.join(ROOT, "data", "video-transcripts.json")))
@@ -571,17 +576,18 @@ def build_videos():
     items, ld_nodes = "", []
     for slug, title, d, link, cta in VIDEOS:
         text = " ".join(tr[slug])
+        yid = YT_IDS[slug]
         items += (f'<section class="vid" id="{slug}"><h2>{esc(title)}</h2>'
-                  f'<video controls preload="none" playsinline width="360" poster="/assets/video/{slug}.jpg" style="max-width:100%;height:auto;aspect-ratio:9/16;background:#101828"><source src="/assets/video/{slug}.mp4" type="video/mp4"></video>'
-                  f'<p>{esc(d)} <a href="{link}">{cta}</a>.</p><details><summary>Read the transcript</summary><p>{esc(text)}</p></details></section>')
+                  f'<div style="max-width:360px;aspect-ratio:9/16;margin:0 0 1rem"><iframe src="https://www.youtube-nocookie.com/embed/{yid}" title="{esc(title)}" loading="lazy" style="width:100%;height:100%;border:0" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>'
+                  f'<p>{esc(d)} <a href="{link}">{cta}</a>. <a href="https://www.youtube.com/shorts/{yid}" rel="noopener">Watch on YouTube</a>.</p><details><summary>Read the transcript</summary><p>{esc(text)}</p></details></section>')
         ld_nodes.append({"@type": "VideoObject", "@id": BASE + path + "#" + slug, "name": title, "description": d,
-                         "thumbnailUrl": BASE + f"/assets/video/{slug}.jpg", "contentUrl": BASE + f"/assets/video/{slug}.mp4",
+                         "thumbnailUrl": BASE + f"/assets/video/{slug}.jpg", "contentUrl": BASE + f"/assets/video/{slug}.mp4", "embedUrl": f"https://www.youtube.com/embed/{yid}",
                          "uploadDate": "2026-11-15", "duration": f"PT{du[slug]}S", "transcript": text,
                          "author": {"@id": BASE + "/#chris-jenkins"}, "publisher": {"@id": BASE + "/#chris-jenkins"}, "inLanguage": "en-US"})
     body = (hero("Videos", "Hampton Roads Real Estate Videos", f"Short answers to common buying and selling questions from {esc(AGENT)}, {esc(BRAND)}. Each video has a transcript and links to the full guide.")
             + crumbs_html(crumbs)
             + '<main class="sub"><div class="sub-wide"><article class="prose">'
-            + '<p>The narration in these videos is an AI-generated voice reading scripts written for Chris Jenkins. The facts match the linked pages. This is general information, not legal or financial advice.</p>'
+            + '<p>The narration in these videos is an AI-generated voice reading scripts written for Chris Jenkins. The facts match the linked pages. This is general information, not legal or financial advice. Subscribe on <a href="' + YT_CHANNEL + '" rel="noopener">YouTube</a>.</p>'
             + items + '</article></div></main>')
     title = f"Hampton Roads Real Estate Videos | {AGENT}"
     ld = [AGENT_NODE, crumbs_ld(crumbs), {"@type": "CollectionPage", "@id": BASE + path + "#page", "name": "Hampton Roads Real Estate Videos", "url": BASE + path, "description": desc}] + ld_nodes
