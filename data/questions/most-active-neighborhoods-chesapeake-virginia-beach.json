@@ -1,0 +1,54 @@
+{
+ "slug": "most-active-neighborhoods-chesapeake-virginia-beach",
+ "question": "Which Chesapeake and Virginia Beach neighborhoods have the most home sales?",
+ "category": "Hampton Roads Neighborhoods",
+ "answer": "Among the neighborhoods with guides on this site (REIN MLS sales, November 15, 2024 to November 14, 2026), Green Run had the most closed sales in Virginia Beach with 324, followed by Ocean Lakes (289) and Princess Anne Plaza (280). In Chesapeake, South Norfolk led with 217, then Riverwalk (188) and Norfolk Highlands (178).",
+ "answer_short": "Virginia Beach: Green Run (324), Ocean Lakes (289), Princess Anne Plaza (280). Chesapeake: South Norfolk (217), Riverwalk (188), Norfolk Highlands (178).",
+ "description": "Which Chesapeake and Virginia Beach neighborhoods have the most closed home sales? Ranked from REIN MLS data, with median prices and days to sell. By Chris Jenkins.",
+ "body": "<p>Here's the deal: a busy neighborhood tells you something real. Lots of closed sales means lots of recent comparable sales, which gives buyers and sellers more to price against. It does not make a neighborhood better or worse. It just means more homes changed hands.</p><h2>Most Closed Sales, Virginia Beach</h2><ol><li><strong>Green Run:</strong> 324 sales, median $329,000, typical days to sell 16</li><li><strong>Ocean Lakes:</strong> 289 sales, median $420,000, 12 days</li><li><strong>Princess Anne Plaza:</strong> 280 sales, median $360,000, 14 days</li><li><strong>North End Virginia Beach:</strong> 252 sales, median $1,155,000, 23 days</li><li><strong>Indian Lakes:</strong> 240 sales, median $325,250, 16 days</li></ol><h2>Most Closed Sales, Chesapeake</h2><ol><li><strong>South Norfolk:</strong> 217 sales, median $297,000, 23 days</li><li><strong>Riverwalk:</strong> 188 sales, median $281,750, 18 days</li><li><strong>Norfolk Highlands:</strong> 178 sales, median $344,750, 10 days</li><li><strong>Greenbrier:</strong> 170 sales, median $275,000, 18 days</li><li><strong>Deep Creek:</strong> 139 sales, median $410,000, 23 days</li></ol><h2>How to Use This</h2><p>Do not pick a neighborhood off a ranking. Pick a short list, then run the real numbers: use the <a href=\"/tools/neighborhood-compare/\">neighborhood compare tool</a> to put two side by side, and read each neighborhood's full guide for price ranges, home types and seasonality. Then visit at different times of day.</p><p>These are counts of closed sales among the neighborhoods covered on this site, not every neighborhood in either city. Days to sell is a typical (median) figure.</p>",
+ "faqs": [
+  [
+   "Does more sales mean a better neighborhood?",
+   "No. It only means more homes sold in the period. Compare prices, home types, and how a neighborhood fits your life, and visit it yourself."
+  ],
+  [
+   "Are these all the neighborhoods in each city?",
+   "No. They are the neighborhoods with guides on this site. Both cities have more neighborhoods than are listed here."
+  ]
+ ],
+ "related": [
+  "chesapeake-vs-virginia-beach-home-prices",
+  "days-to-sell-a-house-virginia-beach-va",
+  "days-to-sell-a-house-chesapeake-va"
+ ],
+ "related_neighborhoods": [
+  [
+   "virginia-beach",
+   "green-run"
+  ],
+  [
+   "virginia-beach",
+   "ocean-lakes"
+  ],
+  [
+   "chesapeake",
+   "south-norfolk"
+  ],
+  [
+   "chesapeake",
+   "riverwalk"
+  ]
+ ],
+ "sources": [
+  [
+   "REIN MLS closed residential sales, Chesapeake and Virginia Beach VA, November 15, 2024 to November 14, 2026",
+   "https://www.reinmls.com"
+  ],
+  [
+   "Hampton Roads Home Buying and Selling Checklist, including how these statistics are calculated",
+   "/blog/hampton-roads-home-buying-and-selling-checklist/"
+  ]
+ ],
+ "date": "2026-11-15",
+ "updated": "2026-11-15"
+}
