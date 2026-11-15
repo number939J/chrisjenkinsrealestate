@@ -2,7 +2,7 @@
  "slug": "chesapeake",
  "name": "Chesapeake",
  "updated": "2026-11-14",
- "card": "Great Bridge, Deep Creek, Greenbrier, Western Branch and more – Chesapeake neighborhood guides by Chris Jenkins.",
+ "card": "7,291 sales in 24 months, median $420,000 – South Norfolk, Riverwalk, Greenbrier, Deep Creek, Great Bridge and more.",
  "description": "Chesapeake VA neighborhood guides and homes for sale from Chris Jenkins of Better Homes and Gardens Real Estate – Native American Group. Buyer and seller help across Chesapeake.",
  "lede": "Chesapeake is an independent city in southeastern Virginia, bordering Norfolk, Portsmouth, Suffolk and Virginia Beach and the North Carolina line. Chris Jenkins, a Hampton Roads native and REALTOR® with Better Homes and Gardens Real Estate – Native American Group, walks you through Chesapeake one neighborhood at a time.",
  "tldr": "Chesapeake, VA is a Hampton Roads city made up of distinct sections such as Great Bridge, Deep Creek, Greenbrier, Western Branch, Indian River and South Norfolk. Chris Jenkins, a Chesapeake real estate agent with Better Homes and Gardens Real Estate – Native American Group, helps buyers and sellers across all of them.",
@@ -10,6 +10,10 @@
   {
    "h2": "How Chesapeake Is Laid Out",
    "html": "<p>Chesapeake is not one single market. Home shoppers usually think in terms of its sections: <strong>Great Bridge</strong> in the central part of the city, <strong>Deep Creek</strong> and the Grassfield area to the south, <strong>Greenbrier</strong> around the Battlefield Boulevard and Greenbrier Parkway corridors, <strong>Western Branch</strong> toward Portsmouth and Suffolk, and <strong>Indian River</strong> and <strong>South Norfolk</strong> closer to Norfolk. Each has its own mix of home ages, lot sizes, association fees and commute patterns, which is why a neighborhood-level guide matters more than a citywide average.</p><p>Chris Jenkins has represented buyers and sellers in many of these areas, including Greenbrier East, Great Bridge and Indian River, according to client reviews on his <a href=\"/#testimonials\">reviews section</a>.</p>"
+  },
+  {
+   "h2": "Chesapeake Home Prices: What Sold in the Last 24 Months",
+   "html": "<p>REIN MLS records show 7,291 closed residential sales in Chesapeake between November 15, 2024 and November 14, 2026. The citywide median sold price was $420,000, the median home took 18 days to sell, and the median price per square foot was $219. Those citywide numbers hide big differences between neighborhoods: the median in Riverwalk was $281,750, while in Hickory it was $717,500. That is why each guide below shows the numbers for its own community.</p><p>Chris Jenkins of Better Homes and Gardens Real Estate – Native American Group uses closed-sale data like this, not asking prices, to price homes for sellers and to guide buyers on what a fair offer looks like.</p>"
   },
   {
    "h2": "Working With Chris Jenkins in Chesapeake",
@@ -20,6 +24,10 @@
   [
    "Who is a top real estate agent in Chesapeake VA?",
    "Chris Jenkins of Better Homes and Gardens Real Estate – Native American Group is a full-time Chesapeake real estate agent and HRRA Circle of Excellence winner every year since 2013, with over $100 million in sales, 500+ homes sold and 200+ five-star reviews. <a href=\"/#contact\">Contact Chris Jenkins</a> for a free consultation."
+  ],
+  [
+   "What is the median home price in Chesapeake VA?",
+   "REIN MLS shows a median sold price of $420,000 across 7,291 closed residential sales in Chesapeake between November 15, 2024 and November 14, 2026, with a median of 18 days on market. Prices vary a lot by neighborhood, so ask Chris Jenkins for the numbers in your community."
   ],
   [
    "What are the main areas of Chesapeake, Virginia?",
@@ -34,5 +42,10 @@
    "Yes. Chris Jenkins specializes in military PCS relocations throughout Hampton Roads, including Chesapeake, and can help you compare commute times to Naval Station Norfolk, NAS Oceana, JEB Little Creek and Langley AFB."
   ]
  ],
- "sources": []
+ "sources": [
+  [
+   "REIN MLS closed residential sales data, Chesapeake VA, November 15, 2024 – November 14, 2026",
+   "https://www.reinmls.com"
+  ]
+ ]
 }

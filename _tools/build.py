@@ -272,12 +272,16 @@ def build_hood(h):
         {
             "@type": "Place", "@id": BASE + path + "#place", "name": f"{h['name']}, {city['name']}, Virginia",
             "description": h["description"],
-            "geo": {"@type": "GeoCoordinates", "latitude": h["lat"], "longitude": h["lng"]},
-            "address": {"@type": "PostalAddress", "addressLocality": city["name"], "addressRegion": "VA", "postalCode": h["zip"], "addressCountry": "US"},
+            "address": {"@type": "PostalAddress", "addressLocality": city["name"], "addressRegion": "VA", "addressCountry": "US"},
             "containedInPlace": {"@type": "City", "name": city["name"], "containedInPlace": {"@type": "State", "name": "Virginia"}},
         },
         faq_ld(h["faqs"]),
     ]
+    place = ld[3]
+    if h.get("lat") is not None and h.get("lng") is not None:
+        place["geo"] = {"@type": "GeoCoordinates", "latitude": h["lat"], "longitude": h["lng"]}
+    if h.get("zip"):
+        place["address"]["postalCode"] = h["zip"]
     write(path.strip("/") + "/index.html", page(path, title, h["description"], body, ld))
     urls.append((path, h["updated"], "0.7"))
 
