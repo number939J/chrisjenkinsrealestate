@@ -56,6 +56,7 @@ NAV = f"""<nav id="nav" class="scrolled">
       onload="this.style.display='block'; document.getElementById('navLogoText').style.display='none';"
       onerror="this.style.display='none';" />
     <span class="nav-logo-text" id="navLogoText">Chris Jenkins</span>
+    <span class="nav-name">Chris Jenkins</span>
   </a>
   <ul class="nav-links">
     <li><a href="/#about">About</a></li>
@@ -67,9 +68,12 @@ NAV = f"""<nav id="nav" class="scrolled">
   </ul>
 </nav>"""
 
+FLOAT = """<a class="talk-float" href="/talk-to-chris/" aria-label="Talk to Chris Jenkins now"><img src="/assets/chris-thumb.jpg" width="56" height="56" alt="" /><span>Talk to Chris Now</span></a>"""
+SCRIPT_FONT = '<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />'
+
 FOOTER = f"""<footer>
   <div class="footer-links">
-    <a href="/">Home</a><a href="/neighborhoods/">Hampton Roads Neighborhoods</a><a href="/questions/">Hampton Roads Real Estate Questions</a><a href="/tools/neighborhood-compare/">Compare Neighborhoods</a><a href="/tools/va-loan-payment-calculator/">VA Loan Calculator</a><a href="/videos/">Videos</a><a href="/blog/">Real Estate Blog</a><a href="/#contact">Contact Chris Jenkins</a>
+    <a href="/">Home</a><a href="/neighborhoods/">Hampton Roads Neighborhoods</a><a href="/questions/">Hampton Roads Real Estate Questions</a><a href="/tools/neighborhood-compare/">Compare Neighborhoods</a><a href="/tools/va-loan-payment-calculator/">VA Loan Calculator</a><a href="/videos/">Videos</a><a href="/blog/">Real Estate Blog</a><a href="/talk-to-chris/">Talk to Chris</a><a href="/#contact">Contact Chris Jenkins</a>
   </div>
   <p>© {datetime.date.today().year} Chris Jenkins · {BRAND} · All Rights Reserved</p>
   <p style="margin-top:0.4rem;">Licensed in the Commonwealth of Virginia · chrisjenkinsrealestate.com</p>
@@ -200,12 +204,14 @@ def page(path, title, desc, body, ld_graph, og_type="website", published=None, m
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   {FONTS}
   <link rel="stylesheet" href="/assets/site.css" />
+  {SCRIPT_FONT}
+  <link rel="stylesheet" href="/assets/chris-float.css" />
   {jsonld({"@context": "https://schema.org", "@graph": ld_graph})}
 </head>
 <body>
 {NAV}
 """
-    return head + body + "\n" + CONTACT + "\n<!-- FOOTER -->\n" + FAIR + "\n" + FOOTER + "\n" + SCRIPTS + "\n</body>\n</html>\n"
+    return head + body + "\n" + CONTACT + "\n<!-- FOOTER -->\n" + FAIR + "\n" + FOOTER + "\n" + SCRIPTS + "\n" + FLOAT + "\n</body>\n</html>\n"
 
 
 def hero(eyebrow, h1, lede, byline=""):
@@ -595,6 +601,33 @@ def build_videos():
     urls.append((path, "2026-11-15", "0.7"))
 
 
+def build_talk():
+    path = "/talk-to-chris/"
+    crumbs = [("Home", "/"), ("Talk to Chris", path)]
+    desc = f"Talk to {AGENT}, REALTOR® with {BRAND}. Call (757) 286-7255 or email with your Hampton Roads buying, selling or relocation questions."
+    body = (
+        hero("Let's Talk", "Talk to Chris Jenkins", "Questions about buying, selling or moving to Hampton Roads? I would love to hear from you.")
+        + crumbs_html(crumbs)
+        + '<main class="sub"><div class="sub-wide"><article class="prose">'
+        + '<div class="talk-grid"><img class="talk-photo" src="/headshot.jpg" width="280" height="340" alt="Chris Jenkins, REALTOR® with Better Homes and Gardens Real Estate – Native American Group" />'
+        + '<div><p>I am Chris Jenkins, a full-time REALTOR® with ' + esc(BRAND) + ' in Chesapeake, Virginia. I help buyers, sellers and military families in Chesapeake, Virginia Beach, Norfolk and across Hampton Roads.</p>'
+        + '<p>I would love to talk with you and answer your questions. Maybe you are just starting to look, getting ready to sell, or planning a PCS move and trying to figure out where to begin. Call, text or email me, and I will get back to you as soon as I can.</p>'
+        + '<p>A little about my background: HRRA Circle of Excellence award winner (2013 to present), 2013 HRRA Rookie of the Year, over $100M in sales and 500+ homes sold.</p></div></div>'
+        + f'<div class="talk-cards"><a class="talk-card" href="tel:{PHONE_TEL}"><strong>Call or text</strong><span>{PHONE_DISPLAY}</span></a>'
+        + f'<a class="talk-card" href="mailto:{EMAIL}"><strong>Email</strong><span>{esc(EMAIL)}</span></a>'
+        + '<a class="talk-card" href="#contact"><strong>Send a message</strong><span>Use the form below</span></a></div>'
+        + '<h2>Not Sure What to Ask?</h2><ul>'
+        + '<li><a href="/questions/">Read answers to common Hampton Roads real estate questions</a></li>'
+        + '<li><a href="/tools/va-loan-payment-calculator/">Estimate a VA loan payment</a></li>'
+        + '<li><a href="/tools/neighborhood-compare/">Compare two neighborhoods</a></li>'
+        + '<li><a href="/neighborhoods/">Browse Hampton Roads neighborhoods</a></li></ul>'
+        + '</article></div></main>')
+    title = f"Talk to {AGENT} | {BRAND}"
+    ld = [AGENT_NODE, crumbs_ld(crumbs), {"@type": "ContactPage", "@id": BASE + path + "#page", "name": f"Talk to {AGENT}", "url": BASE + path, "description": desc, "mainEntity": {"@id": BASE + "/#chris-jenkins"}}]
+    write("talk-to-chris/index.html", page(path, title, desc, body, ld))
+    urls.append((path, "2026-11-15", "0.8"))
+
+
 def build_blog_index():
     path = "/blog/"
     crumbs = [("Home", "/"), ("Blog", path)]
@@ -632,7 +665,7 @@ def build_site_files():
     write("robots.txt", robots)
     lines = [f"# {AGENT} – {BRAND}", "",
              f"> {AGENT} is a full-time REALTOR® serving Chesapeake, Virginia Beach, Norfolk and all of Hampton Roads, Virginia. Over $100M in sales, 500+ homes sold, HRRA Circle of Excellence 2013–present. Specializes in home buyers, home sellers and military PCS relocation. Phone {PHONE_DISPLAY}.", "",
-             "## Core pages", f"- [Home]({BASE}/): About {AGENT}, services, client reviews, FAQ and contact", f"- [Neighborhood guides]({BASE}/neighborhoods/): Community-by-community Hampton Roads guides", f"- [Blog]({BASE}/blog/): Buying, selling, VA loan and relocation guides", f"- [Questions]({BASE}/questions/): Short, sourced answers to Hampton Roads buying and selling questions", f"- [Videos]({BASE}/videos/): Short Hampton Roads real estate videos with transcripts", f"- [VA loan payment calculator]({BASE}/tools/va-loan-payment-calculator/): Free Hampton Roads VA loan payment estimate with funding fee, taxes and BAH", f"- [Neighborhood compare tool]({BASE}/tools/neighborhood-compare/): Free side-by-side comparison of Hampton Roads neighborhoods", "", "## Cities"]
+             "## Core pages", f"- [Home]({BASE}/): About {AGENT}, services, client reviews, FAQ and contact", f"- [Neighborhood guides]({BASE}/neighborhoods/): Community-by-community Hampton Roads guides", f"- [Blog]({BASE}/blog/): Buying, selling, VA loan and relocation guides", f"- [Questions]({BASE}/questions/): Short, sourced answers to Hampton Roads buying and selling questions", f"- [Talk to Chris]({BASE}/talk-to-chris/): Phone, email and a short introduction", f"- [Videos]({BASE}/videos/): Short Hampton Roads real estate videos with transcripts", f"- [VA loan payment calculator]({BASE}/tools/va-loan-payment-calculator/): Free Hampton Roads VA loan payment estimate with funding fee, taxes and BAH", f"- [Neighborhood compare tool]({BASE}/tools/neighborhood-compare/): Free side-by-side comparison of Hampton Roads neighborhoods", "", "## Cities"]
     lines += [f"- [{c['name']}, VA]({BASE}/neighborhoods/{c['slug']}/): {c['card']}" for c in CITIES.values()]
     lines += ["", "## Neighborhood guides"] + [f"- [{h['name']}, {CITIES[h['city_slug']]['name']}]({BASE}/neighborhoods/{h['city_slug']}/{h['slug']}/): {h['card']}" for h in HOODS]
     lines += ["", "## Questions answered"] + [f"- [{q['question']}]({BASE}/questions/{q['slug']}/): {q['description']}" for q in QUESTIONS]
@@ -659,5 +692,6 @@ if QUESTIONS:
 build_tool()
 build_va_calc()
 build_videos()
+build_talk()
 build_site_files()
 print(f"built {len(CITIES)} city hubs, {len(HOODS)} neighborhoods, {len(POSTS)} posts, {len(urls)+1} sitemap urls")

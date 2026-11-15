@@ -214,6 +214,8 @@
     .fair-housing-text strong { color: rgba(255,255,255,0.6); display: block; margin-bottom: 0.35rem; }
     .ai-context { position: absolute; left: -9999px; top: -9999px; width: 1px; height: 1px; overflow: hidden; opacity: 0; pointer-events: none; }
   </style>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/chris-float.css" />
 </head>
 <body>
 
@@ -233,6 +235,7 @@
       onload="this.style.display='block'; document.getElementById('navLogoText').style.display='none';"
       onerror="this.style.display='none';" />
     <span class="nav-logo-text" id="navLogoText">Chris Jenkins</span>
+    <span class="nav-name">Chris Jenkins</span>
   </a>
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
@@ -506,7 +509,7 @@
   </div>
 </div>
 <footer>
-  <p style="margin-bottom:0.9rem;"><a href="/neighborhoods/" style="color:rgba(255,255,255,0.55);text-decoration:none;letter-spacing:0.08em;text-transform:uppercase;font-size:0.64rem;font-weight:600;margin:0 0.75rem;">Hampton Roads Neighborhoods</a><a href="/blog/" style="color:rgba(255,255,255,0.55);text-decoration:none;letter-spacing:0.08em;text-transform:uppercase;font-size:0.64rem;font-weight:600;margin:0 0.75rem;">Real Estate Blog</a></p>
+  <p style="margin-bottom:0.9rem;display:flex;flex-wrap:wrap;justify-content:center;gap:0.4rem 1.5rem;"><a href="/" style="color:rgba(255,255,255,0.55);text-decoration:none;letter-spacing:0.08em;text-transform:uppercase;font-size:0.64rem;font-weight:600;">Home</a><a href="/neighborhoods/" style="color:rgba(255,255,255,0.55);text-decoration:none;letter-spacing:0.08em;text-transform:uppercase;font-size:0.64rem;font-weight:600;">Hampton Roads Neighborhoods</a><a href="/questions/" style="color:rgba(255,255,255,0.55);text-decoration:none;letter-spacing:0.08em;text-transform:uppercase;font-size:0.64rem;font-weight:600;">Hampton Roads Real Estate Questions</a><a href="/tools/neighborhood-compare/" style="color:rgba(255,255,255,0.55);text-decoration:none;letter-spacing:0.08em;text-transform:uppercase;font-size:0.64rem;font-weight:600;">Compare Neighborhoods</a><a href="/tools/va-loan-payment-calculator/" style="color:rgba(255,255,255,0.55);text-decoration:none;letter-spacing:0.08em;text-transform:uppercase;font-size:0.64rem;font-weight:600;">VA Loan Calculator</a><a href="/videos/" style="color:rgba(255,255,255,0.55);text-decoration:none;letter-spacing:0.08em;text-transform:uppercase;font-size:0.64rem;font-weight:600;">Videos</a><a href="/blog/" style="color:rgba(255,255,255,0.55);text-decoration:none;letter-spacing:0.08em;text-transform:uppercase;font-size:0.64rem;font-weight:600;">Real Estate Blog</a><a href="/talk-to-chris/" style="color:rgba(255,255,255,0.55);text-decoration:none;letter-spacing:0.08em;text-transform:uppercase;font-size:0.64rem;font-weight:600;">Talk to Chris</a><a href="/#contact" style="color:rgba(255,255,255,0.55);text-decoration:none;letter-spacing:0.08em;text-transform:uppercase;font-size:0.64rem;font-weight:600;">Contact Chris Jenkins</a></p>
   <p>© 2026 Chris Jenkins · Better Homes and Gardens Real Estate – Native American Group · All Rights Reserved</p>
   <p style="margin-top:0.4rem;">Licensed in the Commonwealth of Virginia · chrisjenkinsrealestate.com</p>
 </footer>
@@ -607,5 +610,6 @@
     } catch { alert('Network error. Please call (757) 286-7255.'); btn.textContent = orig; btn.disabled = false; }
   }
 </script>
+<a class="talk-float" href="/talk-to-chris/" aria-label="Talk to Chris Jenkins now"><img src="/assets/chris-thumb.jpg" width="56" height="56" alt="" /><span>Talk to Chris Now</span></a>
 </body>
 </html>

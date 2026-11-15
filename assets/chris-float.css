@@ -1,0 +1,12 @@
+/* Floating "Talk to Chris Now" button and cursive name in the header. Loaded on every page. */
+.nav-logo { gap: 0.5rem; }
+.nav-name { font-family: 'Great Vibes', 'Cormorant Garamond', cursive; font-size: 2.3rem; line-height: 1; color: #fff; white-space: nowrap; transition: color 0.4s; padding-left: 0.25rem; }
+#nav.scrolled .nav-name { color: #1a1a1a; }
+@media (max-width: 960px) { .nav-name { font-size: 1.9rem; } }
+@media (max-width: 420px) { .nav-name { font-size: 1.6rem; } }
+.talk-float { position: fixed; right: 18px; bottom: 18px; z-index: 9999; display: flex; align-items: center; gap: 0.7rem; padding: 6px 20px 6px 6px; background: #fff; color: #1a1a1a; text-decoration: none; border: 2px solid #b8832a; border-radius: 999px; box-shadow: 0 8px 28px rgba(0,0,0,0.28); font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif; font-weight: 700; font-size: 0.95rem; letter-spacing: 0.02em; transition: transform 0.2s, box-shadow 0.2s; }
+.talk-float:hover, .talk-float:focus-visible { transform: translateY(-2px); box-shadow: 0 12px 34px rgba(0,0,0,0.34); }
+.talk-float img { width: 56px; height: 56px; border-radius: 50%; object-fit: cover; border: 2px solid #b8832a; display: block; }
+.talk-float small { display: block; font-weight: 500; font-size: 0.68rem; letter-spacing: 0.04em; color: #5a5a5a; margin-top: 2px; }
+@media (max-width: 520px) { .talk-float { right: 12px; bottom: 12px; padding: 5px 16px 5px 5px; font-size: 0.85rem; } .talk-float img { width: 48px; height: 48px; } }
+@media print { .talk-float { display: none; } }
