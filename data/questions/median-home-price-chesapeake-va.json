@@ -1,0 +1,49 @@
+{
+ "slug": "median-home-price-chesapeake-va",
+ "question": "What is the median home price in Chesapeake, VA?",
+ "category": "Chesapeake Home Prices",
+ "answer": "The median sold price in Chesapeake, VA was $420,000 across 7,291 closed sales from November 15, 2024 to November 14, 2026, according to REIN MLS. The middle half of sales closed between $316,000 and $565,000.",
+ "answer_short": "$420,000 median sold price across 7,291 closed sales; middle half $316,000 to $565,000.",
+ "description": "Chesapeake VA median home price is $420,000 from 7,291 closed REIN MLS sales, with a breakdown by area and price trend from Chris Jenkins.",
+ "date": "2026-11-15",
+ "updated": "2026-11-15",
+ "body": "<p>Chesapeake's median sold price was $420,000 for the 24 months from November 15, 2024 to November 14, 2026, based on 7,291 closed residential sales recorded in REIN MLS. Closed sales show what buyers actually paid, not asking prices. The price per square foot was about $219 at the median.</p><h2>Is the Price Rising or Falling?</h2><p>Splitting the period in two, the median sold price in the most recent 12 months was $434,900 (3,690 sales) against $409,000 (3,601 sales) in the 12 months before, which is 6.3% higher. One city-wide number can hide big differences between parts of Chesapeake, so here is the same data by MLS area.</p><div class=\"table-wrap\"><table class=\"data-table\"><caption>Chesapeake sold prices by REIN MLS area, November 15, 2024 to November 14, 2026</caption><thead><tr><th scope=\"col\">MLS area</th><th scope=\"col\" class=num>Sales</th><th scope=\"col\" class=num>Median sold price</th><th scope=\"col\" class=num>Median days on market</th></tr></thead><tbody><tr><th scope=\"row\">Area 31: Central Chesapeake</th><td class=num>1251</td><td class=num>$316,000</td><td class=num>16</td></tr><tr><th scope=\"row\">Area 32: South Chesapeake</th><td class=num>4771</td><td class=num>$479,900</td><td class=num>18</td></tr><tr><th scope=\"row\">Area 33: West Chesapeake</th><td class=num>1241</td><td class=num>$397,900</td><td class=num>19</td></tr></tbody></table></div><h2>What Moves the Price</h2><p>Location, size, age, condition, lot and whether a home is detached or attached drive most of the spread. Check the specific street with recent comparable sales rather than relying on the Chesapeake median. The neighborhood guides below break the numbers down further, and our <a href=\"/blog/hampton-roads-home-buying-and-selling-checklist/#methodology\">methodology</a> explains how they are calculated.</p>",
+ "faqs": [
+  [
+   "What is the price per square foot in Chesapeake?",
+   "The median sold price per square foot in Chesapeake was about $219 across closed sales from November 15, 2024 to November 14, 2026."
+  ],
+  [
+   "Are Chesapeake home prices going up?",
+   "The median sold price over the most recent 12 months was 6.3% higher compared with the 12 months before it, per REIN MLS closed sales."
+  ]
+ ],
+ "related": [
+  "days-to-sell-a-house-chesapeake-va",
+  "chesapeake-vs-virginia-beach-home-prices"
+ ],
+ "related_neighborhoods": [
+  [
+   "chesapeake",
+   "south-norfolk"
+  ],
+  [
+   "chesapeake",
+   "riverwalk"
+  ],
+  [
+   "chesapeake",
+   "norfolk-highlands"
+  ]
+ ],
+ "sources": [
+  [
+   "REIN MLS closed residential sales, Chesapeake VA, November 15, 2024 to November 14, 2026",
+   "https://www.reinmls.com"
+  ],
+  [
+   "Hampton Roads Home Buying and Selling Checklist, including how these statistics are calculated",
+   "/blog/hampton-roads-home-buying-and-selling-checklist/"
+  ]
+ ]
+}

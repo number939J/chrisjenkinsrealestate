@@ -1,0 +1,27 @@
+{
+ "slug": "do-homes-sell-above-asking-hampton-roads",
+ "question": "Do homes in Chesapeake and Virginia Beach sell for more than the asking price?",
+ "category": "Hampton Roads Comparisons",
+ "answer": "Some do, but not most. From November 15, 2024 to November 14, 2026, 37% of Chesapeake homes and 36% of Virginia Beach homes sold above list price, per REIN MLS closed sales. The median sale-to-list ratio was 100.0% in Chesapeake and 100.0% in Virginia Beach.",
+ "answer_short": "37% of Chesapeake and 36% of Virginia Beach sales closed above list.",
+ "description": "How often Chesapeake and Virginia Beach homes sell above, at, or below list price, from REIN MLS closed sales, with Chris Jenkins's tips for offers.",
+ "date": "2026-11-15",
+ "updated": "2026-11-15",
+ "body": "<p>The sale-to-list ratio is the final sold price divided by the last list price. A ratio over 100% means a home sold above its list price.</p><div class=\"table-wrap\"><table class=\"data-table\"><caption>Sale-to-list results, November 15, 2024 to November 14, 2026</caption><thead><tr><th scope=\"col\">Result</th><th scope=\"col\" class=num>Chesapeake</th><th scope=\"col\" class=num>Virginia Beach</th></tr></thead><tbody><tr><th scope=\"row\">Sold above list price</th><td class=num>37%</td><td class=num>36%</td></tr><tr><th scope=\"row\">Sold exactly at list price</th><td class=num>39%</td><td class=num>34%</td></tr><tr><th scope=\"row\">Sold at least 5% below list</th><td class=num>4%</td><td class=num>7%</td></tr><tr><th scope=\"row\">Median sale-to-list ratio</th><td class=num>100.0%</td><td class=num>100.0%</td></tr></tbody></table></div><h2>What This Means for an Offer</h2><p>Citywide numbers are a starting point. A well-priced home in a busy neighborhood can draw multiple offers, while a home that has sat for weeks may take a lower one. Each neighborhood guide shows its own share of homes sold above list. Before you offer, review recent closed sales for the closest matching homes and ask whether the list price was reduced.</p>",
+ "faqs": [],
+ "related": [
+  "days-to-sell-a-house-chesapeake-va",
+  "days-to-sell-a-house-virginia-beach-va"
+ ],
+ "related_neighborhoods": [],
+ "sources": [
+  [
+   "REIN MLS closed residential sales, Chesapeake VA, November 15, 2024 to November 14, 2026",
+   "https://www.reinmls.com"
+  ],
+  [
+   "REIN MLS closed residential sales, Virginia Beach VA, November 15, 2024 to November 14, 2026",
+   "https://www.reinmls.com"
+  ]
+ ]
+}

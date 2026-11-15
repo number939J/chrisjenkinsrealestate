@@ -251,3 +251,12 @@ main.sub { padding: 80px 5%; }
 .data-table thead th { font-size: 0.66rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); border-bottom: 2px solid rgba(184,131,42,0.5); }
 .data-table tbody th { font-weight: 600; }
 .data-table .num { text-align: right; font-variant-numeric: tabular-nums; }
+.qlist { list-style: none; padding: 0; margin: 0 0 2rem; }
+.qlist li { padding: 0.85rem 0; border-bottom: 1px solid rgba(184,131,42,0.25); line-height: 1.6; }
+.cmp-controls { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 0 0 1.5rem; }
+.cmp-controls label { display: block; font-size: 0.66rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.4rem; }
+.cmp-controls select { width: 100%; padding: 0.7rem 0.8rem; font: inherit; border: 1px solid rgba(184,131,42,0.5); background: #fff; color: var(--dark); }
+.cmp-sentence { font-size: 1.05rem; font-weight: 600; }
+.cmp-note { font-size: 0.8rem; opacity: 0.8; }
+.embed-code { width: 100%; font-family: monospace; font-size: 0.8rem; padding: 0.8rem; border: 1px solid rgba(184,131,42,0.5); }
+@media (max-width: 600px) { .cmp-controls { grid-template-columns: 1fr; } }

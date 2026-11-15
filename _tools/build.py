@@ -13,6 +13,7 @@ import html, json, os, re, sys, glob, datetime
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE = "https://chrisjenkinsrealestate.com"
+GUIDE_URL = "/blog/hampton-roads-home-buying-and-selling-checklist/"
 BRAND = "Better Homes and Gardens Real Estate – Native American Group"
 AGENT = "Chris Jenkins"
 PHONE_DISPLAY, PHONE_TEL = "(757) 286-7255", "+17572867255"
@@ -59,6 +60,7 @@ NAV = f"""<nav id="nav" class="scrolled">
   <ul class="nav-links">
     <li><a href="/#about">About</a></li>
     <li><a href="/neighborhoods/">Neighborhoods</a></li>
+    <li><a href="/questions/">Questions</a></li>
     <li><a href="/blog/">Blog</a></li>
     <li><a href="/#testimonials">Reviews</a></li>
     <li><a href="/#contact" class="nav-cta">Free Consultation</a></li>
@@ -67,7 +69,7 @@ NAV = f"""<nav id="nav" class="scrolled">
 
 FOOTER = f"""<footer>
   <div class="footer-links">
-    <a href="/">Home</a><a href="/neighborhoods/">Hampton Roads Neighborhoods</a><a href="/blog/">Real Estate Blog</a><a href="/#contact">Contact Chris Jenkins</a>
+    <a href="/">Home</a><a href="/neighborhoods/">Hampton Roads Neighborhoods</a><a href="/questions/">Hampton Roads Real Estate Questions</a><a href="/tools/neighborhood-compare/">Compare Neighborhoods</a><a href="/blog/">Real Estate Blog</a><a href="/#contact">Contact Chris Jenkins</a>
   </div>
   <p>© {datetime.date.today().year} Chris Jenkins · {BRAND} · All Rights Reserved</p>
   <p style="margin-top:0.4rem;">Licensed in the Commonwealth of Virginia · chrisjenkinsrealestate.com</p>
@@ -225,6 +227,8 @@ def byline_html(updated):
 
 CITIES = {c["slug"]: c for c in load_dir("cities")}
 HOODS = load_dir("neighborhoods")
+QUESTIONS = load_dir("questions")
+Q_BY = {q["slug"]: q for q in QUESTIONS}
 POSTS = sorted(load_dir("posts"), key=lambda p: p["date"], reverse=True)
 HOOD_BY = {(h["city_slug"], h["slug"]): h for h in HOODS}
 urls = []  # (path, lastmod, priority)
@@ -253,6 +257,7 @@ def build_hood(h):
         + f'<h2>{esc(h["name"])} Quick Facts</h2><table class="facts">{facts}</table>'
         + secs
         + related
+        + (lambda cs, sl, rel0: f'<h2>Compare {esc(h["name"])} and Ask Questions</h2><p>See {esc(h["name"])} next to another neighborhood with the <a href="/tools/neighborhood-compare/?a={cs}/{sl}&b={cs}/{rel0 or sl}">free neighborhood compare tool</a>, or read our short answers on <a href="/questions/median-home-price-{cs}-va/">{esc(city["name"])} home prices</a> and <a href="/questions/days-to-sell-a-house-{cs}-va/">how long homes take to sell in {esc(city["name"])}</a>.</p>' if cs in ("chesapeake", "virginia-beach") else "")(h["city_slug"], h["slug"], (h.get("related") or [None])[0])
         + sources_html(h.get("sources"))
         + "</article>"
         + side_card(f"Buying or selling in {h['name']}?", f"{AGENT} with {BRAND} can walk you through {h['name']} and the rest of {city['name']}.")
@@ -386,6 +391,116 @@ def build_post(p):
     urls.append((path, p.get("updated", p["date"]), "0.6"))
 
 
+# ---------------- questions (answer-first pages) ----------------
+def build_question(q):
+    path = f"/questions/{q['slug']}/"
+    crumbs = [("Home", "/"), ("Questions", "/questions/"), (q["question"], path)]
+    rel_q = [Q_BY[x] for x in q.get("related", []) if x in Q_BY]
+    rel_html = ""
+    if rel_q:
+        rel_html = "<h2>Related Questions</h2><ul class=\"qlist\">" + "".join(f'<li><a href="/questions/{r["slug"]}/">{esc(r["question"])}</a></li>' for r in rel_q) + "</ul>"
+    links = [HOOD_BY[tuple(x)] for x in q.get("related_neighborhoods", []) if tuple(x) in HOOD_BY]
+    hood_html = ""
+    if links:
+        cards = "".join(f'<a class="link-card" href="/neighborhoods/{r["city_slug"]}/{r["slug"]}/"><h3>{esc(r["name"])}</h3><p>{esc(r["card"])}</p><span class="more">Explore →</span></a>' for r in links)
+        hood_html = f'<h2>Neighborhood Guides Mentioned</h2><div class="card-grid">{cards}</div>'
+    body = (
+        hero(q["category"], q["question"], esc(q["description"]), byline_html(q["updated"]))
+        + crumbs_html(crumbs)
+        + '<main class="sub"><div class="sub-grid"><article class="prose">'
+        + f'<div class="tldr"><span class="tldr-label">Short answer</span><p>{q["answer"]}</p></div>'
+        + q["body"] + hood_html + rel_html + sources_html(q.get("sources"))
+        + f'<p class="post-meta" style="margin-top:2rem;">Answered by {esc(AGENT)}, REALTOR® with {esc(BRAND)}. General information, not legal, tax or financial advice, and not an appraisal.</p>'
+        + "</article>"
+        + side_card(f"Questions? Ask {AGENT}.", f"{AGENT} helps Hampton Roads buyers, sellers and military families with {BRAND}.")
+        + "</div></main>"
+        + faq_html(q.get("faqs", []), "More Quick Answers")
+    )
+    title = f"{q['question']} | {AGENT}"
+    ld = [
+        AGENT_NODE, crumbs_ld(crumbs),
+        {"@type": "WebPage", "@id": BASE + path + "#webpage", "url": BASE + path, "name": q["question"], "description": q["description"],
+         "datePublished": q.get("date", q["updated"]), "dateModified": q["updated"], "inLanguage": "en-US",
+         "author": {"@id": BASE + "/#chris-jenkins"}, "isPartOf": {"@type": "WebSite", "url": BASE + "/", "name": f"{AGENT} – {BRAND}"},
+         "citation": [u for _, u in q.get("sources", [])]},
+        faq_ld([(q["question"], q["answer"])] + [tuple(x) for x in q.get("faqs", [])]),
+    ]
+    write(path.strip("/") + "/index.html", page(path, title, q["description"], body, ld, "article", q.get("date", q["updated"]), q["updated"]))
+    urls.append((path, q["updated"], "0.7"))
+
+
+def build_questions_index():
+    path = "/questions/"
+    crumbs = [("Home", "/"), ("Questions", path)]
+    cats = []
+    for q in QUESTIONS:
+        if q["category"] not in cats: cats.append(q["category"])
+    sec = ""
+    for c in cats:
+        items = "".join(f'<li><a href="/questions/{q["slug"]}/"><strong>{esc(q["question"])}</strong></a><br/>{q["answer_short"]}</li>' for q in QUESTIONS if q["category"] == c)
+        sec += f'<h2>{esc(c)}</h2><ul class="qlist">{items}</ul>'
+    desc = f"Straight answers to Hampton Roads home buying and selling questions, with REIN MLS data for Chesapeake and Virginia Beach, from {AGENT}."
+    body = (
+        hero("Ask Chris Jenkins", "Hampton Roads Real Estate Questions, Answered", f"Short, sourced answers to the questions buyers and sellers ask most, built on closed-sale data from REIN MLS. From {esc(AGENT)}, {esc(BRAND)}.")
+        + crumbs_html(crumbs)
+        + f'<main class="sub"><div class="sub-wide"><article class="prose">{sec}'
+        + f'<p>Have a question that is not here? Call or text <a href="tel:{PHONE_TEL}">{PHONE_DISPLAY}</a> or <a href="#contact">send it through the form</a> and it may become the next answer.</p></article></div></main>'
+    )
+    title = f"Hampton Roads Real Estate Questions Answered | {AGENT}"
+    ld = [AGENT_NODE, crumbs_ld(crumbs),
+          {"@type": "CollectionPage", "@id": BASE + path + "#page", "url": BASE + path, "name": title, "description": desc, "author": {"@id": BASE + "/#chris-jenkins"},
+           "mainEntity": {"@type": "ItemList", "itemListElement": [{"@type": "ListItem", "position": i + 1, "url": BASE + f"/questions/{q['slug']}/", "name": q["question"]} for i, q in enumerate(QUESTIONS)]}}]
+    write("questions/index.html", page(path, title, desc, body, ld))
+    urls.append((path, max([q["updated"] for q in QUESTIONS] + [TODAY]) if QUESTIONS else TODAY, "0.8"))
+
+
+# ---------------- free tool: neighborhood compare ----------------
+def build_tool():
+    stats = json.load(open(os.path.join(ROOT, "assets", "neighborhood-stats.json"), encoding="utf-8"))
+    hs = stats["hoods"]; names = stats["city_names"]
+    path = "/tools/neighborhood-compare/"
+    crumbs = [("Home", "/"), ("Tools", path), ("Neighborhood Compare Tool", path)]
+    crumbs = [("Home", "/"), ("Compare Hampton Roads Neighborhoods", path)]
+    rows = ""
+    for h in sorted(hs, key=lambda x: (x["c"], -x["m"])):
+        rows += (f'<tr><th scope="row"><a href="/neighborhoods/{h["c"]}/{h["s"]}/">{esc(h["n"])}</a></th><td>{esc(names[h["c"]])}</td><td class="num">{h["k"]}</td>'
+                 f'<td class="num">${h["m"]:,}</td><td class="num">${h["p"]:,}</td><td class="num">{h["d"]}</td><td class="num">{h["y"] or ""}</td></tr>')
+    full = (f'<div class="table-wrap"><table class="data-table"><caption>All {len(hs)} neighborhoods, REIN MLS closed sales {esc(stats["window"])}</caption><thead><tr><th scope="col">Neighborhood</th><th scope="col">City</th><th scope="col" class="num">Sales</th>'
+            f'<th scope="col" class="num">Median sold price</th><th scope="col" class="num">Price per sq ft</th><th scope="col" class="num">Median days on market</th><th scope="col" class="num">Median year built</th></tr></thead><tbody>{rows}</tbody></table></div>')
+    embed_code = f'&lt;iframe src="{BASE}/tools/neighborhood-compare/embed/" width="100%" height="640" style="border:0" title="Hampton Roads neighborhood comparison"&gt;&lt;/iframe&gt;'
+    faqs = [
+        ("What does the neighborhood compare tool show?", "It puts two Chesapeake or Virginia Beach neighborhoods side by side using REIN MLS closed sales: median sold price, price per square foot, days on market, home size, year built and sale-to-list ratio, with multiples showing how far apart they are."),
+        ("Where does the data come from?", f"REIN MLS closed residential sales between {stats['window'].replace(' to ', ' and ')}. Medians are used so a few unusual sales do not skew the numbers, and neighborhoods follow MLS subdivision names."),
+        ("Is the tool free to use or embed?", f"Yes. It is free, and you can embed it on your own site with the code on this page. The embed links back to {AGENT} at {BRAND}."),
+    ]
+    desc = f"Free tool: compare two Chesapeake or Virginia Beach neighborhoods side by side with REIN MLS median prices, price per square foot, days on market and more. By {AGENT}."
+    body = (
+        hero("Free Tool", "Compare Hampton Roads Neighborhoods Side by Side", f"Pick any two of {len(hs)} Chesapeake and Virginia Beach neighborhoods to compare closed-sale prices, price per square foot, pace and home age. Built by {esc(AGENT)} from REIN MLS data.")
+        + crumbs_html(crumbs)
+        + '<main class="sub"><div class="sub-wide"><article class="prose">'
+        + f'<div class="tldr"><span class="tldr-label">What this does</span><p>Choose two neighborhoods and see their median sold price, price per square foot, days on market, home size and age next to each other, with a multiple showing the gap. Figures come from REIN MLS closed sales between {esc(stats["window"].replace(" to ", " and "))}.</p></div>'
+        + '<div id="compare-tool"><div class="cmp-controls"><div><label for="cmp-a">First neighborhood</label><select id="cmp-a"></select></div><div><label for="cmp-b">Second neighborhood</label><select id="cmp-b"></select></div></div><div id="cmp-out" aria-live="polite"></div></div>'
+        + f'<h2>All {len(hs)} Neighborhoods at a Glance</h2>{full}'
+        + f'<h2>How to Read the Comparison</h2><p>The multiple column shows how the second neighborhood compares with the first: 1.4x means 1.4 times as much. Medians describe typical past sales, not any one home, and neighborhoods follow the names agents use in the MLS. Read <a href="{GUIDE_URL}#methodology">how these statistics are calculated</a>, and see our <a href="/questions/">answers to common questions</a> for more.</p>'
+        + f'<h2>Embed This Tool on Your Site</h2><p>Copy this code to add the comparison to your own page:</p><p><textarea class="embed-code" rows="3" readonly>{embed_code}</textarea></p>'
+        + sources_html([["REIN MLS closed residential sales, Chesapeake and Virginia Beach VA", "https://www.reinmls.com"], ["Hampton Roads Home Buying and Selling Checklist (methodology)", GUIDE_URL]])
+        + '</article></div></main>' + faq_html(faqs, "About the Compare Tool")
+        + '<script src="/assets/compare.js" defer></script>'
+    )
+    title = f"Compare Hampton Roads Neighborhoods: Free Tool | {AGENT}"
+    ld = [AGENT_NODE, crumbs_ld(crumbs),
+          {"@type": "WebApplication", "@id": BASE + path + "#tool", "name": "Hampton Roads Neighborhood Compare Tool", "url": BASE + path, "description": desc,
+           "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"},
+           "author": {"@id": BASE + "/#chris-jenkins"}, "dateModified": stats["updated"], "inLanguage": "en-US"},
+          faq_ld(faqs)]
+    write("tools/neighborhood-compare/index.html", page(path, title, desc, body, ld))
+    urls.append((path, stats["updated"], "0.8"))
+    emb = f"""<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="robots" content="noindex, follow"/>
+<title>Hampton Roads Neighborhood Compare (embed)</title><link rel="canonical" href="{BASE}{path}"/>{FONTS}<link rel="stylesheet" href="/assets/site.css"/></head>
+<body style="background:#fff;padding:1rem"><div class="prose"><div id="compare-tool" data-embed="1"><div class="cmp-controls"><div><label for="cmp-a">First neighborhood</label><select id="cmp-a"></select></div><div><label for="cmp-b">Second neighborhood</label><select id="cmp-b"></select></div></div><div id="cmp-out" aria-live="polite"></div></div></div><script src="/assets/compare.js"></script></body></html>"""
+    write("tools/neighborhood-compare/embed/index.html", emb)
+
+
 def build_blog_index():
     path = "/blog/"
     crumbs = [("Home", "/"), ("Blog", path)]
@@ -423,9 +538,10 @@ def build_site_files():
     write("robots.txt", robots)
     lines = [f"# {AGENT} – {BRAND}", "",
              f"> {AGENT} is a full-time REALTOR® serving Chesapeake, Virginia Beach, Norfolk and all of Hampton Roads, Virginia. Over $100M in sales, 500+ homes sold, HRRA Circle of Excellence 2013–present. Specializes in home buyers, home sellers and military PCS relocation. Phone {PHONE_DISPLAY}.", "",
-             "## Core pages", f"- [Home]({BASE}/): About {AGENT}, services, client reviews, FAQ and contact", f"- [Neighborhood guides]({BASE}/neighborhoods/): Community-by-community Hampton Roads guides", f"- [Blog]({BASE}/blog/): Buying, selling, VA loan and relocation guides", "", "## Cities"]
+             "## Core pages", f"- [Home]({BASE}/): About {AGENT}, services, client reviews, FAQ and contact", f"- [Neighborhood guides]({BASE}/neighborhoods/): Community-by-community Hampton Roads guides", f"- [Blog]({BASE}/blog/): Buying, selling, VA loan and relocation guides", f"- [Questions]({BASE}/questions/): Short, sourced answers to Hampton Roads buying and selling questions", f"- [Neighborhood compare tool]({BASE}/tools/neighborhood-compare/): Free side-by-side comparison of Hampton Roads neighborhoods", "", "## Cities"]
     lines += [f"- [{c['name']}, VA]({BASE}/neighborhoods/{c['slug']}/): {c['card']}" for c in CITIES.values()]
     lines += ["", "## Neighborhood guides"] + [f"- [{h['name']}, {CITIES[h['city_slug']]['name']}]({BASE}/neighborhoods/{h['city_slug']}/{h['slug']}/): {h['card']}" for h in HOODS]
+    lines += ["", "## Questions answered"] + [f"- [{q['question']}]({BASE}/questions/{q['slug']}/): {q['description']}" for q in QUESTIONS]
     lines += ["", "## Latest blog posts"] + [f"- [{p['title']}]({BASE}/blog/{p['slug']}/): {p['description']}" for p in POSTS[:30]]
     write("llms.txt", "\n".join(lines) + "\n")
     write("_redirects", "/_tools/*  /404.html  404!\n/data/*  /404.html  404!\n/README.md  /404.html  404!\n")
@@ -442,5 +558,10 @@ build_hood_index()
 for p in POSTS:
     build_post(p)
 build_blog_index()
+for q in QUESTIONS:
+    build_question(q)
+if QUESTIONS:
+    build_questions_index()
+build_tool()
 build_site_files()
 print(f"built {len(CITIES)} city hubs, {len(HOODS)} neighborhoods, {len(POSTS)} posts, {len(urls)+1} sitemap urls")

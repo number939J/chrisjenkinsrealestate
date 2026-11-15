@@ -1,0 +1,40 @@
+{
+ "slug": "most-affordable-neighborhoods-virginia-beach-va",
+ "question": "What are the most affordable neighborhoods in Virginia Beach, VA?",
+ "category": "Virginia Beach Neighborhoods",
+ "answer": "Among the 25 Virginia Beach neighborhoods with guides on this site (REIN MLS sales, November 15, 2024 to November 14, 2026), Campus East had the lowest median sold price at $250,000, followed by Ridgely Manor ($302,100) and Kempsville Lake ($315,000). The Virginia Beach city-wide median was $405,000.",
+ "answer_short": "Campus East at $250,000, then Ridgely Manor and Kempsville Lake.",
+ "description": "Virginia Beach VA neighborhood ranking from REIN MLS closed sales: lowest median price, with sales counts and links to each guide.",
+ "date": "2026-11-15",
+ "updated": "2026-11-15",
+ "body": "<p>This list covers the 25 Virginia Beach neighborhoods that have guides on this site, based on closed sales in REIN MLS from November 15, 2024 to November 14, 2026. It is not every neighborhood, and neighborhoods follow MLS subdivision names. The ranking uses the median, so a few unusual sales do not decide it.</p><div class=\"table-wrap\"><table class=\"data-table\"><caption>Virginia Beach neighborhoods by median sold price (lowest first)</caption><thead><tr><th scope=\"col\">Neighborhood</th><th scope=\"col\" class=num>Sales</th><th scope=\"col\" class=num>Median sold price</th><th scope=\"col\" class=num>Price per sq ft</th><th scope=\"col\" class=num>Median year built</th></tr></thead><tbody><tr><th scope=\"row\"><a href=\"/neighborhoods/virginia-beach/campus-east/\">Campus East</a></th><td class=num>99</td><td class=num>$250,000</td><td class=num>$177</td><td class=num>1984</td></tr><tr><th scope=\"row\"><a href=\"/neighborhoods/virginia-beach/ridgely-manor/\">Ridgely Manor</a></th><td class=num>96</td><td class=num>$302,100</td><td class=num>$198</td><td class=num>2008</td></tr><tr><th scope=\"row\"><a href=\"/neighborhoods/virginia-beach/kempsville-lake/\">Kempsville Lake</a></th><td class=num>139</td><td class=num>$315,000</td><td class=num>$202</td><td class=num>1984</td></tr><tr><th scope=\"row\"><a href=\"/neighborhoods/virginia-beach/timberlake/\">Timberlake</a></th><td class=num>116</td><td class=num>$320,000</td><td class=num>$212</td><td class=num>1979</td></tr><tr><th scope=\"row\"><a href=\"/neighborhoods/virginia-beach/indian-lakes/\">Indian Lakes</a></th><td class=num>240</td><td class=num>$325,250</td><td class=num>$225</td><td class=num>1983</td></tr><tr><th scope=\"row\"><a href=\"/neighborhoods/virginia-beach/green-run/\">Green Run</a></th><td class=num>324</td><td class=num>$329,000</td><td class=num>$226</td><td class=num>1979</td></tr><tr><th scope=\"row\"><a href=\"/neighborhoods/virginia-beach/chimney-hill/\">Chimney Hill</a></th><td class=num>126</td><td class=num>$336,000</td><td class=num>$220</td><td class=num>1983</td></tr><tr><th scope=\"row\"><a href=\"/neighborhoods/virginia-beach/rosemont-forest/\">Rosemont Forest</a></th><td class=num>161</td><td class=num>$340,000</td><td class=num>$239</td><td class=num>1985</td></tr></tbody></table></div><h2>How to Use This List</h2><p>A neighborhood's median describes the typical sale, not any one home. Compare the homes you are considering against recent sales on the same street, and check flood zone, association fees and noise zones for the specific address. Use the <a href=\"/tools/neighborhood-compare/\">compare tool</a> to put two neighborhoods side by side.</p>",
+ "faqs": [],
+ "related": [
+  "median-home-price-virginia-beach-va",
+  "chesapeake-vs-virginia-beach-home-prices"
+ ],
+ "related_neighborhoods": [
+  [
+   "virginia-beach",
+   "campus-east"
+  ],
+  [
+   "virginia-beach",
+   "ridgely-manor"
+  ],
+  [
+   "virginia-beach",
+   "kempsville-lake"
+  ]
+ ],
+ "sources": [
+  [
+   "REIN MLS closed residential sales, Virginia Beach VA, November 15, 2024 to November 14, 2026",
+   "https://www.reinmls.com"
+  ],
+  [
+   "Hampton Roads Home Buying and Selling Checklist, including how these statistics are calculated",
+   "/blog/hampton-roads-home-buying-and-selling-checklist/"
+  ]
+ ]
+}

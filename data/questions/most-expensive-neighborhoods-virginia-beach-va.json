@@ -1,0 +1,40 @@
+{
+ "slug": "most-expensive-neighborhoods-virginia-beach-va",
+ "question": "What are the most expensive neighborhoods in Virginia Beach, VA?",
+ "category": "Virginia Beach Neighborhoods",
+ "answer": "Among the 25 Virginia Beach neighborhoods with guides on this site (REIN MLS sales, November 15, 2024 to November 14, 2026), Ashville Park had the highest median sold price at $1,218,153, followed by North End Virginia Beach ($1,155,000) and Sandbridge Beach ($1,032,500). The Virginia Beach city-wide median was $405,000.",
+ "answer_short": "Ashville Park at $1,218,153, then North End Virginia Beach and Sandbridge Beach.",
+ "description": "Virginia Beach VA neighborhood ranking from REIN MLS closed sales: highest median price, with sales counts and links to each guide.",
+ "date": "2026-11-15",
+ "updated": "2026-11-15",
+ "body": "<p>This list covers the 25 Virginia Beach neighborhoods that have guides on this site, based on closed sales in REIN MLS from November 15, 2024 to November 14, 2026. It is not every neighborhood, and neighborhoods follow MLS subdivision names. The ranking uses the median, so a few unusual sales do not decide it.</p><div class=\"table-wrap\"><table class=\"data-table\"><caption>Virginia Beach neighborhoods by median sold price (highest first)</caption><thead><tr><th scope=\"col\">Neighborhood</th><th scope=\"col\" class=num>Sales</th><th scope=\"col\" class=num>Median sold price</th><th scope=\"col\" class=num>Price per sq ft</th><th scope=\"col\" class=num>Median year built</th></tr></thead><tbody><tr><th scope=\"row\"><a href=\"/neighborhoods/virginia-beach/ashville-park/\">Ashville Park</a></th><td class=num>109</td><td class=num>$1,218,153</td><td class=num>$326</td><td class=num>2024</td></tr><tr><th scope=\"row\"><a href=\"/neighborhoods/virginia-beach/north-end-virginia-beach/\">North End Virginia Beach</a></th><td class=num>252</td><td class=num>$1,155,000</td><td class=num>$515</td><td class=num>1986</td></tr><tr><th scope=\"row\"><a href=\"/neighborhoods/virginia-beach/sandbridge-beach/\">Sandbridge Beach</a></th><td class=num>140</td><td class=num>$1,032,500</td><td class=num>$399</td><td class=num>2004</td></tr><tr><th scope=\"row\"><a href=\"/neighborhoods/virginia-beach/lagomar/\">Lagomar</a></th><td class=num>92</td><td class=num>$942,500</td><td class=num>$270</td><td class=num>1997</td></tr><tr><th scope=\"row\"><a href=\"/neighborhoods/virginia-beach/kings-grant/\">Kings Grant</a></th><td class=num>111</td><td class=num>$619,000</td><td class=num>$282</td><td class=num>1968</td></tr><tr><th scope=\"row\"><a href=\"/neighborhoods/virginia-beach/chesapeake-beach/\">Chesapeake Beach</a></th><td class=num>120</td><td class=num>$550,000</td><td class=num>$312</td><td class=num>1989</td></tr><tr><th scope=\"row\"><a href=\"/neighborhoods/virginia-beach/shadowlawn/\">Shadowlawn</a></th><td class=num>107</td><td class=num>$525,000</td><td class=num>$341</td><td class=num>1983</td></tr><tr><th scope=\"row\"><a href=\"/neighborhoods/virginia-beach/beach-borough/\">Beach Borough</a></th><td class=num>226</td><td class=num>$507,500</td><td class=num>$332</td><td class=num>2001</td></tr></tbody></table></div><h2>How to Use This List</h2><p>A neighborhood's median describes the typical sale, not any one home. Compare the homes you are considering against recent sales on the same street, and check flood zone, association fees and noise zones for the specific address. Use the <a href=\"/tools/neighborhood-compare/\">compare tool</a> to put two neighborhoods side by side.</p>",
+ "faqs": [],
+ "related": [
+  "median-home-price-virginia-beach-va",
+  "chesapeake-vs-virginia-beach-home-prices"
+ ],
+ "related_neighborhoods": [
+  [
+   "virginia-beach",
+   "ashville-park"
+  ],
+  [
+   "virginia-beach",
+   "north-end-virginia-beach"
+  ],
+  [
+   "virginia-beach",
+   "sandbridge-beach"
+  ]
+ ],
+ "sources": [
+  [
+   "REIN MLS closed residential sales, Virginia Beach VA, November 15, 2024 to November 14, 2026",
+   "https://www.reinmls.com"
+  ],
+  [
+   "Hampton Roads Home Buying and Selling Checklist, including how these statistics are calculated",
+   "/blog/hampton-roads-home-buying-and-selling-checklist/"
+  ]
+ ]
+}

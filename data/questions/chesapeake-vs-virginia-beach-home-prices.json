@@ -1,0 +1,31 @@
+{
+ "slug": "chesapeake-vs-virginia-beach-home-prices",
+ "question": "Is Chesapeake or Virginia Beach cheaper to buy a home in?",
+ "category": "Hampton Roads Comparisons",
+ "answer": "Based on closed sales from November 15, 2024 to November 14, 2026, Virginia Beach had the lower median sold price: Chesapeake $420,000 versus Virginia Beach $405,000. Price per square foot was $219 in Chesapeake and $240 in Virginia Beach.",
+ "answer_short": "Chesapeake $420,000 vs Virginia Beach $405,000 median sold price.",
+ "description": "Chesapeake vs Virginia Beach home prices from REIN MLS closed sales: median price, price per square foot, days on market and negotiation room, compared by Chris Jenkins.",
+ "date": "2026-11-15",
+ "updated": "2026-11-15",
+ "body": "<p>Both cities are large and varied, so the answer depends on which part of each you are comparing. Here are the city-wide figures from REIN MLS closed residential sales from November 15, 2024 to November 14, 2026.</p><div class=\"table-wrap\"><table class=\"data-table\"><caption>Chesapeake and Virginia Beach compared</caption><thead><tr><th scope=\"col\">Measure</th><th scope=\"col\" class=num>Chesapeake</th><th scope=\"col\" class=num>Virginia Beach</th></tr></thead><tbody><tr><th scope=\"row\">Closed sales</th><td class=num>7,291</td><td class=num>12,010</td></tr><tr><th scope=\"row\">Median sold price</th><td class=num>$420,000</td><td class=num>$405,000</td></tr><tr><th scope=\"row\">Middle half of sales</th><td class=num>$316,000 – $565,000</td><td class=num>$320,000 – $574,000</td></tr><tr><th scope=\"row\">Median price per sq ft</th><td class=num>$219</td><td class=num>$240</td></tr><tr><th scope=\"row\">Median days on market</th><td class=num>18</td><td class=num>15</td></tr><tr><th scope=\"row\">Median sale-to-list ratio</th><td class=num>100.0%</td><td class=num>100.0%</td></tr></tbody></table></div><h2>Look Inside Each City</h2><p>Within both cities, prices span a wide range by area. Use the by-area tables on our <a href=\"/questions/median-home-price-chesapeake-va/\">Chesapeake</a> and <a href=\"/questions/median-home-price-virginia-beach-va/\">Virginia Beach</a> answers, or compare specific neighborhoods side by side with the <a href=\"/tools/neighborhood-compare/\">neighborhood compare tool</a>.</p><h2>Beyond Price</h2><p>Price is only one factor. Commute, flood zone and flood insurance cost, military air installation noise zones and association fees also change what a home really costs, and they vary by address. Our <a href=\"/blog/hampton-roads-home-buying-and-selling-checklist/\">checklist</a> covers how to check each one.</p>",
+ "faqs": [],
+ "related": [
+  "median-home-price-chesapeake-va",
+  "median-home-price-virginia-beach-va"
+ ],
+ "related_neighborhoods": [],
+ "sources": [
+  [
+   "REIN MLS closed residential sales, Chesapeake VA, November 15, 2024 to November 14, 2026",
+   "https://www.reinmls.com"
+  ],
+  [
+   "REIN MLS closed residential sales, Virginia Beach VA, November 15, 2024 to November 14, 2026",
+   "https://www.reinmls.com"
+  ],
+  [
+   "Hampton Roads Home Buying and Selling Checklist, including how these statistics are calculated",
+   "/blog/hampton-roads-home-buying-and-selling-checklist/"
+  ]
+ ]
+}

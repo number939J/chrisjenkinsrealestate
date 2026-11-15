@@ -6,6 +6,8 @@
 - [Home](https://chrisjenkinsrealestate.com/): About Chris Jenkins, services, client reviews, FAQ and contact
 - [Neighborhood guides](https://chrisjenkinsrealestate.com/neighborhoods/): Community-by-community Hampton Roads guides
 - [Blog](https://chrisjenkinsrealestate.com/blog/): Buying, selling, VA loan and relocation guides
+- [Questions](https://chrisjenkinsrealestate.com/questions/): Short, sourced answers to Hampton Roads buying and selling questions
+- [Neighborhood compare tool](https://chrisjenkinsrealestate.com/tools/neighborhood-compare/): Free side-by-side comparison of Hampton Roads neighborhoods
 
 ## Cities
 - [Chesapeake, VA](https://chrisjenkinsrealestate.com/neighborhoods/chesapeake/): 7,291 sales in 24 months, median $420,000 – South Norfolk, Riverwalk, Greenbrier, Deep Creek, Great Bridge and more.
@@ -63,6 +65,23 @@
 - [Timberlake, Virginia Beach](https://chrisjenkinsrealestate.com/neighborhoods/virginia-beach/timberlake/): 116 sales in 24 months, median $320,000; mostly homes from the 1970s through the 1990s.
 - [West Neck, Virginia Beach](https://chrisjenkinsrealestate.com/neighborhoods/virginia-beach/west-neck/): 112 sales in 24 months, median $462,700; a mix of homes from the 1990s to the 2010s.
 - [Windsor Oaks West, Virginia Beach](https://chrisjenkinsrealestate.com/neighborhoods/virginia-beach/windsor-oaks-west/): 154 sales in 24 months, median $377,450; mostly homes from the 1970s through the 1990s.
+
+## Questions answered
+- [Is Chesapeake or Virginia Beach cheaper to buy a home in?](https://chrisjenkinsrealestate.com/questions/chesapeake-vs-virginia-beach-home-prices/): Chesapeake vs Virginia Beach home prices from REIN MLS closed sales: median price, price per square foot, days on market and negotiation room, compared by Chris Jenkins.
+- [How long does it take to sell a house in Chesapeake, VA?](https://chrisjenkinsrealestate.com/questions/days-to-sell-a-house-chesapeake-va/): Chesapeake VA homes took a median of 18 days to sell, per 7,291 closed REIN MLS sales. See how pace varies by price and what sellers can do.
+- [How long does it take to sell a house in Virginia Beach, VA?](https://chrisjenkinsrealestate.com/questions/days-to-sell-a-house-virginia-beach-va/): Virginia Beach VA homes took a median of 15 days to sell, per 12,010 closed REIN MLS sales. See how pace varies by price and what sellers can do.
+- [Do homes in Chesapeake and Virginia Beach sell for more than the asking price?](https://chrisjenkinsrealestate.com/questions/do-homes-sell-above-asking-hampton-roads/): How often Chesapeake and Virginia Beach homes sell above, at, or below list price, from REIN MLS closed sales, with Chris Jenkins's tips for offers.
+- [Do I need flood insurance when buying a home in Hampton Roads?](https://chrisjenkinsrealestate.com/questions/do-i-need-flood-insurance-hampton-roads/): Do you need flood insurance in Hampton Roads? How to check the FEMA flood zone for an address, what Virginia's disclosure covers, and what to do before you offer.
+- [What is the median home price in Chesapeake, VA?](https://chrisjenkinsrealestate.com/questions/median-home-price-chesapeake-va/): Chesapeake VA median home price is $420,000 from 7,291 closed REIN MLS sales, with a breakdown by area and price trend from Chris Jenkins.
+- [What is the median home price in Virginia Beach, VA?](https://chrisjenkinsrealestate.com/questions/median-home-price-virginia-beach-va/): Virginia Beach VA median home price is $405,000 from 12,010 closed REIN MLS sales, with a breakdown by area and price trend from Chris Jenkins.
+- [What is the military noise zone disclosure when buying a home in Hampton Roads?](https://chrisjenkinsrealestate.com/questions/military-noise-zone-disclosure-hampton-roads/): Virginia's military air installation noise and accident potential zone disclosure explained for Hampton Roads buyers, with how to check an address.
+- [What are the most affordable neighborhoods in Chesapeake, VA?](https://chrisjenkinsrealestate.com/questions/most-affordable-neighborhoods-chesapeake-va/): Chesapeake VA neighborhood ranking from REIN MLS closed sales: lowest median price, with sales counts and links to each guide.
+- [What are the most affordable neighborhoods in Virginia Beach, VA?](https://chrisjenkinsrealestate.com/questions/most-affordable-neighborhoods-virginia-beach-va/): Virginia Beach VA neighborhood ranking from REIN MLS closed sales: lowest median price, with sales counts and links to each guide.
+- [What are the most expensive neighborhoods in Chesapeake, VA?](https://chrisjenkinsrealestate.com/questions/most-expensive-neighborhoods-chesapeake-va/): Chesapeake VA neighborhood ranking from REIN MLS closed sales: highest median price, with sales counts and links to each guide.
+- [What are the most expensive neighborhoods in Virginia Beach, VA?](https://chrisjenkinsrealestate.com/questions/most-expensive-neighborhoods-virginia-beach-va/): Virginia Beach VA neighborhood ranking from REIN MLS closed sales: highest median price, with sales counts and links to each guide.
+- [Which Chesapeake, VA neighborhoods have the newest homes?](https://chrisjenkinsrealestate.com/questions/newest-neighborhoods-chesapeake-va/): Chesapeake VA neighborhood ranking from REIN MLS closed sales: newest year built, with sales counts and links to each guide.
+- [Which Virginia Beach, VA neighborhoods have the newest homes?](https://chrisjenkinsrealestate.com/questions/newest-neighborhoods-virginia-beach-va/): Virginia Beach VA neighborhood ranking from REIN MLS closed sales: newest year built, with sales counts and links to each guide.
+- [What is an HOA resale certificate in Virginia, and can I cancel after reading it?](https://chrisjenkinsrealestate.com/questions/virginia-hoa-resale-certificate-cancel-contract/): What a Virginia HOA or condo resale certificate is, what is in it, how long the association has to deliver it, and the buyer's right to cancel.
 
 ## Latest blog posts
 - [Hampton Roads Home Buying and Selling Checklist: Disclosures, Flood Zones, HOAs and Military Noise Zones](https://chrisjenkinsrealestate.com/blog/hampton-roads-home-buying-and-selling-checklist/): Hampton Roads buyer and seller checklist from REALTOR Chris Jenkins: Virginia disclosures, flood zones, HOA packets, military noise zones, and how our neighborhood stats are made.

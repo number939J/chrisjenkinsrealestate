@@ -1,0 +1,45 @@
+{
+ "slug": "days-to-sell-a-house-chesapeake-va",
+ "question": "How long does it take to sell a house in Chesapeake, VA?",
+ "category": "Chesapeake Selling Questions",
+ "answer": "The median home that sold in Chesapeake, VA was on the market 18 days before going under contract, from November 15, 2024 to November 14, 2026. 44% sold in 14 days or less, and 14% took more than 60 days. Closing typically takes additional time after the contract.",
+ "answer_short": "Median 18 days on market; 44% sold within 14 days.",
+ "description": "Chesapeake VA homes took a median of 18 days to sell, per 7,291 closed REIN MLS sales. See how pace varies by price and what sellers can do.",
+ "date": "2026-11-15",
+ "updated": "2026-11-15",
+ "body": "<p>Days on market counts the days from listing to going under contract. For Chesapeake, the median was 18 days across 7,291 closed sales (November 15, 2024 to November 14, 2026); the middle half of homes took between 5 and 41 days. That does not include the weeks it usually takes to close after a contract is signed.</p><div class=\"table-wrap\"><table class=\"data-table\"><caption>Chesapeake sales by days on market, November 15, 2024 to November 14, 2026</caption><thead><tr><th scope=\"col\">Days on market</th><th scope=\"col\" class=num>Share of sales</th></tr></thead><tbody><tr><th scope=\"row\">14 days or less</th><td class=num>44%</td></tr><tr><th scope=\"row\">15 to 60 days</th><td class=num>41%</td></tr><tr><th scope=\"row\">More than 60 days</th><td class=num>14%</td></tr></tbody></table></div><h2>Why Some Homes Sell Faster</h2><p>Pricing is the biggest lever: homes priced to recent comparable sales draw the most early attention. Condition, photography and the season matter too. Homes that sit past the first few weeks often need a price or presentation change. Chesapeake sellers can see how fast individual neighborhoods move in the neighborhood guides below.</p><h2>Typical Negotiation Room</h2><p>The median Chesapeake home sold at 100.0% of its list price. 37% sold above list price and 4% sold at least 5% below it, so outcomes varied widely.</p>",
+ "faqs": [
+  [
+   "Do homes in Chesapeake sell above asking price?",
+   "37% of Chesapeake homes sold for more than their list price and 4% sold at least 5% below it, per REIN MLS closed sales (November 15, 2024 to November 14, 2026)."
+  ]
+ ],
+ "related": [
+  "median-home-price-chesapeake-va",
+  "do-homes-sell-above-asking-hampton-roads"
+ ],
+ "related_neighborhoods": [
+  [
+   "chesapeake",
+   "stoney-creek"
+  ],
+  [
+   "chesapeake",
+   "eagle-pointe"
+  ],
+  [
+   "chesapeake",
+   "norfolk-highlands"
+  ]
+ ],
+ "sources": [
+  [
+   "REIN MLS closed residential sales, Chesapeake VA, November 15, 2024 to November 14, 2026",
+   "https://www.reinmls.com"
+  ],
+  [
+   "Hampton Roads Home Buying and Selling Checklist, including how these statistics are calculated",
+   "/blog/hampton-roads-home-buying-and-selling-checklist/"
+  ]
+ ]
+}
