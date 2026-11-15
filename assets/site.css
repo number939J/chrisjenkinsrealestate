@@ -242,3 +242,12 @@ main.sub { padding: 80px 5%; }
 .footer-links a:hover { color: var(--gold-lt); }
 @media(max-width: 960px) { .sub-grid { grid-template-columns: 1fr; gap: 3rem; } .side-card { position: static; } main.sub { padding: 56px 5%; } .page-hero { padding: 150px 5% 60px; } }
 @media(max-width: 1180px) { .nav-links { gap: 1rem; } .nav-links a { font-size: 0.64rem; letter-spacing: 0.08em; white-space: nowrap; } .nav-cta { padding: 0.55rem 0.9rem !important; } }
+
+/* neighborhood data tables */
+.table-wrap { overflow-x: auto; margin: 0 0 2rem; -webkit-overflow-scrolling: touch; }
+.data-table { width: 100%; border-collapse: collapse; font-size: 0.88rem; min-width: 460px; }
+.data-table caption { text-align: left; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); padding: 0 0 0.6rem; }
+.data-table th, .data-table td { text-align: left; padding: 0.65rem 0.85rem; border-bottom: 1px solid rgba(184,131,42,0.25); line-height: 1.5; color: var(--dark); }
+.data-table thead th { font-size: 0.66rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); border-bottom: 2px solid rgba(184,131,42,0.5); }
+.data-table tbody th { font-weight: 600; }
+.data-table .num { text-align: right; font-variant-numeric: tabular-nums; }

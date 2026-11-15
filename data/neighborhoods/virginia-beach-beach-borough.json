@@ -13,6 +13,10 @@
    "Virginia Beach, Virginia"
   ],
   [
+   "ZIP code",
+   "23451"
+  ],
+  [
    "MLS area",
    "Area 43 – Northeast Virginia Beach (REIN MLS)"
   ],
@@ -53,6 +57,10 @@
    "23% of the sales were detached homes and 77% were attached homes (townhomes or condos)"
   ],
   [
+   "Map point",
+   "36.8502, -75.9813 (middle of recent sales)"
+  ],
+  [
    "Local agent",
    "Chris Jenkins, Better Homes and Gardens Real Estate – Native American Group, (757) 286-7255"
   ]
@@ -60,23 +68,39 @@
  "sections": [
   {
    "h2": "Beach Borough Home Prices and Market Pace",
-   "html": "<p>In the 24 months from November 15, 2024 to November 14, 2026, 226 residential sales closed in Beach Borough (Virginia Beach, VA) according to REIN MLS records. The median sold price was $507,500, above the citywide median of $405,000, and homes took a median of 32 days to sell, slower than the citywide median of 15 days. These figures come from closed sales, which show what homes actually sold for rather than asking prices.</p><p>The middle half of Beach Borough sales closed between $339,925 and $675,000, or about $332 per square foot against $240 citywide. Split by year, the median sold price in the most recent 12 months ($525,000, 106 sales) was about 5% higher than in the earlier 12 months ($499,950, 120 sales). The typical home sold right at its list price (median sale-to-list ratio of 100%).</p>"
+   "html": "<p>In the 24 months from November 15, 2024 to November 14, 2026, 226 residential sales closed in Beach Borough (Virginia Beach, VA) according to REIN MLS records. The median sold price was $507,500, above the citywide median of $405,000, and homes took a median of 32 days to sell, slower than the citywide median of 15 days. These figures come from closed sales, which show what homes actually sold for rather than asking prices.</p><p>The middle half of Beach Borough sales closed between $339,925 and $675,000, or about $332 per square foot against $240 citywide. Split by year, the median sold price in the most recent 12 months ($525,000, 106 sales) was about 5% higher than in the earlier 12 months ($499,950, 120 sales). The typical home sold right at its list price (median sale-to-list ratio of 100%).</p><p>Recent Beach Borough sales were in ZIP code 23451.</p>"
+  },
+  {
+   "h2": "What Stands Out About Beach Borough",
+   "html": "<p>At a median $332 per square foot, Beach Borough sits 38% above the $240 citywide figure. 23% of sales here were detached homes, versus 61% citywide. 32% of the homes sold here were built in 2015 or later; across Virginia Beach the figure is 7%.</p>"
+  },
+  {
+   "h2": "Beach Borough Sold Prices by Price Range",
+   "html": "<p>This table shows how the 226 Beach Borough sales spread across price ranges.</p><div class=\"table-wrap\"><table class=\"data-table\"><caption>Beach Borough sales by sold price, November 15, 2024 – November 14, 2026</caption><thead><tr><th scope=\"col\">Sold price</th><th scope=\"col\" class=num>Sales</th><th scope=\"col\" class=num>Share of sales</th></tr></thead><tbody><tr><th scope=\"row\">Under $400,000</th><td class=num>81</td><td class=num>36%</td></tr><tr><th scope=\"row\">$400,000 &ndash; $599,999</th><td class=num>55</td><td class=num>24%</td></tr><tr><th scope=\"row\">$600,000 &ndash; $799,999</th><td class=num>65</td><td class=num>29%</td></tr><tr><th scope=\"row\">$800,000 and up</th><td class=num>25</td><td class=num>11%</td></tr></tbody></table></div>"
+  },
+  {
+   "h2": "Beach Borough Sales Over Time",
+   "html": "<p>Sales by closing period show whether activity and prices have been steady. Periods with fewer than three sales show no median, because a median of one or two homes says little.</p><div class=\"table-wrap\"><table class=\"data-table\"><caption>Beach Borough closed sales by three-month period</caption><thead><tr><th scope=\"col\">Closing period</th><th scope=\"col\" class=num>Sales</th><th scope=\"col\" class=num>Median sold price</th></tr></thead><tbody><tr><th scope=\"row\">Aug 15, 2026 &ndash; Nov 14, 2026</th><td class=num>20</td><td class=num>$637,500</td></tr><tr><th scope=\"row\">May 15, 2026 &ndash; Aug 14, 2026</th><td class=num>33</td><td class=num>$427,000</td></tr><tr><th scope=\"row\">Feb 15, 2026 &ndash; May 14, 2026</th><td class=num>34</td><td class=num>$532,500</td></tr><tr><th scope=\"row\">Nov 15, 2025 &ndash; Feb 14, 2026</th><td class=num>19</td><td class=num>$525,000</td></tr><tr><th scope=\"row\">Aug 15, 2025 &ndash; Nov 14, 2025</th><td class=num>41</td><td class=num>$525,000</td></tr><tr><th scope=\"row\">May 15, 2025 &ndash; Aug 14, 2025</th><td class=num>28</td><td class=num>$388,075</td></tr><tr><th scope=\"row\">Feb 15, 2025 &ndash; May 14, 2025</th><td class=num>31</td><td class=num>$515,000</td></tr><tr><th scope=\"row\">Nov 15, 2024 &ndash; Feb 14, 2025</th><td class=num>20</td><td class=num>$420,000</td></tr></tbody></table></div>"
+  },
+  {
+   "h2": "When Beach Borough Homes Sell and How Far Prices Range",
+   "html": "<p>Closings in Beach Borough were busiest in July (27 sales across the two years) and slowest in February (13 sales). Sold prices ran from $199,900 to $1,650,000, a spread of 8.3x between the lowest and highest sale. 52% of homes closed at or above list price and 10% closed at least 5% below it.</p><div class=\"table-wrap\"><table class=\"data-table\"><caption>Busiest closing months in Beach Borough</caption><thead><tr><th scope=\"col\">Month</th><th scope=\"col\" class=num>Sales</th><th scope=\"col\" class=num>Median sold price</th></tr></thead><tbody><tr><th scope=\"row\">July</th><td class=num>27</td><td class=num>$427,000</td></tr><tr><th scope=\"row\">April</th><td class=num>26</td><td class=num>$585,000</td></tr><tr><th scope=\"row\">August</th><td class=num>24</td><td class=num>$475,000</td></tr></tbody></table></div>"
   },
   {
    "h2": "What Kinds of Homes Sell in Beach Borough",
-   "html": "<p>23% of the sales were detached homes and 77% were attached homes (townhomes or condos). The median home was about 1,508 square feet, with the middle half of sales running from roughly 1,119 to 1,993 square feet. 44% of the homes that sold had 3 bedrooms.</p><p>Home ages vary widely here: about 80% of sales were built between 1969 and 2025, with a median year built of 2001.</p><p>Averages hide a lot, so Chris Jenkins compares you to homes that match yours on street, size, age and condition rather than to the whole Beach Borough median.</p>"
+   "html": "<p>23% of the sales were detached homes and 77% were attached homes (townhomes or condos). The median home was about 1,508 square feet, with the middle half of sales running from roughly 1,119 to 1,993 square feet. 44% of the homes that sold had 3 bedrooms.</p><p>Home ages vary widely here: about 80% of sales were built between 1969 and 2025, with a median year built of 2001.</p><div class=\"table-wrap\"><table class=\"data-table\"><caption>Beach Borough sales by number of bedrooms</caption><thead><tr><th scope=\"col\">Bedrooms</th><th scope=\"col\" class=num>Sales</th><th scope=\"col\" class=num>Share of sales</th><th scope=\"col\" class=num>Median sold price</th></tr></thead><tbody><tr><th scope=\"row\">2 bedrooms or fewer</th><td class=num>87</td><td class=num>38%</td><td class=num>$330,000</td></tr><tr><th scope=\"row\">3 bedrooms</th><td class=num>100</td><td class=num>44%</td><td class=num>$600,000</td></tr><tr><th scope=\"row\">4 bedrooms</th><td class=num>36</td><td class=num>16%</td><td class=num>$764,750</td></tr><tr><th scope=\"row\">5 or more bedrooms</th><td class=num>3</td><td class=num>1%</td><td class=num>$950,000</td></tr></tbody></table></div><div class=\"table-wrap\"><table class=\"data-table\"><caption>Beach Borough sales by home size</caption><thead><tr><th scope=\"col\">Living area</th><th scope=\"col\" class=num>Sales</th><th scope=\"col\" class=num>Median sold price</th></tr></thead><tbody><tr><th scope=\"row\">Under 1,500 sq ft</th><td class=num>110</td><td class=num>$337,450</td></tr><tr><th scope=\"row\">1,500 &ndash; 1,999 sq ft</th><td class=num>61</td><td class=num>$615,000</td></tr><tr><th scope=\"row\">2,000 &ndash; 2,499 sq ft</th><td class=num>44</td><td class=num>$699,909</td></tr><tr><th scope=\"row\">2,500 &ndash; 2,999 sq ft</th><td class=num>9</td><td class=num>$825,000</td></tr><tr><th scope=\"row\">3,000 sq ft and up</th><td class=num>2</td><td class=num>&ndash;</td></tr></tbody></table></div><div class=\"table-wrap\"><table class=\"data-table\"><caption>Beach Borough sales by decade built</caption><thead><tr><th scope=\"col\">Decade built</th><th scope=\"col\" class=num>Sales</th><th scope=\"col\" class=num>Median sold price</th></tr></thead><tbody><tr><th scope=\"row\">Before 1970</th><td class=num>24</td><td class=num>$439,450</td></tr><tr><th scope=\"row\">1970s</th><td class=num>14</td><td class=num>$389,500</td></tr><tr><th scope=\"row\">1980s</th><td class=num>63</td><td class=num>$335,000</td></tr><tr><th scope=\"row\">1990s</th><td class=num>4</td><td class=num>$487,250</td></tr><tr><th scope=\"row\">2000s</th><td class=num>36</td><td class=num>$480,000</td></tr><tr><th scope=\"row\">2010s</th><td class=num>36</td><td class=num>$631,700</td></tr><tr><th scope=\"row\">2020s</th><td class=num>49</td><td class=num>$685,000</td></tr></tbody></table></div><div class=\"table-wrap\"><table class=\"data-table\"><caption>Beach Borough sales by home type</caption><thead><tr><th scope=\"col\">Home type</th><th scope=\"col\" class=num>Sales</th><th scope=\"col\" class=num>Median sold price</th><th scope=\"col\" class=num>Median size</th></tr></thead><tbody><tr><th scope=\"row\">Detached</th><td class=num>52</td><td class=num>$685,000</td><td class=num>1,678 sq ft</td></tr><tr><th scope=\"row\">Attached (townhome or condo)</th><td class=num>174</td><td class=num>$420,000</td><td class=num>1,409 sq ft</td></tr></tbody></table></div>"
   },
   {
-   "h2": "Buying in Beach Borough With Chris Jenkins",
-   "html": "<p>If you are buying in Beach Borough, Chris Jenkins sets up a search for the exact streets and price range you want, pulls the recent sales so you know what a fair offer looks like, and negotiates for you. Because home ages here range from older to brand new, inspect each home on its own: newer homes may carry builder warranties, while older ones may need roof, HVAC or system updates. Because Virginia sellers give a disclosure statement that tells buyers to do their own due diligence, read our guide to the <a href=\"/blog/virginia-residential-property-disclosure-statement-hampton-roads/\">Virginia Residential Property Disclosure Statement</a>. Confirm flood-zone status and insurance cost for any specific home, since these vary lot by lot.</p>"
+   "h2": "How Fast Homes Sell in Beach Borough",
+   "html": "<p>Days on market counts how long a home was listed before going under contract. Here is how Beach Borough compares with all of Virginia Beach.</p><div class=\"table-wrap\"><table class=\"data-table\"><caption>Beach Borough sales by days on market, compared with Virginia Beach</caption><thead><tr><th scope=\"col\">Days on market</th><th scope=\"col\" class=num>Sales</th><th scope=\"col\" class=num>Share in Beach Borough</th><th scope=\"col\" class=num>Share in Virginia Beach</th></tr></thead><tbody><tr><th scope=\"row\">Under 15 days</th><td class=num>71</td><td class=num>31%</td><td class=num>49%</td></tr><tr><th scope=\"row\">15 &ndash; 30 days</th><td class=num>39</td><td class=num>17%</td><td class=num>20%</td></tr><tr><th scope=\"row\">31 &ndash; 60 days</th><td class=num>62</td><td class=num>27%</td><td class=num>18%</td></tr><tr><th scope=\"row\">61 &ndash; 90 days</th><td class=num>29</td><td class=num>13%</td><td class=num>7%</td></tr><tr><th scope=\"row\">Over 90 days</th><td class=num>25</td><td class=num>11%</td><td class=num>5%</td></tr></tbody></table></div>"
   },
   {
-   "h2": "Selling Your Beach Borough Home With Chris Jenkins",
-   "html": "<p>If you are selling in Beach Borough, your price should rest on recent closed sales of similar homes, not on a neighborhood average. Homes in Beach Borough have been selling in a median of 32 days, and the middle half of recent sales landed between $339,925 and $675,000. Chris Jenkins prices your home against those sales, handles photography and marketing, and manages negotiations through closing. Call or text <a href=\"tel:+17572867255\">(757) 286-7255</a> or <a href=\"#contact\">request a free home valuation</a>.</p>"
+   "h2": "Beach Borough Compared With Nearby Virginia Beach Neighborhoods",
+   "html": "<p>These are the closest neighborhoods by median price within Northeast Virginia Beach, drawn from the same 24 months of REIN MLS sales.</p><div class=\"table-wrap\"><table class=\"data-table\"><caption>Beach Borough compared with similarly priced Virginia Beach neighborhoods</caption><thead><tr><th scope=\"col\">Neighborhood</th><th scope=\"col\" class=num>Sales</th><th scope=\"col\" class=num>Median sold price</th><th scope=\"col\" class=num>Price per sq ft</th><th scope=\"col\" class=num>Median days on market</th></tr></thead><tbody><tr><th scope=\"row\">Beach Borough (this page)</th><td class=num>226</td><td class=num>$507,500</td><td class=num>$332</td><td class=num>32</td></tr><tr><th scope=\"row\"><a href=\"/neighborhoods/virginia-beach/shadowlawn/\">Shadowlawn</a></th><td class=num>107</td><td class=num>$525,000</td><td class=num>$341</td><td class=num>18</td></tr><tr><th scope=\"row\"><a href=\"/neighborhoods/virginia-beach/lynnhaven-shores/\">Lynnhaven Shores</a></th><td class=num>112</td><td class=num>$419,000</td><td class=num>$293</td><td class=num>19</td></tr><tr><th scope=\"row\"><a href=\"/neighborhoods/virginia-beach/north-end-virginia-beach/\">North End Virginia Beach</a></th><td class=num>252</td><td class=num>$1,155,000</td><td class=num>$515</td><td class=num>23</td></tr></tbody></table></div>"
   },
   {
-   "h2": "About These Beach Borough Numbers",
-   "html": "<p>Figures come from closed residential sales recorded in REIN MLS for Virginia Beach between November 15, 2024 and November 14, 2026, grouped under the subdivision name MLS agents use. Medians, not averages, are used so a few very high or low sales do not distort the picture. With 226 sales, this is a solid sample, but every home differs and these figures are not an appraisal or a prediction. Subdivision names in MLS data can cover more than one section of a community. For a valuation of a specific home, contact Chris Jenkins.</p>"
+   "h2": "Buying or Selling in Beach Borough",
+   "html": "<p>Chris Jenkins works with Beach Borough buyers and sellers through Better Homes and Gardens Real Estate – Native American Group. For a buyer, the figures above show what $339,925 to $675,000 has recently bought here; for a seller, they show where your home might land before comparing it with the closest recent sales. Call or text <a href=\"tel:+17572867255\">(757) 286-7255</a> or <a href=\"#contact\">request a free home valuation</a>. The steps for every Hampton Roads purchase or sale, including disclosures, flood zones, association documents and military noise zones, are in our <a href=\"/blog/hampton-roads-home-buying-and-selling-checklist/#buyer-checklist\">buyer checklist</a> and <a href=\"/blog/hampton-roads-home-buying-and-selling-checklist/#seller-checklist\">seller checklist</a>, and <a href=\"/blog/hampton-roads-home-buying-and-selling-checklist/#methodology\">how these statistics are calculated</a> is explained in the same guide. These figures describe past sales and are not an appraisal.</p>"
   }
  ],
  "faqs": [
@@ -97,6 +121,10 @@
    "REIN MLS shows 226 closed sales in Beach Borough between November 15, 2024 and November 14, 2026. Small neighborhoods can have few sales, so Chris Jenkins widens the comparison to nearby communities when needed."
   ],
   [
+   "What ZIP code is Beach Borough in?",
+   "Recent Beach Borough sales were in ZIP code 23451. ZIP codes come from the Census Bureau Geocoder applied to recent sale addresses, and a neighborhood's MLS name can cross ZIP code lines, so confirm the ZIP for a specific home."
+  ],
+  [
    "Who is a good real estate agent for Beach Borough homes?",
    "Chris Jenkins of Better Homes and Gardens Real Estate – Native American Group is a full-time Hampton Roads REALTOR® and HRRA Circle of Excellence winner every year since 2013, with over $100 million in sales and 200+ five-star reviews. Call (757) 286-7255 for a free consultation."
   ]
@@ -112,8 +140,15 @@
    "https://www.reinmls.com"
   ],
   [
-   "Virginia Residential Property Disclosure Statement (DPOR)",
-   "https://www.dpor.virginia.gov/consumers/residential_property_disclosures"
+   "Hampton Roads Home Buying and Selling Checklist, including how these statistics are calculated",
+   "/blog/hampton-roads-home-buying-and-selling-checklist/"
+  ],
+  [
+   "U.S. Census Bureau Geocoder (ZIP code and map point)",
+   "https://geocoding.geo.census.gov/geocoder/"
   ]
- ]
+ ],
+ "zip": "23451",
+ "lat": 36.8502,
+ "lng": -75.9813
 }

@@ -13,6 +13,10 @@
    "Chesapeake, Virginia"
   ],
   [
+   "ZIP code",
+   "23323"
+  ],
+  [
    "MLS area",
    "Area 32 – South Chesapeake (REIN MLS)"
   ],
@@ -53,6 +57,10 @@
    "All of the sales were attached homes such as townhomes or condos"
   ],
   [
+   "Map point",
+   "36.7533, -76.3103 (middle of recent sales)"
+  ],
+  [
    "Local agent",
    "Chris Jenkins, Better Homes and Gardens Real Estate – Native American Group, (757) 286-7255"
   ]
@@ -60,23 +68,39 @@
  "sections": [
   {
    "h2": "Bryans Cove Home Prices and Market Pace",
-   "html": "<p>In the 24 months from November 15, 2024 to November 14, 2026, 79 residential sales closed in Bryans Cove (Chesapeake, VA) according to REIN MLS records. The median sold price was $424,900, close to the citywide median of $420,000, and homes took a median of 28 days to sell, slower than the citywide median of 18 days. These figures come from closed sales, which show what homes actually sold for rather than asking prices.</p><p>The middle half of Bryans Cove sales closed between $397,090 and $439,950, or about $201 per square foot against $219 citywide. Split by year, the median sold price in the most recent 12 months ($434,000, 45 sales) was about 3% higher than in the earlier 12 months ($419,950, 34 sales). The typical home sold right at its list price (median sale-to-list ratio of 100%).</p>"
+   "html": "<p>In the 24 months from November 15, 2024 to November 14, 2026, 79 residential sales closed in Bryans Cove (Chesapeake, VA) according to REIN MLS records. The median sold price was $424,900, close to the citywide median of $420,000, and homes took a median of 28 days to sell, slower than the citywide median of 18 days. These figures come from closed sales, which show what homes actually sold for rather than asking prices.</p><p>The middle half of Bryans Cove sales closed between $397,090 and $439,950, or about $201 per square foot against $219 citywide. Split by year, the median sold price in the most recent 12 months ($434,000, 45 sales) was about 3% higher than in the earlier 12 months ($419,950, 34 sales). The typical home sold right at its list price (median sale-to-list ratio of 100%).</p><p>Recent Bryans Cove sales were in ZIP code 23323.</p>"
+  },
+  {
+   "h2": "What Stands Out About Bryans Cove",
+   "html": "<p>100% of the homes sold here were built in 2015 or later; across Chesapeake the figure is 24%. 0% of sales here were detached homes, versus 76% citywide. 9% of Bryans Cove sales had four or more bedrooms, against 53% citywide.</p>"
+  },
+  {
+   "h2": "Bryans Cove Sold Prices by Price Range",
+   "html": "<p>This table shows how the 79 Bryans Cove sales spread across price ranges.</p><div class=\"table-wrap\"><table class=\"data-table\"><caption>Bryans Cove sales by sold price, November 15, 2024 – November 14, 2026</caption><thead><tr><th scope=\"col\">Sold price</th><th scope=\"col\" class=num>Sales</th><th scope=\"col\" class=num>Share of sales</th></tr></thead><tbody><tr><th scope=\"row\">Under $400,000</th><td class=num>22</td><td class=num>28%</td></tr><tr><th scope=\"row\">$400,000 &ndash; $449,999</th><td class=num>46</td><td class=num>58%</td></tr><tr><th scope=\"row\">$450,000 and up</th><td class=num>11</td><td class=num>14%</td></tr></tbody></table></div>"
+  },
+  {
+   "h2": "Bryans Cove Sales Over Time",
+   "html": "<p>Sales by closing period show whether activity and prices have been steady. Periods with fewer than three sales show no median, because a median of one or two homes says little.</p><div class=\"table-wrap\"><table class=\"data-table\"><caption>Bryans Cove closed sales by three-month period</caption><thead><tr><th scope=\"col\">Closing period</th><th scope=\"col\" class=num>Sales</th><th scope=\"col\" class=num>Median sold price</th></tr></thead><tbody><tr><th scope=\"row\">Aug 15, 2026 &ndash; Nov 14, 2026</th><td class=num>4</td><td class=num>$446,700</td></tr><tr><th scope=\"row\">May 15, 2026 &ndash; Aug 14, 2026</th><td class=num>17</td><td class=num>$434,000</td></tr><tr><th scope=\"row\">Feb 15, 2026 &ndash; May 14, 2026</th><td class=num>12</td><td class=num>$426,350</td></tr><tr><th scope=\"row\">Nov 15, 2025 &ndash; Feb 14, 2026</th><td class=num>12</td><td class=num>$432,500</td></tr><tr><th scope=\"row\">Aug 15, 2025 &ndash; Nov 14, 2025</th><td class=num>9</td><td class=num>$415,000</td></tr><tr><th scope=\"row\">May 15, 2025 &ndash; Aug 14, 2025</th><td class=num>11</td><td class=num>$424,900</td></tr><tr><th scope=\"row\">Feb 15, 2025 &ndash; May 14, 2025</th><td class=num>6</td><td class=num>$411,250</td></tr><tr><th scope=\"row\">Nov 15, 2024 &ndash; Feb 14, 2025</th><td class=num>8</td><td class=num>$419,000</td></tr></tbody></table></div>"
+  },
+  {
+   "h2": "When Bryans Cove Homes Sell and How Far Prices Range",
+   "html": "<p>Closings in Bryans Cove were busiest in April (14 sales across the two years) and slowest in March (2 sales). Sold prices ran from $365,000 to $465,300, a spread of 1.3x between the lowest and highest sale. 81% of homes closed at or above list price and 0% closed at least 5% below it.</p><div class=\"table-wrap\"><table class=\"data-table\"><caption>Busiest closing months in Bryans Cove</caption><thead><tr><th scope=\"col\">Month</th><th scope=\"col\" class=num>Sales</th><th scope=\"col\" class=num>Median sold price</th></tr></thead><tbody><tr><th scope=\"row\">April</th><td class=num>14</td><td class=num>$422,600</td></tr><tr><th scope=\"row\">August</th><td class=num>9</td><td class=num>$419,900</td></tr><tr><th scope=\"row\">June</th><td class=num>9</td><td class=num>$420,000</td></tr></tbody></table></div>"
   },
   {
    "h2": "What Kinds of Homes Sell in Bryans Cove",
-   "html": "<p>All of the sales were attached homes such as townhomes or condos. The median home was about 2,036 square feet, with the middle half of sales running from roughly 1,915 to 2,432 square feet. 91% of the homes that sold had 3 bedrooms.</p><p>Most homes that sold were built between 2019 and 2023, with a median year built of 2020, so this is mostly newer construction.</p><p>Averages hide a lot, so Chris Jenkins compares you to homes that match yours on street, size, age and condition rather than to the whole Bryans Cove median.</p>"
+   "html": "<p>All of the sales were attached homes such as townhomes or condos. The median home was about 2,036 square feet, with the middle half of sales running from roughly 1,915 to 2,432 square feet. 91% of the homes that sold had 3 bedrooms.</p><p>Most homes that sold were built between 2019 and 2023, with a median year built of 2020, so this is mostly newer construction.</p><div class=\"table-wrap\"><table class=\"data-table\"><caption>Bryans Cove sales by number of bedrooms</caption><thead><tr><th scope=\"col\">Bedrooms</th><th scope=\"col\" class=num>Sales</th><th scope=\"col\" class=num>Share of sales</th><th scope=\"col\" class=num>Median sold price</th></tr></thead><tbody><tr><th scope=\"row\">3 bedrooms</th><td class=num>72</td><td class=num>91%</td><td class=num>$421,250</td></tr><tr><th scope=\"row\">4 bedrooms</th><td class=num>7</td><td class=num>9%</td><td class=num>$438,500</td></tr></tbody></table></div><div class=\"table-wrap\"><table class=\"data-table\"><caption>Bryans Cove sales by home size</caption><thead><tr><th scope=\"col\">Living area</th><th scope=\"col\" class=num>Sales</th><th scope=\"col\" class=num>Median sold price</th></tr></thead><tbody><tr><th scope=\"row\">1,500 &ndash; 1,999 sq ft</th><td class=num>35</td><td class=num>$390,000</td></tr><tr><th scope=\"row\">2,000 &ndash; 2,499 sq ft</th><td class=num>39</td><td class=num>$435,000</td></tr><tr><th scope=\"row\">2,500 &ndash; 2,999 sq ft</th><td class=num>5</td><td class=num>$450,000</td></tr></tbody></table></div><div class=\"table-wrap\"><table class=\"data-table\"><caption>Bryans Cove sales by decade built</caption><thead><tr><th scope=\"col\">Decade built</th><th scope=\"col\" class=num>Sales</th><th scope=\"col\" class=num>Median sold price</th></tr></thead><tbody><tr><th scope=\"row\">2010s</th><td class=num>19</td><td class=num>$438,500</td></tr><tr><th scope=\"row\">2020s</th><td class=num>60</td><td class=num>$420,000</td></tr></tbody></table></div>"
   },
   {
-   "h2": "Buying in Bryans Cove With Chris Jenkins",
-   "html": "<p>If you are buying in Bryans Cove, Chris Jenkins sets up a search for the exact streets and price range you want, pulls the recent sales so you know what a fair offer looks like, and negotiates for you. Newer construction can still have builder warranties, so ask what is transferable, and read the association documents closely for dues, rules and any special assessments. Because Virginia sellers give a disclosure statement that tells buyers to do their own due diligence, read our guide to the <a href=\"/blog/virginia-residential-property-disclosure-statement-hampton-roads/\">Virginia Residential Property Disclosure Statement</a>. Confirm flood-zone status and insurance cost for any specific home, since these vary lot by lot.</p>"
+   "h2": "How Fast Homes Sell in Bryans Cove",
+   "html": "<p>Days on market counts how long a home was listed before going under contract. Here is how Bryans Cove compares with all of Chesapeake.</p><div class=\"table-wrap\"><table class=\"data-table\"><caption>Bryans Cove sales by days on market, compared with Chesapeake</caption><thead><tr><th scope=\"col\">Days on market</th><th scope=\"col\" class=num>Sales</th><th scope=\"col\" class=num>Share in Bryans Cove</th><th scope=\"col\" class=num>Share in Chesapeake</th></tr></thead><tbody><tr><th scope=\"row\">Under 15 days</th><td class=num>22</td><td class=num>28%</td><td class=num>44%</td></tr><tr><th scope=\"row\">15 &ndash; 30 days</th><td class=num>21</td><td class=num>27%</td><td class=num>21%</td></tr><tr><th scope=\"row\">31 &ndash; 60 days</th><td class=num>26</td><td class=num>33%</td><td class=num>20%</td></tr><tr><th scope=\"row\">61 &ndash; 90 days</th><td class=num>9</td><td class=num>11%</td><td class=num>7%</td></tr><tr><th scope=\"row\">Over 90 days</th><td class=num>1</td><td class=num>1%</td><td class=num>7%</td></tr></tbody></table></div>"
   },
   {
-   "h2": "Selling Your Bryans Cove Home With Chris Jenkins",
-   "html": "<p>If you are selling in Bryans Cove, your price should rest on recent closed sales of similar homes, not on a neighborhood average. Homes in Bryans Cove have been selling in a median of 28 days, and the middle half of recent sales landed between $397,090 and $439,950. Chris Jenkins prices your home against those sales, handles photography and marketing, and manages negotiations through closing. Call or text <a href=\"tel:+17572867255\">(757) 286-7255</a> or <a href=\"#contact\">request a free home valuation</a>.</p>"
+   "h2": "Bryans Cove Compared With Nearby Chesapeake Neighborhoods",
+   "html": "<p>These are the closest neighborhoods by median price within South Chesapeake, drawn from the same 24 months of REIN MLS sales.</p><div class=\"table-wrap\"><table class=\"data-table\"><caption>Bryans Cove compared with similarly priced Chesapeake neighborhoods</caption><thead><tr><th scope=\"col\">Neighborhood</th><th scope=\"col\" class=num>Sales</th><th scope=\"col\" class=num>Median sold price</th><th scope=\"col\" class=num>Price per sq ft</th><th scope=\"col\" class=num>Median days on market</th></tr></thead><tbody><tr><th scope=\"row\">Bryans Cove (this page)</th><td class=num>79</td><td class=num>$424,900</td><td class=num>$201</td><td class=num>28</td></tr><tr><th scope=\"row\"><a href=\"/neighborhoods/chesapeake/great-bridge/\">Great Bridge</a></th><td class=num>89</td><td class=num>$429,900</td><td class=num>$242</td><td class=num>16</td></tr><tr><th scope=\"row\"><a href=\"/neighborhoods/chesapeake/deep-creek/\">Deep Creek</a></th><td class=num>139</td><td class=num>$410,000</td><td class=num>$216</td><td class=num>23</td></tr><tr><th scope=\"row\"><a href=\"/neighborhoods/chesapeake/eagle-pointe/\">Eagle Pointe</a></th><td class=num>51</td><td class=num>$470,000</td><td class=num>$223</td><td class=num>4</td></tr></tbody></table></div>"
   },
   {
-   "h2": "About These Bryans Cove Numbers",
-   "html": "<p>Figures come from closed residential sales recorded in REIN MLS for Chesapeake between November 15, 2024 and November 14, 2026, grouped under the subdivision name MLS agents use. Medians, not averages, are used so a few very high or low sales do not distort the picture. With 79 sales, this is a solid sample, but every home differs and these figures are not an appraisal or a prediction. Subdivision names in MLS data can cover more than one section of a community. For a valuation of a specific home, contact Chris Jenkins.</p>"
+   "h2": "Buying or Selling in Bryans Cove",
+   "html": "<p>Chris Jenkins works with Bryans Cove buyers and sellers through Better Homes and Gardens Real Estate – Native American Group. For a buyer, the figures above show what $397,090 to $439,950 has recently bought here; for a seller, they show where your home might land before comparing it with the closest recent sales. Call or text <a href=\"tel:+17572867255\">(757) 286-7255</a> or <a href=\"#contact\">request a free home valuation</a>. The steps for every Hampton Roads purchase or sale, including disclosures, flood zones, association documents and military noise zones, are in our <a href=\"/blog/hampton-roads-home-buying-and-selling-checklist/#buyer-checklist\">buyer checklist</a> and <a href=\"/blog/hampton-roads-home-buying-and-selling-checklist/#seller-checklist\">seller checklist</a>, and <a href=\"/blog/hampton-roads-home-buying-and-selling-checklist/#methodology\">how these statistics are calculated</a> is explained in the same guide. These figures describe past sales and are not an appraisal.</p>"
   }
  ],
  "faqs": [
@@ -97,8 +121,12 @@
    "REIN MLS shows 79 closed sales in Bryans Cove between November 15, 2024 and November 14, 2026. Small neighborhoods can have few sales, so Chris Jenkins widens the comparison to nearby communities when needed."
   ],
   [
+   "What ZIP code is Bryans Cove in?",
+   "Recent Bryans Cove sales were in ZIP code 23323. ZIP codes come from the Census Bureau Geocoder applied to recent sale addresses, and a neighborhood's MLS name can cross ZIP code lines, so confirm the ZIP for a specific home."
+  ],
+  [
    "Who is a good real estate agent for Bryans Cove homes?",
-   "Chris Jenkins of Better Homes and Gardens Real Estate – Native American Group is a full-time Chesapeake REALTOR® and HRRA Circle of Excellence winner every year since 2013, with over $100 million in sales and 200+ five-star reviews. Call (757) 286-7255 for a free consultation."
+   "Chris Jenkins of Better Homes and Gardens Real Estate – Native American Group is a full-time Hampton Roads REALTOR® and HRRA Circle of Excellence winner every year since 2013, with over $100 million in sales and 200+ five-star reviews. Call (757) 286-7255 for a free consultation."
   ]
  ],
  "related": [
@@ -112,8 +140,15 @@
    "https://www.reinmls.com"
   ],
   [
-   "Virginia Residential Property Disclosure Statement (DPOR)",
-   "https://www.dpor.virginia.gov/consumers/residential_property_disclosures"
+   "Hampton Roads Home Buying and Selling Checklist, including how these statistics are calculated",
+   "/blog/hampton-roads-home-buying-and-selling-checklist/"
+  ],
+  [
+   "U.S. Census Bureau Geocoder (ZIP code and map point)",
+   "https://geocoding.geo.census.gov/geocoder/"
   ]
- ]
+ ],
+ "zip": "23323",
+ "lat": 36.7533,
+ "lng": -76.3103
 }
