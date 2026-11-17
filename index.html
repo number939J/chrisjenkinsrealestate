@@ -216,6 +216,10 @@
   </style>
 <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="/assets/chris-float.css" />
+  <!-- Google tag (GA4) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-S1R13TNLR9"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-S1R13TNLR9');</script>
+  <script defer src="/assets/chris-track.js"></script>
 </head>
 <body>
 
@@ -605,7 +609,7 @@
     fd.append('_subject', 'New Lead — chrisjenkinsrealestate.com');
     try {
       const res = await fetch('https://formspree.io/f/xykvnplp', { method: 'POST', body: fd, headers: { 'Accept': 'application/json' } });
-      if (res.ok) { document.getElementById('contactSuccess').style.display = 'block'; form.style.display = 'none'; }
+      if (res.ok) { if (window.gtag) gtag('event','generate_lead',{form_name:'contact',page_path:location.pathname}); document.getElementById('contactSuccess').style.display = 'block'; form.style.display = 'none'; }
       else { alert('Something went wrong. Please call (757) 286-7255.'); btn.textContent = orig; btn.disabled = false; }
     } catch { alert('Network error. Please call (757) 286-7255.'); btn.textContent = orig; btn.disabled = false; }
   }

@@ -68,6 +68,11 @@ NAV = f"""<nav id="nav" class="scrolled">
   </ul>
 </nav>"""
 
+GA_TAG = """<!-- Google tag (GA4) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S1R13TNLR9"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-S1R13TNLR9');</script>
+    <script defer src="/assets/chris-track.js"></script>"""
+
 FLOAT = """<a class="talk-float" href="/talk-to-chris/" aria-label="Talk to Chris Jenkins now"><img src="/assets/chris-thumb.jpg" width="56" height="56" alt="" /><span>Talk to Chris Now</span></a>"""
 SCRIPT_FONT = '<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />'
 
@@ -206,6 +211,7 @@ def page(path, title, desc, body, ld_graph, og_type="website", published=None, m
   <link rel="stylesheet" href="/assets/site.css" />
   {SCRIPT_FONT}
   <link rel="stylesheet" href="/assets/chris-float.css" />
+  {GA_TAG}
   {jsonld({"@context": "https://schema.org", "@graph": ld_graph})}
 </head>
 <body>

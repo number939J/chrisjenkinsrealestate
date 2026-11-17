@@ -24,6 +24,10 @@
   <link rel="stylesheet" href="/assets/site.css" />
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/assets/chris-float.css" />
+  <!-- Google tag (GA4) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S1R13TNLR9"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-S1R13TNLR9');</script>
+    <script defer src="/assets/chris-track.js"></script>
   <script type="application/ld+json">
 {"@context": "https://schema.org", "@graph": [{"@type": ["Person", "RealEstateAgent"], "@id": "https://chrisjenkinsrealestate.com/#chris-jenkins", "name": "Chris Jenkins", "alternateName": "Christopher Jenkins", "jobTitle": "REALTOR®", "url": "https://chrisjenkinsrealestate.com/", "telephone": "+17572867255", "email": "chris.jenkins@nativeamericangroup.com", "image": "https://chrisjenkinsrealestate.com/headshot.jpg", "worksFor": {"@type": "RealEstateAgent", "name": "Better Homes and Gardens Real Estate – Native American Group"}, "areaServed": {"@type": "Place", "name": "Hampton Roads, Virginia"}, "hasCredential": [{"@type": "EducationalOccupationalCredential", "name": "HRRA Circle of Excellence Award Winner (2013–present)"}, {"@type": "EducationalOccupationalCredential", "name": "HRRA Realtor Rookie of the Year 2013"}]}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://chrisjenkinsrealestate.com/"}, {"@type": "ListItem", "position": 2, "name": "Neighborhoods", "item": "https://chrisjenkinsrealestate.com/neighborhoods/"}]}, {"@type": "CollectionPage", "@id": "https://chrisjenkinsrealestate.com/neighborhoods/#webpage", "url": "https://chrisjenkinsrealestate.com/neighborhoods/", "name": "Hampton Roads Neighborhood Guides | Chris Jenkins – Better Homes and Gardens Real Estate – Native American Group", "description": "Hampton Roads neighborhood guides by Chris Jenkins of Better Homes and Gardens Real Estate – Native American Group, starting with Chesapeake. Communities, home types, HOA dues and what to check before you buy or sell.", "author": {"@id": "https://chrisjenkinsrealestate.com/#chris-jenkins"}}]}
 </script>
@@ -112,7 +116,7 @@
     fd.append('_subject', 'New Lead — chrisjenkinsrealestate.com');
     try {
       const res = await fetch('https://formspree.io/f/xykvnplp', { method: 'POST', body: fd, headers: { 'Accept': 'application/json' } });
-      if (res.ok) { document.getElementById('contactSuccess').style.display = 'block'; form.style.display = 'none'; }
+      if (res.ok) { if (window.gtag) gtag('event','generate_lead',{form_name:'contact',page_path:location.pathname}); document.getElementById('contactSuccess').style.display = 'block'; form.style.display = 'none'; }
       else { alert('Something went wrong. Please call (757) 286-7255.'); btn.textContent = orig; btn.disabled = false; }
     } catch { alert('Network error. Please call (757) 286-7255.'); btn.textContent = orig; btn.disabled = false; }
   }
