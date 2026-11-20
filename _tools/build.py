@@ -17,6 +17,11 @@ GUIDE_URL = "/blog/hampton-roads-home-buying-and-selling-checklist/"
 BRAND = "Better Homes and Gardens Real Estate – Native American Group"
 AGENT = "Chris Jenkins"
 PHONE_DISPLAY, PHONE_TEL = "(757) 286-7255", "+17572867255"
+# Business address and profile links as shown on Chris's Google Business Profile
+ADDR = {"@type": "PostalAddress", "streetAddress": "5224 Indian River Rd, Suite 104", "addressLocality": "Virginia Beach", "addressRegion": "VA", "postalCode": "23464", "addressCountry": "US"}
+ADDR_LINE = "5224 Indian River Rd, Suite 104, Virginia Beach, VA 23464"
+GBP_MAP = "https://www.google.com/maps?cid=8369621191773639772"
+ZILLOW = "https://www.zillow.com/profile/Christopher%20Jenkins/"
 TODAY = datetime.date.today().isoformat()
 
 esc = lambda s: html.escape(str(s), quote=True)
@@ -81,6 +86,7 @@ FOOTER = f"""<footer>
     <a href="/">Home</a><a href="/neighborhoods/">Hampton Roads Neighborhoods</a><a href="/questions/">Hampton Roads Real Estate Questions</a><a href="/tools/neighborhood-compare/">Compare Neighborhoods</a><a href="/tools/va-loan-payment-calculator/">VA Loan Calculator</a><a href="/videos/">Videos</a><a href="/blog/">Real Estate Blog</a><a href="/talk-to-chris/">Talk to Chris</a><a href="/#contact">Contact Chris Jenkins</a>
   </div>
   <p>© {datetime.date.today().year} Chris Jenkins · {BRAND} · All Rights Reserved</p>
+  <p style="margin-top:0.4rem;">{ADDR_LINE} · <a href="tel:{PHONE_TEL}">{PHONE_DISPLAY}</a> · <a href="{GBP_MAP}" rel="noopener">Find us on Google Maps</a></p>
   <p style="margin-top:0.4rem;">Licensed in the Commonwealth of Virginia · chrisjenkinsrealestate.com</p>
 </footer>"""
 
@@ -105,7 +111,10 @@ AGENT_NODE = {
     "telephone": PHONE_TEL,
     "email": EMAIL,
     "image": OG_IMAGE,
-    "worksFor": {"@type": "RealEstateAgent", "name": BRAND},
+    "address": ADDR,
+    "hasMap": GBP_MAP,
+    "sameAs": [GBP_MAP, ZILLOW],
+    "worksFor": {"@type": "RealEstateAgent", "name": BRAND, "address": ADDR},
     "areaServed": {"@type": "Place", "name": "Hampton Roads, Virginia"},
     "hasCredential": [
         {"@type": "EducationalOccupationalCredential", "name": "HRRA Circle of Excellence Award Winner (2013–present)"},
