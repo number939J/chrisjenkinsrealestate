@@ -273,3 +273,12 @@ main.sub { padding: 80px 5%; }
 .talk-card strong { display: block; font-size: 0.66rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.3rem; }
 .talk-card span { font-size: 1.15rem; font-weight: 600; word-break: break-word; }
 @media (max-width: 700px) { .talk-grid { grid-template-columns: 1fr; } .talk-photo { max-width: 280px; } }
+
+/* Blog header images */
+.post-figure { margin: 0 0 1.75rem; }
+.post-figure img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; border-bottom: 3px solid var(--gold); box-shadow: 0 10px 34px rgba(0,0,0,0.12); }
+.post-card { padding: 0; overflow: hidden; }
+.post-card > .post-meta, .post-card > h3, .post-card > p, .post-card > .more { margin-left: 1.5rem; margin-right: 1.5rem; }
+.post-card > .post-meta { margin-top: 1.25rem; }
+.post-card > .more { margin-bottom: 1.5rem; }
+.post-card-img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; }

@@ -185,7 +185,7 @@ def side_card(title, text):
     )
 
 
-def page(path, title, desc, body, ld_graph, og_type="website", published=None, modified=None, contact=None, scripts=None, extra_head=""):
+def page(path, title, desc, body, ld_graph, og_type="website", published=None, modified=None, contact=None, scripts=None, extra_head="", og_image=None):
     url = BASE + path
     og_extra = ""
     if og_type == "article":
@@ -209,7 +209,7 @@ def page(path, title, desc, body, ld_graph, og_type="website", published=None, m
   <meta property="og:url" content="{url}" />
   <meta property="og:type" content="{og_type}" />
   <meta property="og:site_name" content="{esc(AGENT)} – {esc(BRAND)}" />
-  <meta property="og:image" content="{OG_IMAGE}" />
+  <meta property="og:image" content="{og_image or OG_IMAGE}" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="{esc(title)}" />
   <meta name="twitter:description" content="{esc(desc)}" />
@@ -559,7 +559,20 @@ def build_hood_index():
 
 
 # ---------------- blog ----------------
+def post_image(p):
+    """Return (root-relative url, absolute url) of the post's header image, or (None, None)."""
+    rel = f"/assets/blog/{p['slug']}.jpg"
+    if os.path.exists(os.path.join(ROOT, rel.lstrip("/"))):
+        return rel, BASE + rel
+    return None, None
+
+
 def build_post(p):
+    img, img_abs = post_image(p)
+    fig = ""
+    if img:
+        alt = esc((p.get("image") or {}).get("alt") or f"{p['title']} - {AGENT}, REALTOR")
+        fig = f'<figure class="post-figure"><img src="{img}" width="1672" height="941" alt="{alt}" fetchpriority="high" /></figure>'
     path = f"/blog/{p['slug']}/"
     crumbs = [("Home", "/"), ("Blog", "/blog/"), (p["title"], path)]
     rel = ""
@@ -574,6 +587,7 @@ def build_post(p):
              f'By <a href="/">{esc(AGENT)}</a> · {esc(BRAND)} · Published {fmt_date(p["date"])}' + (f' · Updated {fmt_date(p["updated"])}' if p.get("updated") and p["updated"] != p["date"] else ""))
         + crumbs_html(crumbs)
         + '<main class="sub"><div class="sub-grid"><article class="prose">'
+        + fig
         + f'<div class="tldr"><span class="tldr-label">Quick answer</span><p>{p["tldr"]}</p></div>'
         + p["body"] + rel + sources_html(p.get("sources"))
         + f'<p class="post-meta" style="margin-top:2rem;">Written by {esc(AGENT)}, REALTOR® with {esc(BRAND)}. This article is general information, not legal or financial advice.</p>'
@@ -587,14 +601,14 @@ def build_post(p):
         AGENT_NODE, crumbs_ld(crumbs),
         {"@type": "BlogPosting", "@id": BASE + path + "#article", "mainEntityOfPage": BASE + path, "headline": p["title"],
          "description": p["description"], "datePublished": p["date"], "dateModified": p.get("updated", p["date"]),
-         "author": {"@id": BASE + "/#chris-jenkins"}, "image": OG_IMAGE, "articleSection": p["category"],
+         "author": {"@id": BASE + "/#chris-jenkins"}, "image": img_abs or OG_IMAGE, "articleSection": p["category"],
          "keywords": ", ".join(p.get("keywords", [])), "inLanguage": "en-US",
          "publisher": {"@type": "RealEstateAgent", "name": f"{AGENT} – {BRAND}", "url": BASE + "/", "telephone": PHONE_TEL, "logo": {"@type": "ImageObject", "url": BASE + "/logo.png"}},
          "citation": [u for _, u in p.get("sources", [])]},
     ]
     if p.get("faqs"):
         ld.append(faq_ld(p["faqs"]))
-    write(path.strip("/") + "/index.html", page(path, title, p["description"], body, ld, "article", p["date"], p.get("updated")))
+    write(path.strip("/") + "/index.html", page(path, title, p["description"], body, ld, "article", p["date"], p.get("updated"), og_image=img_abs))
     urls.append((path, p.get("updated", p["date"]), "0.6"))
 
 
@@ -829,11 +843,18 @@ def build_talk():
     urls.append((path, "2026-11-15", "0.8"))
 
 
+def card_img(p):
+    img, _ = post_image(p)
+    if not img:
+        return ""
+    return f'<img class="post-card-img" src="{img}" width="1672" height="941" loading="lazy" alt="{esc((p.get("image") or {}).get("alt") or p["title"])}" />'
+
+
 def build_blog_index():
     path = "/blog/"
     crumbs = [("Home", "/"), ("Blog", path)]
     cards = "".join(
-        f'<a class="link-card" href="/blog/{p["slug"]}/"><div class="post-meta">{esc(p["category"])} · {fmt_date(p["date"])}</div><h3>{esc(p["title"])}</h3><p>{esc(p["description"])}</p><span class="more">Read →</span></a>'
+        f'<a class="link-card post-card" href="/blog/{p["slug"]}/">{card_img(p)}<div class="post-meta">{esc(p["category"])} · {fmt_date(p["date"])}</div><h3>{esc(p["title"])}</h3><p>{esc(p["description"])}</p><span class="more">Read →</span></a>'
         for p in POSTS
     )
     desc = f"The {AGENT} real estate blog: Hampton Roads buying and selling guides, military PCS and VA loan tips, and Chesapeake, Virginia Beach and Norfolk insight from {BRAND}."
