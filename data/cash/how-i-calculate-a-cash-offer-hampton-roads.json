@@ -1,0 +1,97 @@
+{
+ "slug": "how-i-calculate-a-cash-offer-hampton-roads",
+ "kind": "situation",
+ "crumb": "How I Calculate a Cash Offer",
+ "title": "How a Cash Offer on Your House Is Calculated | Hampton Roads",
+ "description": "The inputs behind a cash offer: comparable sales, repair costs, holding costs, resale costs and risk. Check the math before you accept any offer.",
+ "eyebrow": "Hampton Roads, Virginia · Guide",
+ "h1": "How I Calculate a Cash Offer on Your Hampton Roads House",
+ "lede": "Cash buyers rarely explain their numbers. Here is exactly what goes into mine, so you can check the math and compare it to any other offer.",
+ "tldr": "A cash offer starts from what the house would sell for after repairs, then subtracts repair costs, holding and resale costs and a margin for risk. I show you each number. It is lower than a fully prepared listing, and you can verify every input.",
+ "service_name": "How I Calculate a Cash Offer",
+ "card": "",
+ "updated": "2026-11-21",
+ "sections": [
+  {
+   "h2": "Step 1: What the House Is Worth Repaired",
+   "html": "<p>I pull recent closed sales near your address from REIN MLS, matching size, age, style and location, and estimate what your house would sell for once repaired and updated. I use closed sales, not asking prices or online estimates. For Virginia Beach and Chesapeake you can see neighborhood medians on this site, but I price from sales near your actual address.</p>"
+  },
+  {
+   "h2": "Step 2: What It Needs",
+   "html": "<p>I look at the roof, HVAC, plumbing, electrical, foundation, water issues, windows, kitchens, baths, floors and anything unpermitted. Where the work is large I get contractor numbers. You can tell me what you know, and a walk-through tightens the estimate.</p>"
+  },
+  {
+   "h2": "Step 3: What It Costs Me to Own and Resell",
+   "html": "<ul><li>Holding costs while I repair and sell: taxes, insurance, utilities and financing.</li><li>Resale costs: commission, closing costs and transfer taxes.</li><li>A margin for risk, since repair costs and market timing can both come in worse than planned.</li></ul>"
+  },
+  {
+   "h2": "The Formula in Words",
+   "html": "<p><strong>Offer = repaired value − repairs − holding costs − resale costs − risk margin.</strong></p><p>You should expect it to be lower than a prepared listing, which is why I show you both and why you should compare <a href=\"/cash-offer-vs-listing-hampton-roads/\">the net you would keep</a>. If your house is in great shape, the gap between my offer and the list price is mostly resale costs and risk, and listing may be better.</p>"
+  },
+  {
+   "h2": "How to Check Any Cash Offer, Including Mine",
+   "html": "<ul><li>Ask the buyer for the comparable sales and repair estimates they used.</li><li>Ask who the actual buyer is and whether the contract can be assigned.</li><li>Ask for proof of funds and the closing company’s name.</li><li>Get a second opinion from an agent on what the house would list for.</li></ul><p>See <a href=\"/we-buy-houses-hampton-roads/\">how to vet any cash home buyer</a>.</p>"
+  }
+ ],
+ "faqs": [
+  [
+   "Do you use online estimates like Zillow?",
+   "No. I use closed sales from REIN MLS and an inspection of the house."
+  ],
+  [
+   "Why is a cash offer lower than market value?",
+   "The buyer takes on repairs, holding and resale costs and risk. Those are subtracted from the repaired value."
+  ],
+  [
+   "Can I negotiate the offer?",
+   "Yes. If you have repair quotes or information I do not, send it and I will revisit the numbers."
+  ],
+  [
+   "Do you charge fees to the seller?",
+   "I do not charge a listing commission or upfront fees. Closing costs and taxes still apply."
+  ],
+  [
+   "Will you show me the comparable sales?",
+   "Yes. I will show you the sales and the repair estimates behind the offer."
+  ],
+  [
+   "Does the offer change after inspection?",
+   "I will tell you before you sign what could change it. I do not retrade without a real reason."
+  ],
+  [
+   "How long is an offer good for?",
+   "I will state the expiration date on the written offer."
+  ],
+  [
+   "Is this financial advice?",
+   "No. Talk to a tax advisor or attorney about your situation."
+  ]
+ ],
+ "sources": [
+  [
+   "REIN MLS closed residential sales data (November 15, 2024 – November 14, 2026)",
+   "https://www.reinmls.com"
+  ],
+  [
+   "Virginia DPOR: Residential Property Disclosure Statement (effective July 1, 2025)",
+   "https://www.dpor.virginia.gov/consumers/residential_property_disclosures"
+  ]
+ ],
+ "guides": [
+  {
+   "href": "/cash-offer-vs-listing-hampton-roads/",
+   "title": "Cash Offer vs. Listing",
+   "text": "A side-by-side way to compare what you would actually keep."
+  },
+  {
+   "href": "/how-selling-to-chris-jenkins-works/",
+   "title": "How Selling to Me Works",
+   "text": "Each step from first call to closing, and what I will not do."
+  },
+  {
+   "href": "/sell-house-as-is-virginia-beach/",
+   "title": "Selling As-Is",
+   "text": "What as-is means in Virginia and what you still must disclose."
+  }
+ ]
+}

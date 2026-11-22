@@ -1,0 +1,105 @@
+{
+ "slug": "sell-flood-damaged-house-hampton-roads",
+ "kind": "situation",
+ "crumb": "Sell a Flood-Damaged House",
+ "title": "Sell a Flood- or Storm-Damaged House in Hampton Roads, VA",
+ "description": "Flood or storm damage in Hampton Roads? The FEMA 50% rule, what you must disclose, repair-or-sell trade-offs and how a direct as-is sale works.",
+ "eyebrow": "Hampton Roads, Virginia · Guide",
+ "h1": "Selling a Flood- or Storm-Damaged House in Hampton Roads, VA",
+ "lede": "After a flood or storm, the choice is repair, sell or both. Here is how FEMA’s damage rule works, what Virginia requires you to disclose, and how an as-is sale compares.",
+ "tldr": "In a mapped flood zone, a structure is substantially damaged if repairs cost 50 percent or more of its pre-damage market value, and the decision is made by local officials. Virginia sellers must still disclose, and repetitive risk loss structures have a specific disclosure rule. Chris Jenkins buys damaged houses as-is or helps you list.",
+ "service_name": "Sell a Flood-Damaged House",
+ "card": "",
+ "updated": "2026-11-21",
+ "sections": [
+  {
+   "h2": "The 50 Percent Rule",
+   "html": "<p><a href=\"https://www.fema.gov/blog/fact-sheet-substantial-damage\" rel=\"noopener nofollow\" target=\"_blank\">FEMA says a residential structure is substantially damaged when repair costs equal or exceed 50 percent of its market value before the damage</a>, in a Special Flood Hazard Area. <a href=\"https://www.fema.gov/press-release/20250121/fact-sheet-nfip-substantial-damage-what-does-it-mean\" rel=\"noopener nofollow\" target=\"_blank\">The determination is made by a local building official or floodplain manager, not by FEMA</a>, and land value is not counted.</p><p>A substantially damaged house generally has to be brought up to current floodplain rules when it is repaired. That can include elevating the structure, which is expensive, and it is why some owners sell instead of rebuilding. Ask your city’s floodplain manager what applies to your address.</p>"
+  },
+  {
+   "h2": "What You Must Disclose",
+   "html": "<p>Selling as-is does not remove disclosure duties. See the <a href=\"https://www.dpor.virginia.gov/consumers/residential_property_disclosures\" rel=\"noopener nofollow\" target=\"_blank\">DPOR residential property disclosure statement</a>. Separately, an owner with actual knowledge that a dwelling is a <a href=\"https://law.lis.virginia.gov/vacode/title55.1/section55.1-708.2/\" rel=\"noopener nofollow\" target=\"_blank\">repetitive risk loss structure</a> must tell the purchaser. Keep photos, repair estimates, adjuster reports and claim records.</p>"
+  },
+  {
+   "h2": "Repair, List or Sell As-Is",
+   "html": "<ul><li><strong>Repair, then list:</strong> may bring the most, but you need cash, contractors and time, and a substantial-damage finding can add requirements.</li><li><strong>List as-is:</strong> buyers pay for the unknown, and many lenders and insurers will not finance a damaged house.</li><li><strong>Direct as-is sale:</strong> no repairs and no showings, at a price that reflects the damage.</li></ul><p>Read <a href=\"/blog/elevation-certificate-flood-insurance-hampton-roads-home-buyers/\">why elevation certificates matter</a> and <a href=\"/questions/do-i-need-flood-insurance-hampton-roads/\">whether you need flood insurance</a>.</p>"
+  },
+  {
+   "h2": "Insurance and Claims",
+   "html": "<p>If you have an NFIP flood policy and a substantially damaged home, FEMA notes <a href=\"https://www.fema.gov/print/txt/node/330739\" rel=\"noopener nofollow\" target=\"_blank\">Increased Cost of Compliance coverage may help with meeting local requirements</a>. Talk to your adjuster before you sell, since a sale may affect what you can claim. I cannot advise on claims.</p>"
+  }
+ ],
+ "faqs": [
+  [
+   "Can I sell a flood-damaged house as-is?",
+   "Yes, with the required disclosures. The price will reflect the damage."
+  ],
+  [
+   "What is substantial damage?",
+   "In a Special Flood Hazard Area, repairs costing 50 percent or more of the pre-damage market value, as determined by local officials."
+  ],
+  [
+   "Who decides if my house is substantially damaged?",
+   "A local building official or floodplain manager, not FEMA."
+  ],
+  [
+   "Do I have to disclose past flooding?",
+   "Use the DPOR statement honestly, and disclose repetitive risk loss status if you know it."
+  ],
+  [
+   "Should I repair before selling?",
+   "Only if the repairs add more than they cost. I will tell you honestly which it is."
+  ],
+  [
+   "Will you buy a house with mold or water damage?",
+   "I look at many conditions. Tell me what you know and I will walk the property."
+  ],
+  [
+   "Does a sale affect my insurance claim?",
+   "It may. Talk to your adjuster and agent first."
+  ],
+  [
+   "Is this insurance or legal advice?",
+   "No. Talk with your insurer and a Virginia attorney."
+  ]
+ ],
+ "sources": [
+  [
+   "FEMA: Fact sheet on substantial damage",
+   "https://www.fema.gov/blog/fact-sheet-substantial-damage"
+  ],
+  [
+   "FEMA: NFIP substantial damage, what does it mean?",
+   "https://www.fema.gov/press-release/20250121/fact-sheet-nfip-substantial-damage-what-does-it-mean"
+  ],
+  [
+   "FEMA: Increased Cost of Compliance coverage after a flood",
+   "https://www.fema.gov/print/txt/node/330739"
+  ],
+  [
+   "Virginia DPOR: Residential Property Disclosure Statement (effective July 1, 2025)",
+   "https://www.dpor.virginia.gov/consumers/residential_property_disclosures"
+  ],
+  [
+   "Va. Code § 55.1-708.2: repetitive risk loss structure disclosure",
+   "https://law.lis.virginia.gov/vacode/title55.1/section55.1-708.2/"
+  ]
+ ],
+ "guides": [
+  {
+   "href": "/sell-house-as-is-virginia-beach/",
+   "title": "Selling As-Is",
+   "text": "What as-is means in Virginia and what you still must disclose."
+  },
+  {
+   "href": "/cash-offer-vs-listing-hampton-roads/",
+   "title": "Cash Offer vs. Listing",
+   "text": "A side-by-side way to compare what you would actually keep."
+  },
+  {
+   "href": "/how-i-calculate-a-cash-offer-hampton-roads/",
+   "title": "How I Calculate a Cash Offer",
+   "text": "The inputs behind my offer, so you can check the math."
+  }
+ ]
+}

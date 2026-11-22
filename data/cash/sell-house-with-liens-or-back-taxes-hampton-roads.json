@@ -1,0 +1,109 @@
+{
+ "slug": "sell-house-with-liens-or-back-taxes-hampton-roads",
+ "kind": "situation",
+ "crumb": "Sell With Liens or Back Taxes",
+ "title": "Sell a House With Liens or Back Taxes in Hampton Roads, VA",
+ "description": "Selling a house with a lien, a judgment or delinquent real estate taxes in Virginia: how they rank, how they are paid at closing and your options.",
+ "eyebrow": "Hampton Roads, Virginia · Guide",
+ "h1": "Selling a House With Liens or Back Taxes in Hampton Roads, VA",
+ "lede": "Liens and unpaid taxes do not necessarily stop a sale, but they have to be paid or released at closing. Here is how Virginia treats them.",
+ "tldr": "In Virginia, real estate taxes carry a lien ahead of any other lien, and judgment liens attach to real estate, so the title company pays them from your proceeds at closing. If proceeds do not cover them, you need a plan before the sale. This is general information from a real estate agent, not legal or tax advice. Talk with a Virginia attorney about your situation.",
+ "service_name": "Sell With Liens or Back Taxes",
+ "card": "",
+ "updated": "2026-11-21",
+ "sections": [
+  {
+   "h2": "How the Main Liens Rank",
+   "html": "<p><a href=\"https://law.lis.virginia.gov/vacode/58.1-3340/\" rel=\"noopener nofollow\" target=\"_blank\">Virginia law gives real estate taxes a lien prior to any other lien or encumbrance</a>. Every other lien ranks behind it. <a href=\"https://law.lis.virginia.gov/vacodefull/title8.01/chapter17/article7/\" rel=\"noopener nofollow\" target=\"_blank\">A money judgment from a Virginia or federal court becomes a lien on the defendant’s real estate</a> once it is docketed.</p><p>Some local charges are handled separately. <a href=\"https://law.lis.virginia.gov/vacode/title15.2/chapter1/section15.2-104/\" rel=\"noopener nofollow\" target=\"_blank\">A lien for a local fee or charge other than real estate taxes is paid from sale proceeds as real estate taxes are required to be paid</a>.</p>"
+  },
+  {
+   "h2": "How Liens Are Paid at Closing",
+   "html": "<p>A title search before closing finds the liens. The title company or attorney requests payoff amounts, pays them from your proceeds and records the releases. You do not usually have to write separate checks, but your net proceeds are what is left after liens, the mortgage and closing costs.</p><p>If a judgment creditor does not respond, Virginia has a process in which <a href=\"https://law.lis.virginia.gov/vacodefull/title55.1/chapter31/\" rel=\"noopener nofollow\" target=\"_blank\">a settlement agent may release property from a judgment lien under conditions set out in Title 55.1, Chapter 31</a>. That is the closing agent’s call, so ask them how it would apply.</p>"
+  },
+  {
+   "h2": "Delinquent Real Estate Taxes",
+   "html": "<p>Back taxes have to be satisfied for a clean title. If taxes stay unpaid, a locality can file in circuit court to sell the property, as <a href=\"https://law.lis.virginia.gov/vacode/58.1-3967\" rel=\"noopener nofollow\" target=\"_blank\">Va. Code § 58.1-3967 describes</a>. If you are delinquent, sell or settle before that happens, and ask your city treasurer for the exact payoff.</p>"
+  },
+  {
+   "h2": "When the Liens Are Bigger Than the Equity",
+   "html": "<ul><li>You may need lender and creditor approval for a short sale.</li><li>A creditor may accept less than the full amount. Ask an attorney.</li><li>You may have to bring money to closing, which a direct buyer cannot waive.</li></ul><p>This is general information from a real estate agent, not legal or tax advice. Talk with a Virginia attorney about your situation.</p>"
+  }
+ ],
+ "faqs": [
+  [
+   "Can I sell a house with a lien on it?",
+   "Yes. The lien is paid from the proceeds at closing, or released, so the buyer gets clear title."
+  ],
+  [
+   "Do back taxes have to be paid before I sell?",
+   "They have to be paid or satisfied at closing. Get the exact payoff from your city treasurer or your closing agent."
+  ],
+  [
+   "What if a judgment lien is on my house?",
+   "It is paid from proceeds, or the closing agent follows Virginia’s release process. Tell the closing agent early."
+  ],
+  [
+   "Does a lien lower what you will offer?",
+   "The lien is paid from the price, so it lowers your net proceeds, not necessarily the offer."
+  ],
+  [
+   "What if I owe more than the house is worth?",
+   "That needs a short sale or another plan. See an attorney first."
+  ],
+  [
+   "Can a locality sell my house for back taxes?",
+   "A locality can file in circuit court to sell real estate for delinquent taxes. Act before that."
+  ],
+  [
+   "How do I find out what liens exist?",
+   "A title search finds them. A title company can run one."
+  ],
+  [
+   "Is this legal or tax advice?",
+   "No. Talk with a Virginia attorney or tax advisor."
+  ]
+ ],
+ "sources": [
+  [
+   "Va. Code § 58.1-3340: lien on real estate for taxes",
+   "https://law.lis.virginia.gov/vacode/58.1-3340/"
+  ],
+  [
+   "Va. Code § 15.2-104: liens against real estate",
+   "https://law.lis.virginia.gov/vacode/title15.2/chapter1/section15.2-104/"
+  ],
+  [
+   "Va. Code § 8.01-458: judgment lien on real estate",
+   "https://law.lis.virginia.gov/vacodefull/title8.01/chapter17/article7/"
+  ],
+  [
+   "Va. Code § 58.1-3967: proceedings to sell real estate for delinquent taxes",
+   "https://law.lis.virginia.gov/vacode/58.1-3967"
+  ],
+  [
+   "Va. Code Title 55.1, Chapter 31: release of specific property from judgment liens",
+   "https://law.lis.virginia.gov/vacodefull/title55.1/chapter31/"
+  ],
+  [
+   "Virginia Recordation Tax Act, Va. Code Title 58.1, Chapter 8",
+   "https://law.lis.virginia.gov/vacodefull/title58.1/chapter8/"
+  ]
+ ],
+ "guides": [
+  {
+   "href": "/sell-house-before-foreclosure-virginia-beach/",
+   "title": "Selling Before Foreclosure",
+   "text": "How Virginia foreclosure works and what selling first looks like."
+  },
+  {
+   "href": "/how-i-calculate-a-cash-offer-hampton-roads/",
+   "title": "How I Calculate a Cash Offer",
+   "text": "The inputs behind my offer, so you can check the math."
+  },
+  {
+   "href": "/how-selling-to-chris-jenkins-works/",
+   "title": "How Selling to Me Works",
+   "text": "Each step from first call to closing, and what I will not do."
+  }
+ ]
+}

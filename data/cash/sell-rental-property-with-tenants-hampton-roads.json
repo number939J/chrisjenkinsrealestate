@@ -1,0 +1,113 @@
+{
+ "slug": "sell-rental-property-with-tenants-hampton-roads",
+ "kind": "situation",
+ "crumb": "Sell a Rental With Tenants",
+ "title": "Sell a Rental Property With Tenants in Hampton Roads, VA",
+ "description": "Selling a tenant-occupied house in Virginia: what happens to the lease, the security deposit and the tenant, and how a direct sale can work.",
+ "eyebrow": "Hampton Roads, Virginia · Guide",
+ "h1": "Selling a Rental Property With Tenants in Hampton Roads, VA",
+ "lede": "You can sell a house with a tenant still living in it. Here is what changes for the lease, the deposit and the tenant, and what to tell any buyer.",
+ "tldr": "In Virginia a sale generally does not cancel a valid lease, and the security deposit has to be transferred to the new owner at closing under Va. Code § 55.1-1213. Chris Jenkins can buy a rental with the tenant in place or after the lease ends. This is general information from a real estate agent, not legal or tax advice. Talk with a Virginia attorney about your situation.",
+ "service_name": "Sell a Rental With Tenants",
+ "card": "",
+ "updated": "2026-11-21",
+ "sections": [
+  {
+   "h2": "Does the Lease Survive a Sale?",
+   "html": "<p>In most cases yes. <a href=\"https://tenant-rights.com/virginia/tenant-rights-when-landlord-sells-property-virginia\" rel=\"noopener nofollow\" target=\"_blank\">A tenant-rights guide for Virginia explains that a buyer normally takes the house subject to existing leases</a>, and if a new owner wants the tenant out, eviction still has to go through the court process. That means a tenant-occupied house is worth what it can earn as a rental, which can be less than an owner-occupant would pay for the same house.</p><p>The Virginia Residential Landlord and Tenant Act also covers what happens when a landlord conveys rental property. See <a href=\"https://law.lis.virginia.gov/vacode/title55.1/chapter18/section55.1-1224/\" rel=\"noopener nofollow\" target=\"_blank\">Va. Code § 55.1-1224</a>. Ask your attorney how it applies to your lease.</p>"
+  },
+  {
+   "h2": "Security Deposits Move With the Property",
+   "html": "<p><a href=\"https://law.justia.com/codes/virginia/2020/title-55-1/chapter-12/section-55-1-1213/\" rel=\"noopener nofollow\" target=\"_blank\">Under Va. Code § 55.1-1213, the current owner must transfer any security deposits and accrued interest to the new owner at the time of the transfer</a>. If a property manager holds the deposits, the statute also describes a written notice to the manager before settlement. Make sure your closing agent has the deposit amounts and lease copies.</p>"
+  },
+  {
+   "h2": "Selling Occupied vs. Selling Vacant",
+   "html": "<ul><li><strong>With the tenant in place:</strong> no vacancy, rent keeps coming in until closing, but showings are harder and many buyers want an owner-occupant.</li><li><strong>After the lease ends:</strong> the house can be shown and may sell for more, but you may carry a vacant house for a while.</li><li><strong>A direct sale:</strong> I can buy with the tenant in place and take over the lease, or after it ends, depending on your timeline. Tell me what the lease says, the rent, the deposit and whether the tenant is paying and cooperating.</li></ul>"
+  },
+  {
+   "h2": "What to Gather Before a Sale",
+   "html": "<ul><li>The signed lease and any addenda, the rent roll and the deposit amount.</li><li>Any open repair requests, code notices or inspection results.</li><li>Whether the property is in a city rental inspection district. Virginia lets localities create them under Va. Code § 36-105.1:1, and Virginia Beach and Hampton run programs.</li><li>Any notice of a mortgage default, since a landlord with a default has separate notice duties to tenants under Va. Code § 55.1-1237.</li></ul><p>This is general information from a real estate agent, not legal or tax advice. Talk with a Virginia attorney about your situation.</p>"
+  }
+ ],
+ "faqs": [
+  [
+   "Can I sell a house with a tenant in it?",
+   "Yes. The buyer generally takes it subject to the lease. Whether that lowers the price depends on the rent, the lease length and the buyer."
+  ],
+  [
+   "Do I have to give the tenant notice?",
+   "Check your lease and talk to your attorney. A new owner will normally send the tenant written instructions on where to pay rent."
+  ],
+  [
+   "What happens to the security deposit?",
+   "It must be transferred to the new owner at closing. Your closing agent should handle it."
+  ],
+  [
+   "Can the new owner evict my tenant?",
+   "A sale does not by itself end a valid lease. A new owner who wants the tenant out still has to follow Virginia’s legal process."
+  ],
+  [
+   "Will you buy with a month-to-month tenant?",
+   "I look at it case by case. Tell me the rent, how long they have stayed and whether they pay on time."
+  ],
+  [
+   "I am behind on the mortgage on a rental. Does that change anything?",
+   "Possibly. Virginia requires notice to the tenant in some default situations. Talk to your attorney first."
+  ],
+  [
+   "Is a rental sale taxed differently?",
+   "It can be. Ask a tax advisor about depreciation recapture and gains before you sell."
+  ],
+  [
+   "Do you take sides between me and my tenant?",
+   "No. I will review the lease with you and, where it matters, with your attorney."
+  ]
+ ],
+ "sources": [
+  [
+   "Va. Code § 55.1-1213: transfer of security deposits upon purchase",
+   "https://law.justia.com/codes/virginia/2020/title-55-1/chapter-12/section-55-1-1213/"
+  ],
+  [
+   "Va. Code § 55.1-1224: conveyance of premises subject to a rental agreement",
+   "https://law.lis.virginia.gov/vacode/title55.1/chapter18/section55.1-1224/"
+  ],
+  [
+   "Va. Code § 55.1-1237: notice to tenant in event of foreclosure",
+   "https://law.lis.virginia.gov/vacode/title55.1/chapter12/section55.1-1237/"
+  ],
+  [
+   "Tenant-rights.com: Tenant rights when a landlord sells in Virginia",
+   "https://tenant-rights.com/virginia/tenant-rights-when-landlord-sells-property-virginia"
+  ],
+  [
+   "Va. Code § 36-105.1:1: rental inspection districts",
+   "https://law.lis.virginia.gov/vacode/36-105.1:1"
+  ],
+  [
+   "City of Virginia Beach: Certificate of Compliance rental inspections",
+   "https://housing.virginiabeach.gov/code-enforcement/certificate-of-compliance-rental-inspections"
+  ],
+  [
+   "ACLU of Virginia: Hampton rental inspection ordinance",
+   "https://www.acluva.org/?p=4260"
+  ]
+ ],
+ "guides": [
+  {
+   "href": "/sell-vacant-house-hampton-roads/",
+   "title": "Selling a Vacant House",
+   "text": "Insurance, registration and carrying costs on an empty home."
+  },
+  {
+   "href": "/sell-house-with-code-violations-hampton-roads/",
+   "title": "Selling With Code Violations",
+   "text": "How Virginia notices of violation work and what a sale changes."
+  },
+  {
+   "href": "/cash-offer-vs-listing-hampton-roads/",
+   "title": "Cash Offer vs. Listing",
+   "text": "A side-by-side way to compare what you would actually keep."
+  }
+ ]
+}

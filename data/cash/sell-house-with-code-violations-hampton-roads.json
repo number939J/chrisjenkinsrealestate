@@ -1,0 +1,101 @@
+{
+ "slug": "sell-house-with-code-violations-hampton-roads",
+ "kind": "situation",
+ "crumb": "Sell With Code Violations",
+ "title": "Sell a House With Code Violations in Hampton Roads, VA",
+ "description": "Got a city notice of violation? How Virginia maintenance-code enforcement works, why you cannot dodge it by transferring, and how to sell as-is.",
+ "eyebrow": "Hampton Roads, Virginia · Guide",
+ "h1": "Selling a House With Code Violations in Hampton Roads, VA",
+ "lede": "A notice of violation does not stop you from selling, but it does not go away on its own either. Here is how Virginia code enforcement works and your options.",
+ "tldr": "Localities enforce the Virginia Maintenance Code and issue notices of violation to owners. In Virginia Beach, correction times range from 24 hours to 30 days depending on the violation. Pending enforcement follows the owner even if the property moves to an entity the owner controls. This is general information from a real estate agent, not legal or tax advice. Talk with a Virginia attorney about your situation.",
+ "service_name": "Sell With Code Violations",
+ "card": "",
+ "updated": "2026-11-21",
+ "sections": [
+  {
+   "h2": "How a Notice of Violation Works",
+   "html": "<p>Under the <a href=\"https://law.lis.virginia.gov/admincode/title13/agency5/chapter63/section485/\" rel=\"noopener nofollow\" target=\"_blank\">Virginia Maintenance Code, a code official who finds violations issues a correction notice or notice of violation to the owner or the responsible person</a>. Localities enforce it. <a href=\"https://housing.virginiabeach.gov/code-enforcement/types-of-violations/building-maintenance-inspections\" rel=\"noopener nofollow\" target=\"_blank\">Virginia Beach says owners are notified by mail and given from 24 hours to 30 days to correct violations, depending on severity</a>. Norfolk lists code enforcement among its <a href=\"https://norfolk.gov/1096/Code-Enforcement\" rel=\"noopener nofollow\" target=\"_blank\">tools to achieve compliance</a>.</p>"
+  },
+  {
+   "h2": "What a Sale Does and Does Not Change",
+   "html": "<p>Do not assume a transfer ends the problem. <a href=\"https://law.lis.virginia.gov/admincode/title13/agency5/chapter63/section150/\" rel=\"noopener nofollow\" target=\"_blank\">The code says that if enforcement has begun and the owner transfers the property to an entity in which the owner holds more than a 50 percent interest, the pending action continues against the owner</a>.</p><p>Open violations, unpermitted work and unpaid fines should be disclosed to a buyer and checked by the title company. Ask your city for the status of any case and any fines or liens before closing.</p>"
+  },
+  {
+   "h2": "Fix, List or Sell As-Is",
+   "html": "<ul><li><strong>Fix, then list:</strong> works when the fixes are cheap and quick, and the city will confirm they are closed.</li><li><strong>List with the violation:</strong> many buyers and lenders will not take on open violations.</li><li><strong>Sell as-is to a direct buyer:</strong> I can buy a house with violations and take over the repairs, at a price that reflects the cost. Tell me what the notice says and the deadline.</li></ul><p>Compare the numbers in <a href=\"/cash-offer-vs-listing-hampton-roads/\">cash offer vs. listing</a>.</p>"
+  },
+  {
+   "h2": "Rentals and Vacant Houses",
+   "html": "<p>Violations are common on rentals and empty houses. Read about <a href=\"/sell-vacant-house-hampton-roads/\">selling a vacant house</a> and <a href=\"/sell-rental-property-with-tenants-hampton-roads/\">selling a rental</a>.</p>"
+  }
+ ],
+ "faqs": [
+  [
+   "Can I sell a house that has a notice of violation?",
+   "Yes, but the violation should be disclosed and dealt with at or before closing."
+  ],
+  [
+   "How long do I have to fix a violation?",
+   "It depends on the violation and the city. Virginia Beach says 24 hours to 30 days depending on severity."
+  ],
+  [
+   "Will the buyer inherit my fines?",
+   "Check with the city and the title company. Fines and liens should be handled at closing."
+  ],
+  [
+   "Can I avoid a violation by transferring to an LLC?",
+   "Not if you own more than 50 percent of the entity and enforcement is pending. The case continues against you."
+  ],
+  [
+   "Will you buy a house with violations?",
+   "I look at many conditions. Tell me what the notice says and what has been done."
+  ],
+  [
+   "Do I need a permit for past work?",
+   "Unpermitted work can create violations. Ask the city and a licensed contractor."
+  ],
+  [
+   "What if I disagree with the notice?",
+   "Virginia has an appeals process. Ask your city and an attorney."
+  ],
+  [
+   "Is this legal advice?",
+   "No. Talk with a Virginia attorney."
+  ]
+ ],
+ "sources": [
+  [
+   "13VAC5-63-485: Virginia Maintenance Code, violations and notices",
+   "https://law.lis.virginia.gov/admincode/title13/agency5/chapter63/section485/"
+  ],
+  [
+   "13VAC5-63-150: Virginia Maintenance Code, enforcement and transfers of ownership",
+   "https://law.lis.virginia.gov/admincode/title13/agency5/chapter63/section150/"
+  ],
+  [
+   "City of Virginia Beach: Building maintenance inspections",
+   "https://housing.virginiabeach.gov/code-enforcement/types-of-violations/building-maintenance-inspections"
+  ],
+  [
+   "City of Norfolk: Code Enforcement",
+   "https://norfolk.gov/1096/Code-Enforcement"
+  ]
+ ],
+ "guides": [
+  {
+   "href": "/sell-vacant-house-hampton-roads/",
+   "title": "Selling a Vacant House",
+   "text": "Insurance, registration and carrying costs on an empty home."
+  },
+  {
+   "href": "/sell-rental-property-with-tenants-hampton-roads/",
+   "title": "Selling a Rental With Tenants",
+   "text": "What happens to the lease, the deposit and the tenant when you sell."
+  },
+  {
+   "href": "/sell-house-as-is-virginia-beach/",
+   "title": "Selling As-Is",
+   "text": "What as-is means in Virginia and what you still must disclose."
+  }
+ ]
+}
