@@ -19,6 +19,10 @@
    "html": "<p>Virginia Beach is too big to treat as one market. REIN MLS splits it into eight market areas, and the price gap between neighborhoods is enormous. REIN records show <strong>12,010 closed residential sales in Virginia Beach between November 15, 2024 and November 14, 2026</strong>. The citywide median sold price was $405,000, the median home took 15 days to sell, and the median price per square foot was $240.</p><p>Inside that average, the median in <a href=\"/neighborhoods/virginia-beach/campus-east/\">Campus East</a> was $250,000 (0.6x the citywide figure), while in <a href=\"/neighborhoods/virginia-beach/ashville-park/\">Ashville Park</a> it was $1,218,153 (3.0x). That is why I do not give a cash offer from a citywide number. I look at the sold prices closest to your address, the condition of your house and the work it needs, and then show you how I got to the offer.</p><p>If you would like the full local picture first, the <a href=\"/neighborhoods/virginia-beach/\">Virginia Beach neighborhood guides</a> show the numbers for each community, and <a href=\"/questions/median-home-price-virginia-beach-va/\">this short answer</a> covers the citywide median.</p>"
   },
   {
+   "h2": "Virginia Beach Housing Snapshot From the U.S. Census",
+   "html": "<p>About two in three homes are owner-occupied, so most sellers here are homeowners rather than landlords. The Census median is an owner-reported estimate, so it will not match the REIN sold-price median above.</p><table class=\"facts\"><tr><th>Owner-occupied housing rate</th><td>65.1%</td></tr><tr><th>Median value of owner-occupied homes</th><td>$382,500</td></tr><tr><th>Median gross rent</th><td>$1,714</td></tr></table><p>Source: <a href=\"https://www.census.gov/quickfacts/virginiabeachcityvirginia\" rel=\"noopener nofollow\" target=\"_blank\">U.S. Census Bureau QuickFacts, Virginia Beach city</a>, 2020–2024 American Community Survey estimates.</p>"
+  },
+  {
    "h2": "Cash Home Buyers in Virginia Beach: Where Older Homes Are",
    "html": "<p>A direct cash sale is most useful when a house has deferred maintenance, dated finishes or systems nearing the end of their life. Older neighborhoods are where that is most common. This table uses closed-sale data, which includes every kind of sale, not just cash sales, so treat it as context for pricing rather than a count of cash deals.</p><p><table class=\"facts\"><tr><th>Neighborhood</th><td>Median sold price (vs. citywide $405,000) · median year built · sales in 24 months</td></tr><tr><th><a href=\"/neighborhoods/virginia-beach/aragona-village/\">Aragona Village</a></th><td>$345,000 (0.9x) · built 1958 · 234 sales</td></tr><tr><th><a href=\"/neighborhoods/virginia-beach/princess-anne-plaza/\">Princess Anne Plaza</a></th><td>$360,000 (0.9x) · built 1963 · 280 sales</td></tr><tr><th><a href=\"/neighborhoods/virginia-beach/kings-grant/\">Kings Grant</a></th><td>$619,000 (1.5x) · built 1968 · 111 sales</td></tr><tr><th><a href=\"/neighborhoods/virginia-beach/green-run/\">Green Run</a></th><td>$329,000 (0.8x) · built 1979 · 324 sales</td></tr><tr><th><a href=\"/neighborhoods/virginia-beach/timberlake/\">Timberlake</a></th><td>$320,000 (0.8x) · built 1979 · 116 sales</td></tr><tr><th><a href=\"/neighborhoods/virginia-beach/kempsville-lake/\">Kempsville Lake</a></th><td>$315,000 (0.8x) · built 1984 · 139 sales</td></tr></table></p><p>Older homes usually need the kind of work buyers on the open market push back on: roofs, HVAC, plumbing, windows, kitchens and baths. If you would rather not take that on, a cash sale lets you sell the house as it stands. If your home is already updated and well kept, listing will often bring more, and I will tell you that.</p>"
   },
@@ -110,6 +114,10 @@
   [
    "South Hampton Roads: U.S. military installations",
    "https://en.wikipedia.org/wiki/South_Hampton_Roads"
+  ],
+  [
+   "U.S. Census Bureau QuickFacts: Virginia Beach city, Virginia (2020–2024)",
+   "https://www.census.gov/quickfacts/virginiabeachcityvirginia"
   ]
  ]
 }

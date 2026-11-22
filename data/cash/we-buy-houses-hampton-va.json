@@ -19,6 +19,10 @@
    "html": "<p>Hampton is one of the oldest English-speaking communities in the country, and its housing stock shows it: mid-century neighborhoods, waterfront streets and newer pockets all sit within a few miles. That mix is why a Hampton offer has to come from sales near your address.</p><p>I have not published Hampton neighborhood statistics on this site yet, so I will not quote a median here. Send me your address and I will pull the closed sales nearby from REIN MLS and show you the numbers behind any offer.</p>"
   },
   {
+   "h2": "Hampton Housing Snapshot From the U.S. Census",
+   "html": "<p>Hampton has the lowest median owner-reported home value of the seven cities, which is one reason accurate nearby comps matter so much.</p><table class=\"facts\"><tr><th>Owner-occupied housing rate</th><td>56.9%</td></tr><tr><th>Median value of owner-occupied homes</th><td>$245,700</td></tr><tr><th>Median gross rent</th><td>$1,427</td></tr></table><p>Source: <a href=\"https://www.census.gov/quickfacts/hamptoncityvirginia\" rel=\"noopener nofollow\" target=\"_blank\">U.S. Census Bureau QuickFacts, Hampton city</a>, 2020–2024 American Community Survey estimates.</p>"
+  },
+  {
    "h2": "Hampton Rental Inspection Districts",
    "html": "<p>Hampton set up rental inspection districts by ordinance in October 2013, according to the <a href=\"https://www.acluva.org/?p=4260\" rel=\"noopener nofollow\" target=\"_blank\">ACLU of Virginia</a>, and the city also adopted <a href=\"https://www.whro.org/local-government/2024-07-17/hampton-mailing-notices-of-new-rules-to-known-short-term-rental-owners-this-week\" rel=\"noopener nofollow\" target=\"_blank\">new short-term rental rules reported by WHRO</a>.</p><p>Virginia law allows localities to create <a href=\"https://law.lis.virginia.gov/vacode/36-105.1:1\" rel=\"noopener nofollow\" target=\"_blank\">rental inspection districts</a>. If you own a Hampton rental and want out of inspections, repairs or turnover, tell me about the lease, the rent and the condition. Please confirm current city requirements for your address.</p>"
   },
@@ -89,6 +93,10 @@
   [
    "Va. Code § 55.1-708.2: repetitive risk loss structure disclosure",
    "https://law.lis.virginia.gov/vacode/title55.1/section55.1-708.2/"
+  ],
+  [
+   "U.S. Census Bureau QuickFacts: Hampton city, Virginia (2020–2024)",
+   "https://www.census.gov/quickfacts/hamptoncityvirginia"
   ]
  ],
  "guides": [

@@ -19,6 +19,10 @@
    "html": "<p>Chesapeake is not one market. REIN MLS records show <strong>7,291 closed residential sales in Chesapeake between November 15, 2024 and November 14, 2026</strong>. The citywide median sold price was $420,000, the median home took 18 days to sell, and the median price per square foot was $219.</p><p>Neighborhoods vary widely. The median sold price in <a href=\"/neighborhoods/chesapeake/riverwalk/\">Riverwalk</a> was $281,750 (0.7x the citywide median), while in <a href=\"/neighborhoods/chesapeake/hickory/\">Hickory</a> it was $717,500 (1.7x). A citywide average hides all of that, which is why I price every cash offer from sales near your address and show you the numbers.</p><p>You can explore the full <a href=\"/neighborhoods/chesapeake/\">Chesapeake neighborhood guides</a> for the statistics on each community, or read <a href=\"/questions/median-home-price-chesapeake-va/\">this short answer on Chesapeake home prices</a>.</p>"
   },
   {
+   "h2": "Chesapeake Housing Snapshot From the U.S. Census",
+   "html": "<p>Chesapeake has the highest owner-occupancy of the seven cities, so most sellers are homeowners. Census values are owner estimates and differ from the REIN sold-price median above.</p><table class=\"facts\"><tr><th>Owner-occupied housing rate</th><td>74.4%</td></tr><tr><th>Median value of owner-occupied homes</th><td>$378,400</td></tr><tr><th>Median gross rent</th><td>$1,586</td></tr></table><p>Source: <a href=\"https://www.census.gov/quickfacts/chesapeakecityvirginia\" rel=\"noopener nofollow\" target=\"_blank\">U.S. Census Bureau QuickFacts, Chesapeake city</a>, 2020–2024 American Community Survey estimates.</p>"
+  },
+  {
    "h2": "Where a Cash Sale Fits in Chesapeake’s Neighborhoods",
    "html": "<p>A direct sale is most useful when a house needs work or you cannot wait. Older neighborhoods are where deferred maintenance is most common, while newer construction can take much longer to sell on the open market. This closed-sale data includes every kind of sale, not just cash sales, so treat it as context for pricing.</p><p><table class=\"facts\"><tr><th>Neighborhood</th><td>Median sold price (vs. citywide $420,000) · median year built · median days on market</td></tr><tr><th><a href=\"/neighborhoods/chesapeake/south-norfolk/\">South Norfolk</a></th><td>$297,000 (0.7x) · built 1956 · 23 days · 217 sales</td></tr><tr><th><a href=\"/neighborhoods/chesapeake/plymouth-park/\">Plymouth Park</a></th><td>$285,000 (0.7x) · built 1958 · 17 days · 113 sales</td></tr><tr><th><a href=\"/neighborhoods/chesapeake/portlock-terrace/\">Portlock Terrace</a></th><td>$319,250 (0.8x) · built 1960 · 18 days · 58 sales</td></tr><tr><th><a href=\"/neighborhoods/chesapeake/greenbrier/\">Greenbrier</a></th><td>$275,000 (0.7x) · built 1984 · 18 days · 170 sales</td></tr><tr><th><a href=\"/neighborhoods/chesapeake/jolliff-landing-at-western-branch/\">Jolliff Landing at Western Branch</a></th><td>$554,900 (1.3x) · built 2025 · 33 days · 119 sales</td></tr><tr><th><a href=\"/neighborhoods/chesapeake/retreat-at-edinburgh/\">Retreat at Edinburgh</a></th><td>$557,740 (1.3x) · built 2025 · 61 days · 60 sales</td></tr></table></p><p>The last two rows are a useful reminder: newer homes can sit much longer on the market than older ones. If you need to move on a deadline, that wait is a real cost, and it is one reason some owners choose certainty over the highest possible price.</p>"
   },
@@ -106,6 +110,10 @@
   [
    "Virginia DPOR: Residential Property Disclosure Statement (effective July 1, 2025)",
    "https://www.dpor.virginia.gov/consumers/residential_property_disclosures"
+  ],
+  [
+   "U.S. Census Bureau QuickFacts: Chesapeake city, Virginia (2020–2024)",
+   "https://www.census.gov/quickfacts/chesapeakecityvirginia"
   ]
  ]
 }

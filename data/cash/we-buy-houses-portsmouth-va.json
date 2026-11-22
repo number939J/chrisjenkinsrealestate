@@ -19,6 +19,10 @@
    "html": "<p>Portsmouth is a compact city across the Elizabeth River from Norfolk, with historic Olde Towne, older neighborhoods and newer pockets. Values vary block to block, so a cash offer has to be built from sales near your address.</p><p>I have not published Portsmouth neighborhood statistics on this site yet, so I will not quote a median. Send your address and I will pull the nearby closed sales from REIN MLS and show you the numbers.</p>"
   },
   {
+   "h2": "Portsmouth Housing Snapshot From the U.S. Census",
+   "html": "<p>Portsmouth has the lowest median gross rent of the seven cities and a median owner-reported value close to Hampton’s.</p><table class=\"facts\"><tr><th>Owner-occupied housing rate</th><td>57.9%</td></tr><tr><th>Median value of owner-occupied homes</th><td>$246,900</td></tr><tr><th>Median gross rent</th><td>$1,300</td></tr></table><p>Source: <a href=\"https://www.census.gov/quickfacts/portsmouthcityvirginia\" rel=\"noopener nofollow\" target=\"_blank\">U.S. Census Bureau QuickFacts, Portsmouth city</a>, 2020–2024 American Community Survey estimates.</p>"
+  },
+  {
    "h2": "Shipyard and Naval Medical Center Households",
    "html": "<p>Portsmouth is home to <a href=\"https://en.wikipedia.org/wiki/South_Hampton_Roads\" rel=\"noopener nofollow\" target=\"_blank\">Norfolk Naval Shipyard and Naval Medical Center Portsmouth</a>. Many sellers here are on orders or changing jobs at the yard. Tell me your dates and I will say honestly whether a direct sale, listing or rental fits. Read <a href=\"/blog/va-loan-entitlement-pcs-move-norfolk-hampton-roads/\">VA loan entitlement and PCS moves</a> first.</p>"
   },
@@ -85,6 +89,10 @@
   [
    "Virginia DPOR: Residential Property Disclosure Statement (effective July 1, 2025)",
    "https://www.dpor.virginia.gov/consumers/residential_property_disclosures"
+  ],
+  [
+   "U.S. Census Bureau QuickFacts: Portsmouth city, Virginia (2020–2024)",
+   "https://www.census.gov/quickfacts/portsmouthcityvirginia"
   ]
  ],
  "guides": [

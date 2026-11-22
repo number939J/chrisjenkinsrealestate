@@ -19,6 +19,10 @@
    "html": "<p>Suffolk is the <a href=\"https://virginiaplaces.org/vacities/24suff.html\" rel=\"noopener nofollow\" target=\"_blank\">largest city in Virginia by land area, at 430 square miles</a>. The north has suburban neighborhoods close to the rest of Hampton Roads, while the south is rural. A house on a half-acre in a subdivision and a farmhouse on ten acres are different markets.</p><p>I have not published Suffolk neighborhood statistics on this site yet, so I will not quote a median. Send your address and I will pull comparable closed sales from REIN MLS and show you the numbers. Rural properties can have few close comparables, and I will tell you when that makes pricing harder.</p>"
   },
   {
+   "h2": "Suffolk Housing Snapshot From the U.S. Census",
+   "html": "<p>Suffolk’s high owner-occupancy fits its mix of suburban subdivisions and rural property, where most owners live in the home they are selling.</p><table class=\"facts\"><tr><th>Owner-occupied housing rate</th><td>70.7%</td></tr><tr><th>Median value of owner-occupied homes</th><td>$347,400</td></tr><tr><th>Median gross rent</th><td>$1,563</td></tr></table><p>Source: <a href=\"https://www.census.gov/quickfacts/suffolkcityvirginia\" rel=\"noopener nofollow\" target=\"_blank\">U.S. Census Bureau QuickFacts, Suffolk city</a>, 2020–2024 American Community Survey estimates.</p>"
+  },
+  {
    "h2": "Rural Property, Wells, Septic and Acreage",
    "html": "<p>Rural Suffolk properties often have well water, a septic system, outbuildings or acreage. Those items affect value and what a buyer will accept. Tell me what you know about each, including any old tanks or unpermitted additions, and I will say honestly whether I can take the property on.</p><p>Disclosure rules still apply as-is. See the <a href=\"https://www.dpor.virginia.gov/consumers/residential_property_disclosures\" rel=\"noopener nofollow\" target=\"_blank\">DPOR statement</a> and the <a href=\"/blog/virginia-residential-property-disclosure-statement-hampton-roads/\">plain-English guide</a>.</p>"
   },
@@ -77,6 +81,10 @@
   [
    "Virginia DPOR: Residential Property Disclosure Statement (effective July 1, 2025)",
    "https://www.dpor.virginia.gov/consumers/residential_property_disclosures"
+  ],
+  [
+   "U.S. Census Bureau QuickFacts: Suffolk city, Virginia (2020–2024)",
+   "https://www.census.gov/quickfacts/suffolkcityvirginia"
   ]
  ],
  "guides": [
