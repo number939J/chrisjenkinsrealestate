@@ -1,0 +1,76 @@
+{
+ "slug": "sell-inherited-house-virginia-beach",
+ "kind": "situation",
+ "crumb": "Sell an Inherited House",
+ "title": "Sell an Inherited House in Virginia Beach, VA | Probate Guide",
+ "description": "How to sell an inherited house in Virginia Beach and Hampton Roads: probate, who can sign, timing and options, plus when a cash sale helps.",
+ "eyebrow": "Virginia Beach, Virginia · Guide",
+ "h1": "How to Sell an Inherited House in Virginia Beach and Hampton Roads",
+ "lede": "Inheriting a house can mean costs and decisions at a hard time. Here is how probate and sale work in Virginia, in plain language.",
+ "tldr": "In Virginia, probate is handled by the circuit court clerk where the person lived, and generally only a qualified executor or administrator can sell. This is general information, not legal advice. Chris Jenkins can buy for cash or list.",
+ "service_name": "Sell an Inherited House",
+ "card": "",
+ "updated": "2026-11-21",
+ "sections": [
+  {
+   "h2": "Step 1: Find Who Has Authority to Sign",
+   "html": "<p><a href=\"https://vsb.org/TE/groups/TE/probate.aspx\" rel=\"noopener nofollow\" target=\"_blank\">Probate is handled by the circuit court clerk in the city or county where the person lived</a>. Under Virginia law an executor named in a will, or an administrator the court appoints, typically has authority only after qualifying. See also <a href=\"https://www.pubs.ext.vt.edu/content/pubs_ext_vt_edu/en/448/448-067/448-067.html\" rel=\"noopener nofollow\" target=\"_blank\">Virginia Cooperative Extension’s guide to settling an estate</a>.</p><p>A personal representative’s power to sell real estate is addressed in <a href=\"https://law.lis.virginia.gov/vacode/title64.2/section64.2-521/\" rel=\"noopener nofollow\" target=\"_blank\">Va. Code § 64.2-521</a>. Ask a Virginia attorney what applies to your estate.</p>"
+  },
+  {
+   "h2": "Step 2: Decide Keep, List or Sell for Cash",
+   "html": "<ul><li><strong>Keep or rent:</strong> best if you want the asset and can cover taxes and upkeep.</li><li><strong>List:</strong> usually the highest price, but you must prepare the house.</li><li><strong>Sell for cash as-is:</strong> faster and no repairs, usually at a lower price.</li></ul><p>Heirs often disagree, so settle this early, in writing.</p>"
+  },
+  {
+   "h2": "Step 3: Costs While You Decide",
+   "html": "<p>Taxes, insurance, utilities and upkeep continue. Recordation tax and other transfer costs fall under <a href=\"https://law.lis.virginia.gov/vacodefull/title58.1/chapter8/\" rel=\"noopener nofollow\" target=\"_blank\">the Virginia Recordation Tax Act</a>; your closing agent will itemize them.</p>"
+  }
+ ],
+ "faqs": [
+  [
+   "Can I sell an inherited house before probate ends?",
+   "Often only after the personal representative qualifies. Ask a Virginia attorney."
+  ],
+  [
+   "Do all heirs have to agree?",
+   "It depends on the will and how title passes. With several heirs, get legal advice before listing or accepting any offer."
+  ],
+  [
+   "What if the house needs lots of work?",
+   "A direct as-is sale avoids repairs and showings. Compare it against listing."
+  ],
+  [
+   "Is the information here legal advice?",
+   "No. It is general information from a real estate agent. Consult a Virginia attorney."
+  ]
+ ],
+ "sources": [
+  [
+   "Virginia State Bar: Probate in Virginia",
+   "https://vsb.org/TE/groups/TE/probate.aspx"
+  ],
+  [
+   "Virginia Cooperative Extension: Settling an estate in Virginia",
+   "https://www.pubs.ext.vt.edu/content/pubs_ext_vt_edu/en/448/448-067/448-067.html"
+  ],
+  [
+   "Va. Code § 64.2-521: personal representative's power to sell real estate",
+   "https://law.lis.virginia.gov/vacode/title64.2/section64.2-521/"
+  ],
+  [
+   "Virginia Recordation Tax Act, Va. Code Title 58.1, Chapter 8",
+   "https://law.lis.virginia.gov/vacodefull/title58.1/chapter8/"
+  ]
+ ],
+ "guides": [
+  {
+   "href": "/blog/virginia-residential-property-disclosure-statement-hampton-roads/",
+   "title": "Virginia Property Disclosure Statement",
+   "text": "What sellers must disclose in Hampton Roads and how the form works."
+  },
+  {
+   "href": "/questions/how-to-price-your-home-to-sell-hampton-roads/",
+   "title": "How to Price Your Home to Sell",
+   "text": "How closed sales, not asking prices, set a realistic list price."
+  }
+ ]
+}

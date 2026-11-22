@@ -83,7 +83,7 @@ SCRIPT_FONT = '<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&
 
 FOOTER = f"""<footer>
   <div class="footer-links">
-    <a href="/">Home</a><a href="/neighborhoods/">Hampton Roads Neighborhoods</a><a href="/questions/">Hampton Roads Real Estate Questions</a><a href="/tools/neighborhood-compare/">Compare Neighborhoods</a><a href="/tools/va-loan-payment-calculator/">VA Loan Calculator</a><a href="/videos/">Videos</a><a href="/blog/">Real Estate Blog</a><a href="/talk-to-chris/">Talk to Chris</a><a href="/#contact">Contact Chris Jenkins</a>
+    <a href="/">Home</a><a href="/neighborhoods/">Hampton Roads Neighborhoods</a><a href="/questions/">Hampton Roads Real Estate Questions</a><a href="/tools/neighborhood-compare/">Compare Neighborhoods</a><a href="/tools/va-loan-payment-calculator/">VA Loan Calculator</a><a href="/we-buy-houses-hampton-roads/">Sell Your House for Cash</a><a href="/videos/">Videos</a><a href="/blog/">Real Estate Blog</a><a href="/talk-to-chris/">Talk to Chris</a><a href="/#contact">Contact Chris Jenkins</a>
   </div>
   <p>© {datetime.date.today().year} Chris Jenkins · {BRAND} · All Rights Reserved</p>
   <p style="margin-top:0.4rem;">{ADDR_LINE} · <a href="tel:{PHONE_TEL}">{PHONE_DISPLAY}</a> · <a href="{GBP_MAP}" rel="noopener">Find us on Google Maps</a></p>
@@ -185,7 +185,7 @@ def side_card(title, text):
     )
 
 
-def page(path, title, desc, body, ld_graph, og_type="website", published=None, modified=None):
+def page(path, title, desc, body, ld_graph, og_type="website", published=None, modified=None, contact=None, scripts=None, extra_head=""):
     url = BASE + path
     og_extra = ""
     if og_type == "article":
@@ -220,13 +220,14 @@ def page(path, title, desc, body, ld_graph, og_type="website", published=None, m
   <link rel="stylesheet" href="/assets/site.css" />
   {SCRIPT_FONT}
   <link rel="stylesheet" href="/assets/chris-float.css" />
+  {extra_head}
   {GA_TAG}
   {jsonld({"@context": "https://schema.org", "@graph": ld_graph})}
 </head>
 <body>
 {NAV}
 """
-    return head + body + "\n" + CONTACT + "\n<!-- FOOTER -->\n" + FAIR + "\n" + FOOTER + "\n" + SCRIPTS + "\n" + FLOAT + "\n</body>\n</html>\n"
+    return head + body + "\n" + (contact or CONTACT) + "\n<!-- FOOTER -->\n" + FAIR + "\n" + FOOTER + "\n" + (scripts or SCRIPTS) + "\n" + FLOAT + "\n</body>\n</html>\n"
 
 
 def hero(eyebrow, h1, lede, byline=""):
@@ -252,7 +253,190 @@ QUESTIONS = load_dir("questions")
 Q_BY = {q["slug"]: q for q in QUESTIONS}
 POSTS = sorted(load_dir("posts"), key=lambda p: p["date"], reverse=True)
 HOOD_BY = {(h["city_slug"], h["slug"]): h for h in HOODS}
+CASH = load_dir("cash")  # "we buy houses" / cash-offer landing pages (data/cash/*.json)
+CASH_BY = {c["slug"]: c for c in CASH}
+CASH_HUB = "we-buy-houses-hampton-roads"
+CASH_CITIES = [("virginia-beach", "Virginia Beach"), ("norfolk", "Norfolk"), ("chesapeake", "Chesapeake"), ("newport-news", "Newport News"), ("hampton", "Hampton"), ("portsmouth", "Portsmouth"), ("suffolk", "Suffolk")]
+cash_city_slug = lambda cs: f"we-buy-houses-{cs}-va"
 urls = []  # (path, lastmod, priority)
+
+
+# ---------------- cash-offer ("we buy houses") landing pages ----------------
+def cash_city_note(cs, name):
+    if cash_city_slug(cs) not in CASH_BY:
+        return ""
+    return (f'<h2>Need to Sell Your {esc(name)} Home Fast?</h2><p>If you would rather skip repairs and showings, {esc(AGENT)} makes '
+            f'<a href="/{cash_city_slug(cs)}/">cash offers on {esc(name)} homes</a> and will tell you honestly when listing would net you more. '
+            f'See also the guide to <a href="/{CASH_HUB}/">cash home buyers across Hampton Roads</a>.</p>')
+
+
+def cash_hood_note(cs, hood_name, city_name):
+    if cash_city_slug(cs) not in CASH_BY:
+        return ""
+    return (f'<h2>Selling Fast in {esc(hood_name)}?</h2><p>If you need to sell without repairs or showings, '
+            f'<a href="/{cash_city_slug(cs)}/">see how a cash sale works in {esc(city_name)}</a> and compare it with listing.</p>')
+
+
+CASH_CONTACT = f"""<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-inner">
+    <p class="section-eyebrow">Get Your Cash Offer</p>
+    <h2 class="section-title">Tell Me About Your House</h2>
+    <div class="section-line center" style="background:var(--gold);"></div>
+    <p class="contact-sub">Share the address and a little about your situation. I will review it personally and follow up with a no-obligation offer, or tell you honestly if listing would serve you better. Prefer to talk first? Call or text {PHONE_DISPLAY}.</p>
+    <div id="contactSuccess">Thank you! I'll review your property and be in touch within one business day.<br/><small style="font-size:0.8rem;font-family:'Montserrat',sans-serif;color:rgba(255,255,255,0.5);margin-top:0.5rem;display:block;">Or call me directly: {PHONE_DISPLAY}</small></div>
+    <form class="contact-form" id="cashForm" onsubmit="handleCashForm(event)">
+      <div class="form-group"><label for="k-address">Property Address</label><input type="text" id="k-address" required autocomplete="street-address" placeholder="123 Main St, Norfolk, VA" /></div>
+      <div class="form-row">
+        <div class="form-group"><label for="k-first">First Name</label><input type="text" id="k-first" required placeholder="Jane" /></div>
+        <div class="form-group"><label for="k-last">Last Name</label><input type="text" id="k-last" required placeholder="Smith" /></div>
+      </div>
+      <div class="form-row">
+        <div class="form-group"><label for="k-phone">Phone Number</label><input type="tel" id="k-phone" required placeholder="(757) 555-0100" /></div>
+        <div class="form-group"><label for="k-email">Email Address</label><input type="email" id="k-email" placeholder="jane@email.com" /></div>
+      </div>
+      <div class="form-row">
+        <div class="form-group"><label for="k-situation">What's Going On?</label><select id="k-situation"><option value="">Select one</option><option>Needs repairs / sell as-is</option><option>Inherited or probate</option><option>Behind on payments / foreclosure</option><option>Divorce or separation</option><option>Relocating or PCS move</option><option>Tired landlord / rental property</option><option>Vacant property</option><option>Other</option></select></div>
+        <div class="form-group"><label for="k-timeline">How Soon Do You Need to Sell?</label><select id="k-timeline"><option value="">Select one</option><option>As soon as possible</option><option>Within 30 days</option><option>1 to 3 months</option><option>Just exploring options</option></select></div>
+      </div>
+      <div class="form-group"><label for="k-message">Anything Else I Should Know? (Optional)</label><textarea id="k-message" placeholder="Condition, tenants, mortgage, timing…"></textarea></div>
+      <button type="submit" class="form-submit">Request My Cash Offer</button>
+    </form>
+    <div class="contact-direct">
+      <div class="direct-item"><div class="direct-label">Call or Text</div><a href="tel:{PHONE_TEL}" class="direct-value">{PHONE_DISPLAY}</a></div>
+      <div class="direct-item"><div class="direct-label">Email</div><a href="mailto:{EMAIL}" class="direct-value">{EMAIL}</a></div>
+    </div>
+  </div>
+</section>"""
+
+CASH_SCRIPTS = """<script>
+  document.querySelectorAll('.faq-q').forEach(q => {
+    q.addEventListener('click', () => {
+      const item = q.parentElement, wasOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+      if (!wasOpen) item.classList.add('open');
+    });
+  });
+  async function handleCashForm(e) {
+    e.preventDefault();
+    const form = e.target, btn = form.querySelector('button[type="submit"]'), orig = btn.textContent, v = id => document.getElementById(id).value;
+    btn.textContent = 'Sending…'; btn.disabled = true;
+    const fd = new FormData();
+    fd.append('name', v('k-first') + ' ' + v('k-last'));
+    fd.append('email', v('k-email'));
+    fd.append('phone', v('k-phone'));
+    fd.append('type', 'Cash offer request');
+    fd.append('address', v('k-address'));
+    fd.append('situation', v('k-situation'));
+    fd.append('timeline', v('k-timeline'));
+    fd.append('message', v('k-message'));
+    fd.append('page', location.href);
+    fd.append('_subject', 'New CASH OFFER Lead — ' + location.pathname);
+    try {
+      const res = await fetch('https://formspree.io/f/xykvnplp', { method: 'POST', body: fd, headers: { 'Accept': 'application/json' } });
+      if (res.ok) { if (window.gtag) gtag('event','generate_lead',{form_name:'cash_offer',page_path:location.pathname}); document.getElementById('contactSuccess').style.display = 'block'; form.style.display = 'none'; }
+      else { alert('Something went wrong. Please call (757) 286-7255.'); btn.textContent = orig; btn.disabled = false; }
+    } catch { alert('Network error. Please call (757) 286-7255.'); btn.textContent = orig; btn.disabled = false; }
+  }
+</script>"""
+
+CASH_CSS = '<link rel="stylesheet" href="/assets/cash.css" />'
+
+
+def cash_cards(exclude=None):
+    out = []
+    for cs, nm in CASH_CITIES:
+        slug = cash_city_slug(cs)
+        if slug in CASH_BY and slug != exclude:
+            out.append(f'<a class="link-card" href="/{slug}/"><h3>{esc(nm)}, VA</h3><p>{esc(CASH_BY[slug]["card"])}</p><span class="more">Cash offers in {esc(nm)} →</span></a>')
+    return "".join(out)
+
+
+def cash_shared(p):
+    """Shared explainer blocks. Kept short so each page is mostly its own local content."""
+    nm = p.get("city_name") or "Hampton Roads"
+    steps = (
+        f"<h2>How Selling to Chris Works in {esc(nm)}</h2><ol>"
+        "<li><strong>Tell me about the house.</strong> Send the address, the condition and your timeline through the form below or call me. A rough description is enough to start.</li>"
+        "<li><strong>I review it and put the offer in writing.</strong> I look at the property, recent nearby sales and the work the house needs, then give you a no-obligation written offer. You can compare it with what listing would likely bring.</li>"
+        "<li><strong>You decide, and you set the pace.</strong> If you accept, we close through a Virginia title company or attorney on a date that fits your situation. If you decline, you owe nothing.</li></ol>"
+    )
+    rows = [
+        ("Price", "A cash offer usually comes in below what a repaired, well-marketed home can fetch on the open market. You are paying for speed, certainty and convenience."),
+        ("Speed", "A cash buyer does not wait on mortgage approval or a lender appraisal. A listing depends on how fast the right buyer and their financing line up."),
+        ("Repairs and showings", "Sell as-is with no repairs, staging or open houses, versus preparing and showing the home when you list."),
+        ("Certainty", "Fewer contingencies means fewer ways for the deal to fall through, though every sale still depends on clear title and a signed contract."),
+        ("Costs", 'No listing commission on a direct sale, but closing costs and taxes still apply. Virginia’s state recordation tax is 25 cents per $100 of the price (<a href="https://law.lis.virginia.gov/vacodefull/title58.1/chapter8/" rel="noopener nofollow" target="_blank">Va. Code § 58.1-801</a>), and other fees can apply. Your settlement agent itemizes all of it.'),
+    ]
+    compare = (
+        f"<h2>Cash Sale vs. Listing With an Agent in {esc(nm)}</h2><table class=\"facts\">"
+        + "".join(f"<tr><th>{k}</th><td>{v}</td></tr>" for k, v in rows)
+        + "</table><p>If your home is in good shape and you are not in a hurry, listing with an agent will often net you more, and I will tell you that straight. I am a full-time REALTOR®, so I can help you either way.</p>"
+    )
+    disclose = (
+        "<h2>Who You Would Be Selling To</h2>"
+        f"<p>I am {esc(AGENT)}, a licensed Virginia real estate agent with {esc(BRAND)}. If you sell your home directly to me or to a company I own, I am the buyer, not your agent, and I will tell you so in writing before you sign anything. "
+        "You are always free to talk with a REALTOR®, an attorney or a tax advisor first, and to compare my offer with listing the home. "
+        f'See my <a href="/#testimonials">client reviews</a> and my <a href="/talk-to-chris/">background</a>.</p>'
+    )
+    return steps + compare + disclose
+
+
+def build_cash(p):
+    path = f"/{p['slug']}/"
+    hub = p["kind"] == "hub"
+    nm = p.get("city_name") or "Hampton Roads"
+    crumbs = [("Home", "/")]
+    if not hub:
+        crumbs.append(("We Buy Houses in Hampton Roads", f"/{CASH_HUB}/"))
+    crumbs.append((p["crumb"], path))
+    cta = f'<p class="cash-cta"><a class="cash-btn" href="#contact">Get My Cash Offer</a><a class="cash-call" href="tel:{PHONE_TEL}">Or call {PHONE_DISPLAY}</a></p>'
+    who = (
+        '<table class="facts">'
+        f'<tr><th>Who you are dealing with</th><td>{esc(AGENT)}, licensed Virginia REALTOR® with {esc(BRAND)}, a Hampton Roads native</td></tr>'
+        '<tr><th>Track record as a Realtor</th><td>500+ homes sold and over $100 million in sales; HRRA Circle of Excellence winner every year since 2013; 200+ five-star reviews (<a href="/#testimonials">read them</a>)</td></tr>'
+        f'<tr><th>Office</th><td>{ADDR_LINE} · <a href="tel:{PHONE_TEL}">{PHONE_DISPLAY}</a></td></tr>'
+        f'<tr><th>Areas</th><td>Virginia Beach, Norfolk, Chesapeake, Newport News, Hampton, Portsmouth and Suffolk</td></tr></table>'
+    )
+    secs = "".join(f"<h2>{esc(s['h2'])}</h2>{s['html']}" for s in p["sections"])
+    more = cash_cards(None if hub else cash_city_slug(p.get("city_slug", "")))
+    more_h = "Cash Offers Across Hampton Roads" if hub else "We Also Buy Houses in These Hampton Roads Cities"
+    guides = "".join(
+        f'<a class="link-card" href="{esc(g["href"])}"><h3>{esc(g["title"])}</h3><p>{esc(g["text"])}</p><span class="more">Read →</span></a>' for g in p.get("guides", [])
+    )
+    guides_html = f'<h2>Helpful Guides</h2><div class="card-grid">{guides}</div>' if guides else ""
+    body = (
+        hero(p["eyebrow"], p["h1"], p["lede"], byline_html(p["updated"]))
+        + crumbs_html(crumbs)
+        + '<main class="sub"><div class="sub-grid"><article class="prose">'
+        + f'<div class="tldr"><span class="tldr-label">The short answer</span><p>{p["tldr"]}</p></div>'
+        + cta + who + secs + cash_shared(p) + guides_html
+        + f'<h2>{esc(more_h)}</h2><div class="card-grid">{more}</div>'
+        + sources_html(p.get("sources"))
+        + f'<p class="post-meta" style="margin-top:2rem;">This page is general information, not legal, tax or financial advice. Talk with a Virginia attorney or tax professional about your specific situation.</p>'
+        + "</article>"
+        + f'<aside class="side-card"><h3>Want a cash offer on your {esc(nm)} house?</h3><p>Send the address and your timeline. No obligation, and I will tell you honestly if listing would net you more.</p>'
+        + f'<a class="hero-btn" href="#contact">Get My Cash Offer</a><div class="side-contact">{esc(AGENT)} · {esc(BRAND)}<br/><a href="tel:{PHONE_TEL}">{PHONE_DISPLAY}</a></div></aside>'
+        + "</div></main>"
+        + faq_html(p["faqs"], p.get("faq_heading", f"{nm} Cash Sale Questions, Answered"))
+    )
+    title = p["title"]
+    area = (
+        [{"@type": "City", "name": n, "containedInPlace": {"@type": "State", "name": "Virginia"}} for _, n in CASH_CITIES]
+        if hub else {"@type": "City", "name": nm, "containedInPlace": {"@type": "State", "name": "Virginia"}}
+    )
+    ld = [
+        AGENT_NODE, crumbs_ld(crumbs),
+        {"@type": "WebPage", "@id": BASE + path + "#webpage", "url": BASE + path, "name": title, "description": p["description"],
+         "dateModified": p["updated"], "inLanguage": "en-US", "isPartOf": {"@type": "WebSite", "name": f"{AGENT} – {BRAND}", "url": BASE + "/"},
+         "author": {"@id": BASE + "/#chris-jenkins"}, "about": {"@id": BASE + path + "#service"}},
+        {"@type": "Service", "@id": BASE + path + "#service", "name": p.get("service_name", f"Cash home buying in {nm}, Virginia"),
+         "serviceType": "Cash home purchase", "description": p["description"], "url": BASE + path,
+         "provider": {"@id": BASE + "/#chris-jenkins"}, "areaServed": area},
+        faq_ld(p["faqs"]),
+    ]
+    write(path.strip("/") + "/index.html", page(path, title, p["description"], body, ld, contact=CASH_CONTACT, scripts=CASH_SCRIPTS, extra_head=CASH_CSS))
+    urls.append((path, p["updated"], "0.9" if p["kind"] in ("hub", "city") else "0.8"))
 
 
 # ---------------- neighborhood pages ----------------
@@ -279,6 +463,7 @@ def build_hood(h):
         + secs
         + related
         + (lambda cs, sl, rel0: f'<h2>Compare {esc(h["name"])} and Ask Questions</h2><p>See {esc(h["name"])} next to another neighborhood with the <a href="/tools/neighborhood-compare/?a={cs}/{sl}&b={cs}/{rel0 or sl}">free neighborhood compare tool</a>, or read our short answers on <a href="/questions/median-home-price-{cs}-va/">{esc(city["name"])} home prices</a> and <a href="/questions/days-to-sell-a-house-{cs}-va/">how long homes take to sell in {esc(city["name"])}</a>.</p>' if cs in ("chesapeake", "virginia-beach") else "")(h["city_slug"], h["slug"], (h.get("related") or [None])[0])
+        + cash_hood_note(h["city_slug"], h["name"], city["name"])
         + sources_html(h.get("sources"))
         + "</article>"
         + side_card(f"Buying or selling in {h['name']}?", f"{AGENT} with {BRAND} can walk you through {h['name']} and the rest of {city['name']}.")
@@ -330,6 +515,7 @@ def build_city(c):
         + "".join(f"<h2>{esc(s['h2'])}</h2>{s['html']}" for s in c["sections"])
         + f"<h2>{esc(c['name'])} Neighborhood Guides</h2>"
         + (grid or "<p>Neighborhood guides for this city are being added. Call or text Chris Jenkins for a personal walkthrough of any community.</p>")
+        + cash_city_note(c["slug"], c["name"])
         + sources_html(c.get("sources"))
         + "</article>"
         + side_card(f"Thinking about {c['name']}?", f"{AGENT} helps buyers and sellers across {c['name']} and the rest of Hampton Roads.")
@@ -682,6 +868,8 @@ def build_site_files():
              f"> {AGENT} is a full-time REALTOR® serving Chesapeake, Virginia Beach, Norfolk and all of Hampton Roads, Virginia. Over $100M in sales, 500+ homes sold, HRRA Circle of Excellence 2013–present. Specializes in home buyers, home sellers and military PCS relocation. Phone {PHONE_DISPLAY}.", "",
              "## Core pages", f"- [Home]({BASE}/): About {AGENT}, services, client reviews, FAQ and contact", f"- [Neighborhood guides]({BASE}/neighborhoods/): Community-by-community Hampton Roads guides", f"- [Blog]({BASE}/blog/): Buying, selling, VA loan and relocation guides", f"- [Questions]({BASE}/questions/): Short, sourced answers to Hampton Roads buying and selling questions", f"- [Talk to Chris]({BASE}/talk-to-chris/): Phone, email and a short introduction", f"- [Videos]({BASE}/videos/): Short Hampton Roads real estate videos with transcripts", f"- [VA loan payment calculator]({BASE}/tools/va-loan-payment-calculator/): Free Hampton Roads VA loan payment estimate with funding fee, taxes and BAH", f"- [Neighborhood compare tool]({BASE}/tools/neighborhood-compare/): Free side-by-side comparison of Hampton Roads neighborhoods", "", "## Cities"]
     lines += [f"- [{c['name']}, VA]({BASE}/neighborhoods/{c['slug']}/): {c['card']}" for c in CITIES.values()]
+    if CASH:
+        lines += ["", "## Cash offers (we buy houses)"] + [f"- [{p['h1']}]({BASE}/{p['slug']}/): {p['description']}" for p in CASH]
     lines += ["", "## Neighborhood guides"] + [f"- [{h['name']}, {CITIES[h['city_slug']]['name']}]({BASE}/neighborhoods/{h['city_slug']}/{h['slug']}/): {h['card']}" for h in HOODS]
     lines += ["", "## Questions answered"] + [f"- [{q['question']}]({BASE}/questions/{q['slug']}/): {q['description']}" for q in QUESTIONS]
     lines += ["", "## Latest blog posts"] + [f"- [{p['title']}]({BASE}/blog/{p['slug']}/): {p['description']}" for p in POSTS[:30]]
@@ -704,9 +892,11 @@ for q in QUESTIONS:
     build_question(q)
 if QUESTIONS:
     build_questions_index()
+for cp in CASH:
+    build_cash(cp)
 build_tool()
 build_va_calc()
 build_videos()
 build_talk()
 build_site_files()
-print(f"built {len(CITIES)} city hubs, {len(HOODS)} neighborhoods, {len(POSTS)} posts, {len(urls)+1} sitemap urls")
+print(f"built {len(CITIES)} city hubs, {len(HOODS)} neighborhoods, {len(POSTS)} posts, {len(CASH)} cash pages, {len(urls)+1} sitemap urls")
