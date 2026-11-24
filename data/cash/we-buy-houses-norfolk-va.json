@@ -12,7 +12,7 @@
  "tldr": "Chris Jenkins, a licensed Virginia REALTOR® with Better Homes and Gardens Real Estate – Native American Group, buys Norfolk houses for cash, as-is. I price each house from closed sales near its address, show you the math, and you decide with no obligation.",
  "service_name": "Cash home buying in Norfolk, Virginia",
  "card": "Cash offers on Norfolk houses, including vacant, inherited and rental properties.",
- "updated": "2026-11-21",
+ "updated": "2026-11-24",
  "sections": [
   {
    "h2": "Cash Home Buyers in Norfolk: How a Direct Sale Works Here",
@@ -68,6 +68,11 @@
    "href": "/sell-house-with-code-violations-hampton-roads/",
    "title": "Selling With Code Violations",
    "text": "How Virginia notices of violation work and what a sale changes."
+  },
+  {
+   "href": "/sell-house-pcs-orders-hampton-roads/",
+   "title": "Selling on PCS Orders",
+   "text": "Compare listing, a direct sale and renting against your report date."
   }
  ],
  "faqs": [
